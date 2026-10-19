@@ -1,0 +1,113 @@
+[
+  {
+    "bracket": [
+      0.0,
+      0.25
+    ],
+    "growth": 0.02093069122415997,
+    "issuer": "MSFT",
+    "reconstructed_value": 1053248.2964319477,
+    "reference_fraction": 0.8,
+    "residual": -2.3283064365386963e-10,
+    "status": "solved",
+    "target_value": 1053248.296431948
+  },
+  {
+    "bracket": [
+      0.0,
+      0.25
+    ],
+    "growth": 0.09999999999999998,
+    "issuer": "MSFT",
+    "reconstructed_value": 1316560.3705399348,
+    "reference_fraction": 1,
+    "residual": 0.0,
+    "status": "solved",
+    "target_value": 1316560.3705399348
+  },
+  {
+    "bracket": [
+      0.0,
+      0.25
+    ],
+    "growth": 0.1569029410122345,
+    "issuer": "MSFT",
+    "reconstructed_value": 1579872.4446479217,
+    "reference_fraction": 1.2,
+    "residual": 0.0,
+    "status": "solved",
+    "target_value": 1579872.4446479217
+  },
+  {
+    "issuer": "TGT",
+    "lower": 0.0,
+    "lower_value": 38462.59239993941,
+    "reference_fraction": 0.8,
+    "status": "unreachable_in_declared_bracket",
+    "target_value": 31314.468895681202,
+    "upper": 0.25,
+    "upper_value": 53725.96668836515
+  },
+  {
+    "bracket": [
+      0.0,
+      0.25
+    ],
+    "growth": 0.019999999999999844,
+    "issuer": "TGT",
+    "reconstructed_value": 39143.0861196015,
+    "reference_fraction": 1,
+    "residual": 0.0,
+    "status": "solved",
+    "target_value": 39143.0861196015
+  },
+  {
+    "bracket": [
+      0.0,
+      0.25
+    ],
+    "growth": 0.17106839668022167,
+    "issuer": "TGT",
+    "reconstructed_value": 46971.703343521796,
+    "reference_fraction": 1.2,
+    "residual": -7.275957614183426e-12,
+    "status": "solved",
+    "target_value": 46971.7033435218
+  },
+  {
+    "issuer": "INFY",
+    "lower": 0.0,
+    "lower_value": 31608.61342071963,
+    "reference_fraction": 0.8,
+    "status": "unreachable_in_declared_bracket",
+    "target_value": 28303.45398444661,
+    "upper": 0.25,
+    "upper_value": 64150.45749605415
+  },
+  {
+    "bracket": [
+      0.0,
+      0.25
+    ],
+    "growth": 0.04999999999999993,
+    "issuer": "INFY",
+    "reconstructed_value": 35379.317480558246,
+    "reference_fraction": 1,
+    "residual": -1.4551915228366852e-11,
+    "status": "solved",
+    "target_value": 35379.31748055826
+  },
+  {
+    "bracket": [
+      0.0,
+      0.25
+    ],
+    "growth": 0.11944903713948152,
+    "issuer": "INFY",
+    "reconstructed_value": 42455.18097666992,
+    "reference_fraction": 1.2,
+    "residual": 1.4551915228366852e-11,
+    "status": "solved",
+    "target_value": 42455.18097666991
+  }
+]

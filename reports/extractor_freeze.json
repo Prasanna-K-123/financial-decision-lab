@@ -1,0 +1,33 @@
+{
+  "protocol_commit": "e5291c624cd33d1e7567e3b32033f76b92bfbdcd",
+  "development_sources": [
+    "MSFT_2023",
+    "MSFT_2024",
+    "TGT_2023",
+    "TGT_2024",
+    "INFY_2023",
+    "INFY_2024"
+  ],
+  "final_sources": [
+    "MSFT_2025",
+    "TGT_2025",
+    "INFY_2025"
+  ],
+  "source_code_sha256": {
+    "src/finance_lab/__init__.py": "d18c8e7dce0ede808ba4c44f431123e6e1a23e7bf5b15e76be226b0322979587",
+    "src/finance_lab/documents.py": "41469b4423c5939b968fa97df473c61bb0cde555ddd30618cbc1c330ff152829",
+    "src/finance_lab/extraction.py": "a5a7893036d09c4993a7bd4dc5e0c8dd9edbb49d2d0d1b94cd3e7930d5a4c967",
+    "src/finance_lab/valuation.py": "bd2a2d47a196aad9d42e81703e397fb0132496bff756a20fca7b13e16a7631d8",
+    "tests/test_valuation.py": "2a459ec57d26ad754ec0f71c2c362cf31f3cdb655faf8101d87034bdf6ba008f",
+    "tests/test_extraction.py": "9a97fe1fc53b71d2ff92bd705a01bd2c41e45fea0492d6b09f22fc7a87a9d8ab"
+  },
+  "final_predictions_created": false,
+  "final_references_created": false,
+  "caveat": "Retrospective temporal test; TGT FY2025 cover highlights incidentally displayed during source identity review. No final reference/score used for method development; no blind or prospective performance claim.",
+  "development_findings": [
+    "TGT2023 corrupt native CMap requires deterministic OCR.",
+    "DOCX split accounting parentheses require source-cell reconstruction.",
+    "Infosys cash-flow note column must not join labels.",
+    "Main-statement D&A+other and PPE+intangibles remain unsupported for pure targets."
+  ]
+}

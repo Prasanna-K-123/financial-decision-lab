@@ -1,0 +1,53 @@
+{
+  "all_final_source_statements_visually_checked": true,
+  "final_controls": 9,
+  "final_financial_targets": 36,
+  "final_reference_rows": 45,
+  "prediction_seal_commit": "38727b4eb73851132634601a246e492984e3f397",
+  "reviewed_alternate_groups": {
+    "INFY_2023": [
+      "page:67",
+      "page:73"
+    ],
+    "INFY_2024": [
+      "page:61",
+      "page:73"
+    ],
+    "INFY_2025": [
+      "page:66",
+      "page:78",
+      "page:70"
+    ],
+    "MSFT_2023": [
+      "table:13",
+      "table:25"
+    ],
+    "MSFT_2024": [
+      "table:13",
+      "table:25"
+    ],
+    "MSFT_2025": [
+      "table:13",
+      "table:24"
+    ],
+    "TGT_2023": [
+      "page:5",
+      "page:35",
+      "page:47"
+    ],
+    "TGT_2024": [
+      "page:6",
+      "page:38",
+      "page:50"
+    ],
+    "TGT_2025": [
+      "page:5",
+      "page:40",
+      "page:52"
+    ]
+  },
+  "rule": "Financial summary/MD&A duplicates with the correct consolidated quantity, requested year/end date and USD-million units count as valid provenance. Baseline is not penalised merely for citing MD&A rather than the canonical statement. The Infosys FY2023/FY2024 D&A wrong-column values remain errors.",
+  "source_identity": "Original bytes already hash-guarded",
+  "uncertainty": "Only three final report clusters. Exact per-case results, no population confidence interval or unseen-issuer inference.",
+  "workflow_annotations_not_external_human_review": true
+}

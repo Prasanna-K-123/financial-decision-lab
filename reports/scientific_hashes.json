@@ -1,0 +1,13 @@
+{
+  "development_predictions.json": "0db5a5a37bbdba6c028ba9fa87f0c19fb3d5ed41f4a1be7a6d92f8841f0c0a1b",
+  "error_ledger.json": "7fe44f57eb28fb002838db0b1952ac202c17ad5df0a1efad3b2a717bc20b1b07",
+  "evaluation_ledger.json": "6d95fc8f3cde92632ff7c9593d3f25baa42e0f1f62bb0c81549dba0bd7ba263b",
+  "evaluation_summary.json": "5deff011342635c60bd264015aa13f8c8c2b3e9767c7777dde9b20910f774a30",
+  "final_predictions.json": "0272f65436cd714db4a6aa9933fe0b0d91ac936f3e2ff38518ad672aa001a24b",
+  "financial_spread.json": "a38057450aa756144854922374dfa8183d1fa0831d64038c03221a919f168f75",
+  "growth_return_regimes.json": "d19415d086f8f161e4086a74c4cc4d6b7347a054039d336190c673adf2a0c446",
+  "independent_math_verification.json": "eda88c43c2c1d0cfe4cc997187acb81f38cf3c3a606cc28c1762373181b25481",
+  "reverse_cases.json": "2a9bb2c7187baac88baa30f0503807efdcec95e9eff2d819fa9772a7ee522ece",
+  "valuation_scenarios.json": "e5dd3e32eefd9d5e39aa115515bd287ccfe88f0da8e202cafc37444d41b033a9",
+  "valuation_sensitivity.json": "458facefaa61128dbe266a35b0030b5564051cde276cf50c9317ddaf20b191c7"
+}

@@ -1,0 +1,10 @@
+{
+  "original_working_protocol_sha256": "be2155f41d3626ca329d0d992179a6579b82394dc3d8066b6db808fdfd4c1248",
+  "original_private_protocol_commit": "e5291c624cd33d1e7567e3b32033f76b92bfbdcd",
+  "extractor_freeze_commit": "83869d6071bd38e5748687c10a928946540226a2",
+  "prediction_seal_commit": "38727b4eb73851132634601a246e492984e3f397",
+  "numerical_reproduction_commit": "8ccbaf70acd50f14cc3810918bad1d282c6c5faf",
+  "public_protocol_edition": "Editorial research specification after completion; same scientific sample/definitions/methods/assumptions. Private original retained in its original commit.",
+  "publication_history_limit": "Public repository is a clean completed-study import; private build IDs do not establish external preregistration or independent timestamp certification.",
+  "final_caveat": "Retrospective three-report final check. Target FY2025 cover highlights incidentally displayed during source identity review; no blind/unseen-issuer claim."
+}

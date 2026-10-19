@@ -1,0 +1,2795 @@
+[
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -5.820766091346741e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999994,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -117817.33333333407,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 846142.6666666659,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 19279.200000000128,
+    "value_to_no_growth": 0.877777777777777
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -265089.0000000007,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 698870.9999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 38558.399999999965,
+    "value_to_no_growth": 0.7249999999999993
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -454438.28571428626,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 509521.71428571374,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 57837.60000000009,
+    "value_to_no_growth": 0.528571428571428
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -706904.0000000005,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 257055.9999999995,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 77116.79999999993,
+    "value_to_no_growth": 0.26666666666666616
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1060356.000000001,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": -96396.00000000095,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 96396.00000000006,
+    "value_to_no_growth": -0.10000000000000098
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1590534.0000000005,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": -626574.0000000005,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 115675.20000000019,
+    "value_to_no_growth": -0.6500000000000005
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -5.820766091346741e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999994,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -29454.333333333954,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 934505.666666666,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 12049.50000000008,
+    "value_to_no_growth": 0.9694444444444438
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -66272.2500000007,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 897687.7499999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 24098.999999999978,
+    "value_to_no_growth": 0.9312499999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -113609.57142857206,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 850350.4285714279,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 36148.50000000006,
+    "value_to_no_growth": 0.8821428571428565
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -176726.0000000007,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 787233.9999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 48197.999999999956,
+    "value_to_no_growth": 0.816666666666666
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -265089.0000000008,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 698870.9999999992,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 60247.50000000004,
+    "value_to_no_growth": 0.7249999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -397633.5000000008,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 566326.4999999992,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 72297.00000000012,
+    "value_to_no_growth": 0.5874999999999991
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -5.820766091346741e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999994,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -6.984919309616089e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 9639.600000000064,
+    "value_to_no_growth": 0.9999999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -5.820766091346741e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999994,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 19279.199999999983,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -6.984919309616089e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 28918.800000000047,
+    "value_to_no_growth": 0.9999999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -6.984919309616089e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 38558.399999999965,
+    "value_to_no_growth": 0.9999999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -8.149072527885437e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999992,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 48198.00000000003,
+    "value_to_no_growth": 0.9999999999999991
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -8.149072527885437e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999992,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 57837.60000000009,
+    "value_to_no_growth": 0.9999999999999991
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -5.820766091346741e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999994,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 19636.22222222155,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 983596.2222222215,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 8033.000000000054,
+    "value_to_no_growth": 1.0203703703703697
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 44181.4999999993,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1008141.4999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 16065.999999999985,
+    "value_to_no_growth": 1.0458333333333325
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 75739.71428571339,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1039699.7142857134,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 24099.00000000004,
+    "value_to_no_growth": 1.0785714285714276
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 117817.33333333256,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1081777.3333333326,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 32131.99999999997,
+    "value_to_no_growth": 1.1222222222222213
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 176725.99999999907,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1140685.999999999,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 40165.00000000003,
+    "value_to_no_growth": 1.1833333333333325
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 265088.99999999907,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1229048.999999999,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 48198.00000000008,
+    "value_to_no_growth": 1.274999999999999
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -5.820766091346741e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999994,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 39272.4444444438,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1003232.4444444438,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 6426.400000000043,
+    "value_to_no_growth": 1.04074074074074
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 88362.9999999993,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1052322.9999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 12852.799999999988,
+    "value_to_no_growth": 1.091666666666666
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 151479.4285714277,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1115439.4285714277,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 19279.200000000033,
+    "value_to_no_growth": 1.1571428571428561
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 235634.6666666658,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1199594.6666666658,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 25705.599999999977,
+    "value_to_no_growth": 1.2444444444444436
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 353451.9999999993,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1317411.9999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 32132.000000000022,
+    "value_to_no_growth": 1.366666666666666
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 530177.9999999988,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1494137.9999999988,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 38558.40000000007,
+    "value_to_no_growth": 1.5499999999999987
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -5.820766091346741e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999994,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 58908.666666666046,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1022868.666666666,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 4819.800000000032,
+    "value_to_no_growth": 1.0611111111111104
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 132544.49999999953,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1096504.4999999995,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 9639.599999999991,
+    "value_to_no_growth": 1.1374999999999995
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 227219.14285714226,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1191179.1428571423,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 14459.400000000023,
+    "value_to_no_growth": 1.235714285714285
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 353451.99999999907,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1317411.999999999,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 19279.199999999983,
+    "value_to_no_growth": 1.3666666666666658
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 530177.9999999993,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1494137.9999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 24099.000000000015,
+    "value_to_no_growth": 1.5499999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 795266.9999999986,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1759226.9999999986,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 28918.800000000047,
+    "value_to_no_growth": 1.8249999999999986
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -5.820766091346741e-10,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 963959.9999999994,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 78544.88888888818,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1042504.8888888882,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 3213.2000000000216,
+    "value_to_no_growth": 1.0814814814814808
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 176725.99999999953,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1140685.9999999995,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 6426.399999999994,
+    "value_to_no_growth": 1.183333333333333
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 302958.85714285634,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1266918.8571428563,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 9639.600000000017,
+    "value_to_no_growth": 1.3142857142857134
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 471269.33333333256,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1435229.3333333326,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 12852.799999999988,
+    "value_to_no_growth": 1.488888888888888
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 706903.9999999993,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 1670863.9999999993,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 16066.000000000011,
+    "value_to_no_growth": 1.7333333333333325
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 1060355.999999999,
+    "issuer": "MSFT",
+    "no_growth_reference": 963960.0,
+    "policy_value": 2024315.999999999,
+    "reported_ebit": 128528.0,
+    "upfront_investment": 19279.200000000033,
+    "value_to_no_growth": 2.099999999999999
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999998,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -4690.583333333358,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 33686.91666666664,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 767.5500000000011,
+    "value_to_no_growth": 0.8777777777777771
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -10553.81250000003,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 27823.68749999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1535.1000000000022,
+    "value_to_no_growth": 0.7249999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -18092.250000000036,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 20285.249999999964,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 2302.6500000000033,
+    "value_to_no_growth": 0.5285714285714276
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -28143.50000000003,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 10233.999999999969,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 3070.2000000000044,
+    "value_to_no_growth": 0.2666666666666659
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -42215.25000000003,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": -3837.750000000031,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 3837.7500000000055,
+    "value_to_no_growth": -0.10000000000000081
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -63322.87500000002,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": -24945.375000000022,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 4605.300000000007,
+    "value_to_no_growth": -0.6500000000000006
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999998,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1172.6458333333576,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 37204.85416666664,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 479.7187500000007,
+    "value_to_no_growth": 0.9694444444444438
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2638.453125000029,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 35739.04687499997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 959.4375000000014,
+    "value_to_no_growth": 0.9312499999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -4523.062500000029,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 33854.43749999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1439.156250000002,
+    "value_to_no_growth": 0.8821428571428563
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -7035.875000000033,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 31341.624999999967,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1918.8750000000027,
+    "value_to_no_growth": 0.8166666666666658
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -10553.81250000003,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 27823.68749999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 2398.593750000003,
+    "value_to_no_growth": 0.7249999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -15830.71875000003,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 22546.78124999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 2878.312500000004,
+    "value_to_no_growth": 0.5874999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999998,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.9103830456733704e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 383.77500000000055,
+    "value_to_no_growth": 0.9999999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.9103830456733704e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 767.5500000000011,
+    "value_to_no_growth": 0.9999999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.9103830456733704e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1151.3250000000016,
+    "value_to_no_growth": 0.9999999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.9103830456733704e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1535.1000000000022,
+    "value_to_no_growth": 0.9999999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.9103830456733704e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1918.8750000000027,
+    "value_to_no_growth": 0.9999999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -3.637978807091713e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999996,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 2302.6500000000033,
+    "value_to_no_growth": 0.999999999999999
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999998,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 781.7638888888614,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 39159.26388888886,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 319.81250000000045,
+    "value_to_no_growth": 1.0203703703703697
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 1758.968749999971,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 40136.46874999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 639.6250000000009,
+    "value_to_no_growth": 1.0458333333333325
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 3015.374999999971,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 41392.87499999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 959.4375000000014,
+    "value_to_no_growth": 1.0785714285714278
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 4690.583333333299,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 43068.0833333333,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1279.2500000000018,
+    "value_to_no_growth": 1.1222222222222213
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 7035.874999999964,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 45413.37499999996,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1599.0625000000023,
+    "value_to_no_growth": 1.1833333333333325
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 10553.81249999997,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 48931.31249999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1918.8750000000027,
+    "value_to_no_growth": 1.2749999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999998,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 1563.527777777752,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 39941.02777777775,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 255.85000000000036,
+    "value_to_no_growth": 1.04074074074074
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 3517.937499999978,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 41895.43749999998,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 511.7000000000007,
+    "value_to_no_growth": 1.0916666666666661
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 6030.749999999971,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 44408.24999999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 767.5500000000011,
+    "value_to_no_growth": 1.1571428571428564
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 9381.166666666642,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 47758.66666666664,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1023.4000000000015,
+    "value_to_no_growth": 1.2444444444444438
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 14071.749999999964,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 52449.24999999996,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1279.2500000000018,
+    "value_to_no_growth": 1.3666666666666658
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 21107.624999999956,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 59485.124999999956,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1535.1000000000022,
+    "value_to_no_growth": 1.549999999999999
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999998,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 2345.291666666635,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 40722.791666666635,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 191.88750000000027,
+    "value_to_no_growth": 1.0611111111111102
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 5276.906249999978,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 43654.40624999998,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 383.77500000000055,
+    "value_to_no_growth": 1.1374999999999995
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 9046.12499999997,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 47423.62499999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 575.6625000000008,
+    "value_to_no_growth": 1.2357142857142849
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 14071.74999999997,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 52449.24999999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 767.5500000000011,
+    "value_to_no_growth": 1.3666666666666658
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 21107.62499999997,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 59485.12499999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 959.4375000000014,
+    "value_to_no_growth": 1.5499999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 31661.43749999997,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 70038.93749999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 1151.3250000000016,
+    "value_to_no_growth": 1.8249999999999993
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 38377.49999999998,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 3127.0555555555256,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 41504.555555555526,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 127.92500000000018,
+    "value_to_no_growth": 1.0814814814814806
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 7035.874999999985,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 45413.374999999985,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 255.85000000000036,
+    "value_to_no_growth": 1.183333333333333
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 12061.49999999997,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 50438.99999999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 383.77500000000055,
+    "value_to_no_growth": 1.3142857142857136
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 18762.333333333314,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 57139.833333333314,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 511.7000000000007,
+    "value_to_no_growth": 1.4888888888888885
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 28143.49999999997,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 66520.99999999997,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 639.6250000000009,
+    "value_to_no_growth": 1.7333333333333325
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 42215.249999999956,
+    "issuer": "TGT",
+    "no_growth_reference": 38377.5,
+    "policy_value": 80592.74999999996,
+    "reported_ebit": 5117.0,
+    "upfront_investment": 767.5500000000011,
+    "value_to_no_growth": 2.0999999999999988
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1.4551915228366852e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999996
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -3731.7500000000146,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 26800.749999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 610.649999999996,
+    "value_to_no_growth": 0.8777777777777773
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -8396.437500000015,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 22136.062499999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1221.300000000001,
+    "value_to_no_growth": 0.7249999999999995
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -14393.892857142864,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 16138.607142857136,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1831.949999999997,
+    "value_to_no_growth": 0.5285714285714284
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -22390.500000000033,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 8141.999999999966,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 2442.600000000002,
+    "value_to_no_growth": 0.26666666666666555
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -33585.750000000015,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": -3053.2500000000155,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 3053.249999999998,
+    "value_to_no_growth": -0.1000000000000005
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.05,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.05,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -50378.625000000015,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": -19846.12500000002,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 3663.9000000000033,
+    "value_to_no_growth": -0.6500000000000006
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1.4551915228366852e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999996
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -932.9375000000146,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 29599.562499999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 381.6562499999975,
+    "value_to_no_growth": 0.969444444444444
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2099.109375000018,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 28433.39062499998,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 763.3125000000007,
+    "value_to_no_growth": 0.9312499999999994
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -3598.473214285732,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 26934.026785714268,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1144.9687499999982,
+    "value_to_no_growth": 0.8821428571428566
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -5597.6250000000255,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 24934.874999999975,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1526.6250000000014,
+    "value_to_no_growth": 0.8166666666666659
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -8396.437500000022,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 22136.062499999978,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1908.2812499999989,
+    "value_to_no_growth": 0.7249999999999993
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.08,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.08,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -12594.656250000025,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 17937.843749999975,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 2289.937500000002,
+    "value_to_no_growth": 0.5874999999999991
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1.4551915228366852e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999996
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999978,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 305.324999999998,
+    "value_to_no_growth": 0.9999999999999993
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999978,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 610.6500000000005,
+    "value_to_no_growth": 0.9999999999999993
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999978,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 915.9749999999985,
+    "value_to_no_growth": 0.9999999999999993
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.1827872842550278e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999978,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1221.300000000001,
+    "value_to_no_growth": 0.9999999999999993
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.546585164964199e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999975,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1526.624999999999,
+    "value_to_no_growth": 0.9999999999999991
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.1,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -2.9103830456733704e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.49999999997,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1831.9500000000016,
+    "value_to_no_growth": 0.999999999999999
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1.4551915228366852e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999996
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 621.9583333333139,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 31154.458333333314,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 254.43749999999835,
+    "value_to_no_growth": 1.0203703703703697
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 1399.4062499999782,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 31931.906249999978,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 508.87500000000045,
+    "value_to_no_growth": 1.0458333333333327
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 2398.982142857116,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 32931.482142857116,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 763.3124999999989,
+    "value_to_no_growth": 1.0785714285714276
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 3731.749999999978,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 34264.24999999998,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1017.7500000000009,
+    "value_to_no_growth": 1.1222222222222216
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 5597.624999999971,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 36130.12499999997,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1272.1874999999993,
+    "value_to_no_growth": 1.1833333333333325
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 8396.43749999997,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 38928.93749999997,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1526.6250000000014,
+    "value_to_no_growth": 1.274999999999999
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1.4551915228366852e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999996
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 1243.9166666666424,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 31776.416666666642,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 203.54999999999868,
+    "value_to_no_growth": 1.0407407407407399
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 2798.812499999978,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 33331.31249999998,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 407.10000000000036,
+    "value_to_no_growth": 1.091666666666666
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 4797.964285714261,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 35330.46428571426,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 610.6499999999991,
+    "value_to_no_growth": 1.1571428571428564
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 7463.499999999985,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 37995.999999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 814.2000000000007,
+    "value_to_no_growth": 1.244444444444444
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 11195.24999999997,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 41727.74999999997,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1017.7499999999994,
+    "value_to_no_growth": 1.3666666666666658
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.15,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.15,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 16792.87499999997,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 47325.37499999997,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 1221.300000000001,
+    "value_to_no_growth": 1.5499999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1.4551915228366852e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999996
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 1865.8749999999745,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 32398.374999999975,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 152.662499999999,
+    "value_to_no_growth": 1.0611111111111102
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 4198.218749999978,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 34730.71874999998,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 305.3250000000003,
+    "value_to_no_growth": 1.1374999999999993
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 7196.946428571406,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 37729.446428571406,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 457.9874999999993,
+    "value_to_no_growth": 1.2357142857142849
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 11195.249999999985,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 41727.749999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 610.6500000000005,
+    "value_to_no_growth": 1.3666666666666663
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 16792.87499999997,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 47325.37499999997,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 763.3124999999995,
+    "value_to_no_growth": 1.5499999999999992
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.2,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.2,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 25189.31249999997,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 55721.81249999997,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 915.9750000000008,
+    "value_to_no_growth": 1.824999999999999
+  },
+  {
+    "assumptions": {
+      "growth": 0,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": -1.4551915228366852e-11,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 30532.499999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 0.0,
+    "value_to_no_growth": 0.9999999999999996
+  },
+  {
+    "assumptions": {
+      "growth": 0.01,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 2487.833333333314,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 33020.333333333314,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 101.77499999999934,
+    "value_to_no_growth": 1.0814814814814808
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 5597.624999999971,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 36130.12499999997,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 203.55000000000018,
+    "value_to_no_growth": 1.1833333333333325
+  },
+  {
+    "assumptions": {
+      "growth": 0.03,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 9595.928571428536,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 40128.428571428536,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 305.32499999999953,
+    "value_to_no_growth": 1.3142857142857132
+  },
+  {
+    "assumptions": {
+      "growth": 0.04,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 14926.999999999985,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 45459.499999999985,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 407.10000000000036,
+    "value_to_no_growth": 1.4888888888888885
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 22390.49999999997,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 52922.99999999997,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 508.8749999999997,
+    "value_to_no_growth": 1.7333333333333323
+  },
+  {
+    "assumptions": {
+      "growth": 0.06,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.3,
+      "tax": 0.25,
+      "terminal_growth": 0.06,
+      "terminal_roic": 0.3,
+      "wacc": 0.1
+    },
+    "incremental_policy_value": 33585.74999999996,
+    "issuer": "INFY",
+    "no_growth_reference": 30532.5,
+    "policy_value": 64118.24999999996,
+    "reported_ebit": 4071.0,
+    "upfront_investment": 610.6500000000005,
+    "value_to_no_growth": 2.0999999999999988
+  }
+]

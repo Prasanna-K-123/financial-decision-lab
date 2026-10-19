@@ -1,0 +1,21 @@
+{
+  "extractor_freeze_commit": "83869d6071bd38e5748687c10a928946540226a2",
+  "files": {
+    "tools/predict.py": {
+      "bytes": 2191,
+      "sha256": "e6f800ba5ec5f4e52773893edeed6238c05dd4670cfb23669892dd48b9ad427e"
+    },
+    "reports/development_predictions.json": {
+      "bytes": 115466,
+      "sha256": "0db5a5a37bbdba6c028ba9fa87f0c19fb3d5ed41f4a1be7a6d92f8841f0c0a1b"
+    },
+    "reports/final_predictions.json": {
+      "bytes": 57153,
+      "sha256": "0272f65436cd714db4a6aa9933fe0b0d91ac936f3e2ff38518ad672aa001a24b"
+    }
+  },
+  "final_reference_annotations_exist": false,
+  "final_scored": false,
+  "freeze_code_hashes_match": true,
+  "development_references_created_after_prediction_execution": true
+}

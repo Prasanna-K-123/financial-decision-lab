@@ -1,0 +1,72 @@
+[
+  {
+    "answered": true,
+    "field": "da",
+    "materiality": "No unreviewed extractor result feeds the decision model. Any unsupported/wrong/missed financial answer requires source review; no dollar materiality threshold excuses a wrong year, unit or combined metric.",
+    "method": "literal",
+    "numeric_correct": false,
+    "outcome": "incorrect_numeric_or_context",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "da",
+        "fiscal_year": 2023,
+        "locator": "page:65:line:19",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Depreciation and amortization",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "466",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "provenance_correct": false,
+    "reason": "literal_lookup",
+    "reference_locator": "page:166:line:14",
+    "reference_status": "direct",
+    "reference_value": 524,
+    "request_id": "INFY_2023__da",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "supported_correct": false,
+    "value": "466"
+  },
+  {
+    "answered": true,
+    "field": "da",
+    "materiality": "No unreviewed extractor result feeds the decision model. Any unsupported/wrong/missed financial answer requires source review; no dollar materiality threshold excuses a wrong year, unit or combined metric.",
+    "method": "literal",
+    "numeric_correct": false,
+    "outcome": "incorrect_numeric_or_context",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "da",
+        "fiscal_year": 2024,
+        "locator": "page:65:line:18",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Depreciation and amortization",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "524",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "provenance_correct": false,
+    "reason": "literal_lookup",
+    "reference_locator": "page:164:line:14",
+    "reference_status": "direct",
+    "reference_value": 565,
+    "request_id": "INFY_2024__da",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "supported_correct": false,
+    "value": "524"
+  }
+]

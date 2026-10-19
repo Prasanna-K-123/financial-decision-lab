@@ -1,0 +1,6173 @@
+[
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g0",
+    "issuer": "MSFT",
+    "policy_value": 2427434.0087104095,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.722816795592644
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g1",
+    "issuer": "MSFT",
+    "policy_value": 2530314.015245272,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7392815524246845
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g2",
+    "issuer": "MSFT",
+    "policy_value": 2653287.462873252,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7564101563194228
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g3",
+    "issuer": "MSFT",
+    "policy_value": 2803046.3040950447,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7742870303173647
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g4",
+    "issuer": "MSFT",
+    "policy_value": 2989628.4135689223,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7930155621593771
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g5",
+    "issuer": "MSFT",
+    "policy_value": 3228807.5321929236,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.8127238206287629
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g6",
+    "issuer": "MSFT",
+    "policy_value": 3546873.1552684223,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.8335724717728326
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g7",
+    "issuer": "MSFT",
+    "policy_value": 3991146.286458906,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.8557659503730216
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g8",
+    "issuer": "MSFT",
+    "policy_value": 4656268.822685699,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.8795685632375518
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g9",
+    "issuer": "MSFT",
+    "policy_value": 5763071.708813395,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.905328266121655
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g10",
+    "issuer": "MSFT",
+    "policy_value": 7974047.556389123,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.9335127484075898
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g0",
+    "issuer": "MSFT",
+    "policy_value": 1999505.6422609072,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.684742240885368
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g1",
+    "issuer": "MSFT",
+    "policy_value": 2059151.8584730388,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6997874067211142
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g2",
+    "issuer": "MSFT",
+    "policy_value": 2128369.7018872495,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7153757565455718
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g3",
+    "issuer": "MSFT",
+    "policy_value": 2209765.2025172114,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.731571581121664
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g4",
+    "issuer": "MSFT",
+    "policy_value": 2306986.7625600854,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7484532570614727
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g5",
+    "issuer": "MSFT",
+    "policy_value": 2425304.2518279417,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7661173977985964
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g6",
+    "issuer": "MSFT",
+    "policy_value": 2572622.4247521986,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7846845640793068
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g7",
+    "issuer": "MSFT",
+    "policy_value": 2761362.98053401,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.8043072631714516
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g8",
+    "issuer": "MSFT",
+    "policy_value": 3012228.6834443053,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.8251813835485498
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g9",
+    "issuer": "MSFT",
+    "policy_value": 3362484.4274829007,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.8475629190965953
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g10",
+    "issuer": "MSFT",
+    "policy_value": 3886659.898025154,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.8717930759463939
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g0",
+    "issuer": "MSFT",
+    "policy_value": 1682741.6941106492,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6486950338601423
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g1",
+    "issuer": "MSFT",
+    "policy_value": 1717772.8683383255,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6624316515063892
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g2",
+    "issuer": "MSFT",
+    "policy_value": 1757517.4617752004,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6766047928705867
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g3",
+    "issuer": "MSFT",
+    "policy_value": 1803059.746572314,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6912615387907417
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g4",
+    "issuer": "MSFT",
+    "policy_value": 1855845.3883696417,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7064590111670186
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g5",
+    "issuer": "MSFT",
+    "policy_value": 1917845.715893575,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7222672659259813
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g6",
+    "issuer": "MSFT",
+    "policy_value": 1991820.552312469,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7387732470832035
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g7",
+    "issuer": "MSFT",
+    "policy_value": 2081756.2674953984,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7560862855076103
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g8",
+    "issuer": "MSFT",
+    "policy_value": 2193632.3694644584,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7743458954256766
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g9",
+    "issuer": "MSFT",
+    "policy_value": 2336845.174234116,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7937330726566518
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g10",
+    "issuer": "MSFT",
+    "policy_value": 2527055.145489226,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.8144870779122088
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g0",
+    "issuer": "MSFT",
+    "policy_value": 1439803.386601768,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6145750016976945
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g1",
+    "issuer": "MSFT",
+    "policy_value": 1460092.8432657495,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6271064317420053
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g2",
+    "issuer": "MSFT",
+    "policy_value": 1482684.2888578712,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.639980382125473
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g3",
+    "issuer": "MSFT",
+    "policy_value": 1508035.373142656,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6532292929127419
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g4",
+    "issuer": "MSFT",
+    "policy_value": 1536734.4788172622,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6668923131168341
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g5",
+    "issuer": "MSFT",
+    "policy_value": 1569551.0032760026,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6810171905572387
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g6",
+    "issuer": "MSFT",
+    "policy_value": 1607510.7812567959,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6956628384761536
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g7",
+    "issuer": "MSFT",
+    "policy_value": 1652012.6471125826,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7109028795757678
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g8",
+    "issuer": "MSFT",
+    "policy_value": 1705014.9344452154,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7268306311422806
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g9",
+    "issuer": "MSFT",
+    "policy_value": 1769346.3088281455,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7435662645696705
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g10",
+    "issuer": "MSFT",
+    "policy_value": 1849249.7250706553,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7612673324902632
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g0",
+    "issuer": "MSFT",
+    "policy_value": 1248309.5628489782,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5822860980302372
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g1",
+    "issuer": "MSFT",
+    "policy_value": 1259452.9549637293,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5937084441475752
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g2",
+    "issuer": "MSFT",
+    "policy_value": 1271642.9553377605,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6053907245754461
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g3",
+    "issuer": "MSFT",
+    "policy_value": 1285062.0229605366,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6173529910416974
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g4",
+    "issuer": "MSFT",
+    "policy_value": 1299938.2120844685,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6296192789604746
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g5",
+    "issuer": "MSFT",
+    "policy_value": 1316560.3705399348,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6422187046972381
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g6",
+    "issuer": "MSFT",
+    "policy_value": 1335299.8516136247,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6551869464875801
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g7",
+    "issuer": "MSFT",
+    "policy_value": 1356642.2467935225,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6685682751745737
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g8",
+    "issuer": "MSFT",
+    "policy_value": 1381234.9848860886,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.682418388602951
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g9",
+    "issuer": "MSFT",
+    "policy_value": 1409960.8942879261,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.696808446898166
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g10",
+    "issuer": "MSFT",
+    "policy_value": 1444055.902620092,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.7118309472952588
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g0",
+    "issuer": "MSFT",
+    "policy_value": 1094035.8404524317,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5517362870491332
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g1",
+    "issuer": "MSFT",
+    "policy_value": 1099367.7092570798,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5621388084538027
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g2",
+    "issuer": "MSFT",
+    "policy_value": 1105074.059718616,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5727289564415233
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g3",
+    "issuer": "MSFT",
+    "policy_value": 1111212.173343349,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5835163636013554
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g4",
+    "issuer": "MSFT",
+    "policy_value": 1117852.044875058,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5945124358342371
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g5",
+    "issuer": "MSFT",
+    "policy_value": 1125080.1213962496,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.605730830109781
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g6",
+    "issuer": "MSFT",
+    "policy_value": 1133004.4435921693,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6171880953501404
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g7",
+    "issuer": "MSFT",
+    "policy_value": 1141761.843520197,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6289045453259621
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g8",
+    "issuer": "MSFT",
+    "policy_value": 1151528.227137315,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6409054678278233
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g9",
+    "issuer": "MSFT",
+    "policy_value": 1162533.602609222,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6532228315981969
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g10",
+    "issuer": "MSFT",
+    "policy_value": 1175084.6227737297,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6658977476628044
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g0",
+    "issuer": "MSFT",
+    "policy_value": 967514.3735569688,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5228374311483008
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g1",
+    "issuer": "MSFT",
+    "policy_value": 969100.2355157738,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5323029416596958
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g2",
+    "issuer": "MSFT",
+    "policy_value": 970697.3781930321,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5418930049275477
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g3",
+    "issuer": "MSFT",
+    "policy_value": 972305.8693994248,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5516085509732703
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g4",
+    "issuer": "MSFT",
+    "policy_value": 973925.777218247,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5614505079691758
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g5",
+    "issuer": "MSFT",
+    "policy_value": 975557.1700059242,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.571419802124393
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g6",
+    "issuer": "MSFT",
+    "policy_value": 977200.1163925302,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5815173575705975
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g7",
+    "issuer": "MSFT",
+    "policy_value": 978854.6852823017,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5917440962475607
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g8",
+    "issuer": "MSFT",
+    "policy_value": 980520.945854158,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6021009377885611
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g9",
+    "issuer": "MSFT",
+    "policy_value": 982198.9675622146,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6125887994056649
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g10",
+    "issuer": "MSFT",
+    "policy_value": 983888.8201363028,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.6232085957749204
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g0",
+    "issuer": "MSFT",
+    "policy_value": 862203.1070831064,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.49550518108996244
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g1",
+    "issuer": "MSFT",
+    "policy_value": 861361.5821785073,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5041104343250731
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g2",
+    "issuer": "MSFT",
+    "policy_value": 860337.6780933924,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5127854448625467
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g3",
+    "issuer": "MSFT",
+    "policy_value": 859106.3034353221,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5215239319997353
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g4",
+    "issuer": "MSFT",
+    "policy_value": 857637.7935732106,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.530318204424404
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g5",
+    "issuer": "MSFT",
+    "policy_value": 855896.8217114552,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5391587975393858
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g6",
+    "issuer": "MSFT",
+    "policy_value": 853840.983286164,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5480339927629124
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g7",
+    "issuer": "MSFT",
+    "policy_value": 851418.9333284604,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5569291714101635
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g8",
+    "issuer": "MSFT",
+    "policy_value": 848567.902948732,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5658259326870179
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g9",
+    "issuer": "MSFT",
+    "policy_value": 845210.3392857378,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5747008687949802
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g10",
+    "issuer": "MSFT",
+    "policy_value": 841249.2854364559,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.583523830832048
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g0",
+    "issuer": "MSFT",
+    "policy_value": 773439.7612410416,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.46965886789462646
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g1",
+    "issuer": "MSFT",
+    "policy_value": 771032.6668350655,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4774749281630722
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g2",
+    "issuer": "MSFT",
+    "policy_value": 768344.8842430096,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4853133563189094
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g3",
+    "issuer": "MSFT",
+    "policy_value": 765341.6222875151,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.49316195339590857
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g4",
+    "issuer": "MSFT",
+    "policy_value": 761982.2817928935,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5010060082110326
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g5",
+    "issuer": "MSFT",
+    "policy_value": 758219.1929265573,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5088276654764656
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g6",
+    "issuer": "MSFT",
+    "policy_value": 753996.0081788988,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5166050930471379
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g7",
+    "issuer": "MSFT",
+    "policy_value": 749245.6361944408,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5243113696299775
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g8",
+    "issuer": "MSFT",
+    "policy_value": 743887.5557521963,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5319129769771023
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g9",
+    "issuer": "MSFT",
+    "policy_value": 737824.2815291644,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5393677221281739
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g10",
+    "issuer": "MSFT",
+    "policy_value": 730936.651784841,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5466218214339419
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g0",
+    "issuer": "MSFT",
+    "policy_value": 697814.325889189,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.44522139584884884
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g1",
+    "issuer": "MSFT",
+    "policy_value": 694415.1732411608,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4523139944022509
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g2",
+    "issuer": "MSFT",
+    "policy_value": 690691.4101468751,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.45938818278255045
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g3",
+    "issuer": "MSFT",
+    "policy_value": 686606.0187492662,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.46642695978737453
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g4",
+    "issuer": "MSFT",
+    "policy_value": 682116.2780460648,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4734099666925172
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g5",
+    "issuer": "MSFT",
+    "policy_value": 677172.6232180032,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4803126612500909
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g6",
+    "issuer": "MSFT",
+    "policy_value": 671717.2197889707,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4871052352000571
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g7",
+    "issuer": "MSFT",
+    "policy_value": 665682.1658278418,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.493751177294398
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g8",
+    "issuer": "MSFT",
+    "policy_value": 658987.2038416027,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5002053385680908
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g9",
+    "issuer": "MSFT",
+    "policy_value": 651536.7789235369,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5064112863639799
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g10",
+    "issuer": "MSFT",
+    "policy_value": 643216.2143457492,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.5122976221363755
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g0",
+    "issuer": "MSFT",
+    "policy_value": 632776.9559694568,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4221191361925805
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g1",
+    "issuer": "MSFT",
+    "policy_value": 628772.5058514527,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4285490125647957
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g2",
+    "issuer": "MSFT",
+    "policy_value": 624430.6342139676,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4349255896337134
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g3",
+    "issuer": "MSFT",
+    "policy_value": 619715.6162247378,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4412280242721718
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g4",
+    "issuer": "MSFT",
+    "policy_value": 614586.6165457463,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4474314833224063
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g5",
+    "issuer": "MSFT",
+    "policy_value": 608996.7429066251,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.45350618347175276
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g6",
+    "issuer": "MSFT",
+    "policy_value": 602891.8812718338,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4594161398706141
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g7",
+    "issuer": "MSFT",
+    "policy_value": 596209.2514478692,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.46511751491206144
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g8",
+    "issuer": "MSFT",
+    "policy_value": 588875.6015921845,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.470556409728615
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g9",
+    "issuer": "MSFT",
+    "policy_value": 580804.9317243355,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.4756658658846713
+  },
+  {
+    "assumptions": {
+      "growth": 0.1,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.18,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g10",
+    "issuer": "MSFT",
+    "policy_value": 571895.5963764284,
+    "reported_ebit": 128528.0,
+    "terminal_share_of_net_value": 0.48036172683784806
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g0",
+    "issuer": "TGT",
+    "policy_value": 67879.8976888148,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.60449807534223
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g1",
+    "issuer": "TGT",
+    "policy_value": 69798.83281864735,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6214903090994985
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g2",
+    "issuer": "TGT",
+    "policy_value": 72094.91935549147,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6395719851004461
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g3",
+    "issuer": "TGT",
+    "policy_value": 74893.79773667199,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6589434605845182
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g4",
+    "issuer": "TGT",
+    "policy_value": 78383.92791282608,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6798653226965411
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g5",
+    "issuer": "TGT",
+    "policy_value": 82861.4604246419,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.7026830556253727
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g6",
+    "issuer": "TGT",
+    "policy_value": 88819.97855632464,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.7278649139397892
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g7",
+    "issuer": "TGT",
+    "policy_value": 97147.93107320728,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.7560620588929355
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g8",
+    "issuer": "TGT",
+    "policy_value": 109622.2140657608,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.7882078838451824
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g9",
+    "issuer": "TGT",
+    "policy_value": 130388.9164816004,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.8256899539822746
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.06
+    },
+    "case": "w6_g10",
+    "issuer": "TGT",
+    "policy_value": 171886.30225347748,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.870665087993425
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g0",
+    "issuer": "TGT",
+    "policy_value": 57532.82048348171,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.556537614701235
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g1",
+    "issuer": "TGT",
+    "policy_value": 58533.4804011049,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5708846713653526
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g2",
+    "issuer": "TGT",
+    "policy_value": 59695.90416579312,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5859886279245675
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g3",
+    "issuer": "TGT",
+    "policy_value": 61064.15164132058,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6019748927935968
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g4",
+    "issuer": "TGT",
+    "policy_value": 62699.906118003084,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6190046122549513
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g5",
+    "issuer": "TGT",
+    "policy_value": 64692.2651022177,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6372885466141347
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g6",
+    "issuer": "TGT",
+    "policy_value": 67174.87419805476,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6571079575520753
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g7",
+    "issuer": "TGT",
+    "policy_value": 70357.74717323326,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6788470196716735
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g8",
+    "issuer": "TGT",
+    "policy_value": 74590.9060909213,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.7030449253712021
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g9",
+    "issuer": "TGT",
+    "policy_value": 80504.38959972806,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.7304832159857084
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.07
+    },
+    "case": "w7_g10",
+    "issuer": "TGT",
+    "policy_value": 89358.27365866801,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.7623396518341515
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g0",
+    "issuer": "TGT",
+    "policy_value": 49802.79983999253,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5125835963728513
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g1",
+    "issuer": "TGT",
+    "policy_value": 50295.0629536288,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5246620952102116
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g2",
+    "issuer": "TGT",
+    "policy_value": 50853.7547651118,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5372347919894335
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g3",
+    "issuer": "TGT",
+    "policy_value": 51494.16028809284,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5503719354042949
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g4",
+    "issuer": "TGT",
+    "policy_value": 52236.659142723525,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5641626857775112
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g5",
+    "issuer": "TGT",
+    "policy_value": 53109.04128362164,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5787220842928166
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g6",
+    "issuer": "TGT",
+    "policy_value": 54150.21216461075,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5942013507328955
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g7",
+    "issuer": "TGT",
+    "policy_value": 55416.368013279556,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6108035247491783
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g8",
+    "issuer": "TGT",
+    "policy_value": 56991.802561453485,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6288079918049936
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g9",
+    "issuer": "TGT",
+    "policy_value": 59008.976687490445,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6486103973325349
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.08
+    },
+    "case": "w8_g10",
+    "issuer": "TGT",
+    "policy_value": 61688.657700862794,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.6707905286593283
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g0",
+    "issuer": "TGT",
+    "policy_value": 43815.49023053826,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.47229227324570344
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g1",
+    "issuer": "TGT",
+    "policy_value": 44013.768529977366,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4824267748863461
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g2",
+    "issuer": "TGT",
+    "policy_value": 44233.7433038032,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4928492385475869
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g3",
+    "issuer": "TGT",
+    "policy_value": 44479.71828559975,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5035897726755719
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g4",
+    "issuer": "TGT",
+    "policy_value": 44757.226532853325,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5146860182149785
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g5",
+    "issuer": "TGT",
+    "policy_value": 45073.50324207553,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5261857852093139
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g6",
+    "issuer": "TGT",
+    "policy_value": 45438.194971483215,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5381508814436489
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g7",
+    "issuer": "TGT",
+    "policy_value": 45864.45571240793,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5506628131188959
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g8",
+    "issuer": "TGT",
+    "policy_value": 46370.700603545716,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5638315201836988
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g9",
+    "issuer": "TGT",
+    "policy_value": 46983.52878803388,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5778092144896346
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.09
+    },
+    "case": "w9_g10",
+    "issuer": "TGT",
+    "policy_value": 47742.8384133289,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5928131735229851
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g0",
+    "issuer": "TGT",
+    "policy_value": 39046.43614413811,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4353492012398325
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g1",
+    "issuer": "TGT",
+    "policy_value": 39070.34379046745,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4438192896788282
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g2",
+    "issuer": "TGT",
+    "policy_value": 39094.42064719337,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.45241667857810114
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g3",
+    "issuer": "TGT",
+    "policy_value": 39118.66774519523,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4611427012932311
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g4",
+    "issuer": "TGT",
+    "policy_value": 39143.0861196015,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4699986979944045
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g5",
+    "issuer": "TGT",
+    "policy_value": 39167.67680979823,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4789860156236779
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g6",
+    "issuer": "TGT",
+    "policy_value": 39192.44085943731,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.48810600785120783
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g7",
+    "issuer": "TGT",
+    "policy_value": 39217.37931644486,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4973600350304322
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g8",
+    "issuer": "TGT",
+    "policy_value": 39242.493233029556,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5067494641522124
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g9",
+    "issuer": "TGT",
+    "policy_value": 39267.78366569098,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5162756687979208
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.1
+    },
+    "case": "w10_g10",
+    "issuer": "TGT",
+    "policy_value": 39293.25167522798,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.5259400290914821
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g0",
+    "issuer": "TGT",
+    "policy_value": 35162.018150793476,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4014668937190297
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g1",
+    "issuer": "TGT",
+    "policy_value": 35081.5328303454,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4085133143948176
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g2",
+    "issuer": "TGT",
+    "policy_value": 34990.971516686375,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.41556308438259276
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g3",
+    "issuer": "TGT",
+    "policy_value": 34888.71954884031,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.42259732960249574
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g4",
+    "issuer": "TGT",
+    "policy_value": 34772.803244448354,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4295923670374137
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g5",
+    "issuer": "TGT",
+    "policy_value": 34640.784304098546,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4365181758335787
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g6",
+    "issuer": "TGT",
+    "policy_value": 34489.61461727614,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.44333624646108494
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g7",
+    "issuer": "TGT",
+    "policy_value": 34315.43299069093,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4499964912946651
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g8",
+    "issuer": "TGT",
+    "policy_value": 34113.27476017027,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4564327012883259
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g9",
+    "issuer": "TGT",
+    "policy_value": 33876.64737726821,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.46255568253600093
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.11
+    },
+    "case": "w11_g10",
+    "issuer": "TGT",
+    "policy_value": 33596.89378917558,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.46824256184867125
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g0",
+    "issuer": "TGT",
+    "policy_value": 31939.927168436807,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.370382629243713
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g1",
+    "issuer": "TGT",
+    "policy_value": 31797.461854890767,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.37621260417398733
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g2",
+    "issuer": "TGT",
+    "policy_value": 31640.37642300094,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.38195147908305177
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g3",
+    "issuer": "TGT",
+    "policy_value": 31466.56254726989,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3875666008055152
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g4",
+    "issuer": "TGT",
+    "policy_value": 31273.490064436406,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3930175822225057
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g5",
+    "issuer": "TGT",
+    "policy_value": 31058.095962591124,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.39825395930434854
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g6",
+    "issuer": "TGT",
+    "policy_value": 30816.636366661558,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4032119423372798
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g7",
+    "issuer": "TGT",
+    "policy_value": 30544.486283477614,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4078098246229145
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g8",
+    "issuer": "TGT",
+    "policy_value": 30235.86425123402,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.41194135351518496
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g9",
+    "issuer": "TGT",
+    "policy_value": 29883.446848734842,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.4154659244557168
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.12
+    },
+    "case": "w12_g10",
+    "issuer": "TGT",
+    "policy_value": 29477.817994311277,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.41819366740712527
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g0",
+    "issuer": "TGT",
+    "policy_value": 29226.34392638338,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.34185640936913075
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g1",
+    "issuer": "TGT",
+    "policy_value": 29048.27993604722,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.346648236026977
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g2",
+    "issuer": "TGT",
+    "policy_value": 28853.99304537108,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3512781573341306
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g3",
+    "issuer": "TGT",
+    "policy_value": 28641.350637355474,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3557045356419711
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g4",
+    "issuer": "TGT",
+    "policy_value": 28407.83220145858,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3598763795561433
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g5",
+    "issuer": "TGT",
+    "policy_value": 28150.436977199788,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.363730640131162
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g6",
+    "issuer": "TGT",
+    "policy_value": 27865.563890842277,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3671885124084035
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g7",
+    "issuer": "TGT",
+    "policy_value": 27548.85357734169,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3701502875179569
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g8",
+    "issuer": "TGT",
+    "policy_value": 27194.97774294224,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3724880463172269
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g9",
+    "issuer": "TGT",
+    "policy_value": 26797.354185157303,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.37403505937116577
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.13
+    },
+    "case": "w13_g10",
+    "issuer": "TGT",
+    "policy_value": 26347.75494524035,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3745700203294419
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g0",
+    "issuer": "TGT",
+    "policy_value": 26911.470922613255,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.315669061797316
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g1",
+    "issuer": "TGT",
+    "policy_value": 26714.51558596395,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3195760895074327
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g2",
+    "issuer": "TGT",
+    "policy_value": 26501.254236775374,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3232692945441418
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g3",
+    "issuer": "TGT",
+    "policy_value": 26269.71610077966,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.32670160385911123
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g4",
+    "issuer": "TGT",
+    "policy_value": 26017.60181846926,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.329815858921307
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g5",
+    "issuer": "TGT",
+    "policy_value": 25742.2120128553,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3325420310925642
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g6",
+    "issuer": "TGT",
+    "policy_value": 25440.356375703814,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3347934611575647
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g7",
+    "issuer": "TGT",
+    "policy_value": 25108.236778409224,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3364616992845709
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g8",
+    "issuer": "TGT",
+    "policy_value": 24741.295316127933,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3374092975179587
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g9",
+    "issuer": "TGT",
+    "policy_value": 24334.014365847048,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.33745953985195404
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.14
+    },
+    "case": "w14_g10",
+    "issuer": "TGT",
+    "policy_value": 23879.649997140616,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3363814761170315
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g0",
+    "issuer": "TGT",
+    "policy_value": 24914.852291943018,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.29162048315173794
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g1",
+    "issuer": "TGT",
+    "policy_value": 24709.700071509167,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.29477454921620155
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g2",
+    "issuer": "TGT",
+    "policy_value": 24488.92430827213,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.2976779056791143
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g3",
+    "issuer": "TGT",
+    "policy_value": 24250.777063844333,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3002806456816437
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g4",
+    "issuer": "TGT",
+    "policy_value": 23993.24138133603,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3025226372315804
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g5",
+    "issuer": "TGT",
+    "policy_value": 23713.977481086513,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.30433082401922434
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g6",
+    "issuer": "TGT",
+    "policy_value": 23410.25550532669,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3056156241703664
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g7",
+    "issuer": "TGT",
+    "policy_value": 23078.87071796965,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3062660544751817
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g8",
+    "issuer": "TGT",
+    "policy_value": 22716.035577069728,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.30614302085578105
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g9",
+    "issuer": "TGT",
+    "policy_value": 22317.240970839848,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.30506991664318583
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.15
+    },
+    "case": "w15_g10",
+    "issuer": "TGT",
+    "policy_value": 21877.07582447229,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.3028191780607224
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g0",
+    "issuer": "TGT",
+    "policy_value": 23176.19930313562,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.2695280149063513
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g1",
+    "issuer": "TGT",
+    "policy_value": 22969.717600998298,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.2720424123505321
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g2",
+    "issuer": "TGT",
+    "policy_value": 22748.65303419975,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.2742811182781477
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g3",
+    "issuer": "TGT",
+    "policy_value": 22511.4867400879,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.27619327477733724
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g4",
+    "issuer": "TGT",
+    "policy_value": 22256.482785467975,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.2777180424371152
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g5",
+    "issuer": "TGT",
+    "policy_value": 21981.647967866716,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.27878207893104345
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g6",
+    "issuer": "TGT",
+    "policy_value": 21684.682340163956,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.2792962131644521
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g7",
+    "issuer": "TGT",
+    "policy_value": 21362.91786113469,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.2791509987441763
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g8",
+    "issuer": "TGT",
+    "policy_value": 21013.24170862523,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.27821067999436794
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g9",
+    "issuer": "TGT",
+    "policy_value": 20631.99958746969,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.2763048674920724
+  },
+  {
+    "assumptions": {
+      "growth": 0.02,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.12,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.1,
+      "wacc": 0.16
+    },
+    "case": "w16_g10",
+    "issuer": "TGT",
+    "policy_value": 20214.87266683679,
+    "reported_ebit": 5117.0,
+    "terminal_share_of_net_value": 0.2732168402411242
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g0",
+    "issuer": "INFY",
+    "policy_value": 61489.47444990162,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6508640533317898
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g1",
+    "issuer": "INFY",
+    "policy_value": 63826.93970122821,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6686151768965417
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g2",
+    "issuer": "INFY",
+    "policy_value": 66623.60908572233,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.68736850976007
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g3",
+    "issuer": "INFY",
+    "policy_value": 70032.45315340433,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.7072758465355384
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g4",
+    "issuer": "INFY",
+    "policy_value": 74282.92683103278,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.7285262718696809
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g5",
+    "issuer": "INFY",
+    "policy_value": 79735.60111446062,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.751358468613403
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g6",
+    "issuer": "INFY",
+    "policy_value": 86991.42645333389,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.776078245964598
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g7",
+    "issuer": "INFY",
+    "policy_value": 97132.11219741036,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.8030840668000913
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g8",
+    "issuer": "INFY",
+    "policy_value": 112321.07521233537,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.8329051837241793
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g9",
+    "issuer": "INFY",
+    "policy_value": 137606.2857269388,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.8662603013809902
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.06
+    },
+    "case": "w6_g10",
+    "issuer": "INFY",
+    "policy_value": 188131.6507223817,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.9041509245338538
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g0",
+    "issuer": "INFY",
+    "policy_value": 51533.9011370135,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6059993158025498
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g1",
+    "issuer": "INFY",
+    "policy_value": 52884.44635723681,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6216164500580735
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g2",
+    "issuer": "INFY",
+    "policy_value": 54453.76224410991,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6380129975974018
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g3",
+    "issuer": "INFY",
+    "policy_value": 56301.440185054904,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6552987846468129
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g4",
+    "issuer": "INFY",
+    "policy_value": 58510.907461262876,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6736095782623819
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g5",
+    "issuer": "INFY",
+    "policy_value": 61202.66940709822,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6931153229789313
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g6",
+    "issuer": "INFY",
+    "policy_value": 64557.48318904653,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.7140317289962886
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g7",
+    "issuer": "INFY",
+    "policy_value": 68859.3948237485,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.7366369186841057
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g8",
+    "issuer": "INFY",
+    "policy_value": 74581.81321405538,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.7612959094760513
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g9",
+    "issuer": "INFY",
+    "policy_value": 82576.8730283337,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.7884976033818198
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.07
+    },
+    "case": "w7_g10",
+    "issuer": "INFY",
+    "policy_value": 94548.84189870826,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.8189124302806793
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g0",
+    "issuer": "INFY",
+    "policy_value": 44124.04510353082,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5642844842816204
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g1",
+    "issuer": "INFY",
+    "policy_value": 44912.81617492928,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5780061889863964
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g2",
+    "issuer": "INFY",
+    "policy_value": 45809.31010475107,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5923209561458369
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g3",
+    "issuer": "INFY",
+    "policy_value": 46838.32891757462,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6073052415536511
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g4",
+    "issuer": "INFY",
+    "policy_value": 48032.9414721371,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6230528408180354
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g5",
+    "issuer": "INFY",
+    "policy_value": 49438.2411103629,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6396801875753094
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g6",
+    "issuer": "INFY",
+    "policy_value": 51117.357895801964,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6573337211946688
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g7",
+    "issuer": "INFY",
+    "policy_value": 53161.47901101847,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6762003326956845
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g8",
+    "issuer": "INFY",
+    "policy_value": 55707.38445301225,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.69652250157124
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g9",
+    "issuer": "INFY",
+    "policy_value": 58970.01332470462,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.7186207799219785
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.08
+    },
+    "case": "w8_g10",
+    "issuer": "INFY",
+    "policy_value": 63307.5964178983,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.742928150820648
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g0",
+    "issuer": "INFY",
+    "policy_value": 38407.56065694786,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5255048840438074
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g1",
+    "issuer": "INFY",
+    "policy_value": 38860.03704849517,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5375445697778125
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g2",
+    "issuer": "INFY",
+    "policy_value": 39365.09994772685,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.550022074114138
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g3",
+    "issuer": "INFY",
+    "policy_value": 39933.221095835666,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5629874938026223
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g4",
+    "issuer": "INFY",
+    "policy_value": 40577.86375931654,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5765018028382128
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g5",
+    "issuer": "INFY",
+    "policy_value": 41316.63331439084,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5906400518429716
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g6",
+    "issuer": "INFY",
+    "policy_value": 42173.003123637274,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6054957676746983
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g7",
+    "issuer": "INFY",
+    "policy_value": 43178.981799869565,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6211871135800279
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g8",
+    "issuer": "INFY",
+    "policy_value": 44379.38082833431,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6378656905211648
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g9",
+    "issuer": "INFY",
+    "policy_value": 45838.92727036605,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6557294024673185
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.09
+    },
+    "case": "w9_g10",
+    "issuer": "INFY",
+    "policy_value": 47654.710994775654,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6750417574174233
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g0",
+    "issuer": "INFY",
+    "policy_value": 33873.32966950718,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.48945890041150575
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g1",
+    "issuer": "INFY",
+    "policy_value": 34117.31309285166,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5000072672877804
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g2",
+    "issuer": "INFY",
+    "policy_value": 34385.17086524953,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5108647022402141
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g3",
+    "issuer": "INFY",
+    "policy_value": 34681.079068782135,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5220606431512769
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g4",
+    "issuer": "INFY",
+    "policy_value": 35010.257482673886,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5336306001087501
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g5",
+    "issuer": "INFY",
+    "policy_value": 35379.31748055826,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.545617875165503
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g6",
+    "issuer": "INFY",
+    "policy_value": 35796.759026567626,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5580759020436799
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g7",
+    "issuer": "INFY",
+    "policy_value": 36273.69705422879,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5710714831613808
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g8",
+    "issuer": "INFY",
+    "policy_value": 36824.951034801416,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5846893528795333
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g9",
+    "issuer": "INFY",
+    "policy_value": 37470.7288556131,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5990387473248586
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.1
+    },
+    "case": "w10_g10",
+    "issuer": "INFY",
+    "policy_value": 38239.32102538967,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.6142630915750313
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g0",
+    "issuer": "INFY",
+    "policy_value": 30196.33320107372,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4559574211864787
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g1",
+    "issuer": "INFY",
+    "policy_value": 30307.98674549476,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.46518469634771525
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g2",
+    "issuer": "INFY",
+    "policy_value": 30428.137955937993,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.47461480333053224
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g3",
+    "issuer": "INFY",
+    "policy_value": 30558.0980156858,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4842611402741579
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g4",
+    "issuer": "INFY",
+    "policy_value": 30699.469216806352,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4941396517214734
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g5",
+    "issuer": "INFY",
+    "policy_value": 30854.23057893456,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5042695229477201
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g6",
+    "issuer": "INFY",
+    "policy_value": 31024.85557509235,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5146741149337163
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g7",
+    "issuer": "INFY",
+    "policy_value": 31214.476947833078,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5253822432416558
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g8",
+    "issuer": "INFY",
+    "policy_value": 31427.122160872415,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.536429957994545
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g9",
+    "issuer": "INFY",
+    "policy_value": 31668.05752069816,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5478630700209604
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.11
+    },
+    "case": "w11_g10",
+    "issuer": "INFY",
+    "policy_value": 31944.30435898023,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5597408154810272
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g0",
+    "issuer": "INFY",
+    "policy_value": 27160.08968573199,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4248232706861294
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g1",
+    "issuer": "INFY",
+    "policy_value": 27186.590600101565,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4328812551152588
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g2",
+    "issuer": "INFY",
+    "policy_value": 27213.277914189697,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.44105492458144874
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g3",
+    "issuer": "INFY",
+    "policy_value": 27240.152753391572,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4493453674268609
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g4",
+    "issuer": "INFY",
+    "policy_value": 27267.21624768742,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4577536750870056
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g5",
+    "issuer": "INFY",
+    "policy_value": 27294.469531651404,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4662809420152873
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g6",
+    "issuer": "INFY",
+    "policy_value": 27321.91374446053,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.47492826560663537
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g7",
+    "issuer": "INFY",
+    "policy_value": 27349.55002990347,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.48369674612021574
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g8",
+    "issuer": "INFY",
+    "policy_value": 27377.37953638947,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4925874866012405
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g9",
+    "issuer": "INFY",
+    "policy_value": 27405.403416957215,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5016015928018696
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.12
+    },
+    "case": "w12_g10",
+    "issuer": "INFY",
+    "policy_value": 27433.62282928372,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.5107401731012252
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g0",
+    "issuer": "INFY",
+    "policy_value": 24614.892824121685,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3958906404415453
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g1",
+    "issuer": "INFY",
+    "policy_value": 24586.35610198901,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4029145761778531
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g2",
+    "issuer": "INFY",
+    "policy_value": 24553.57334331917,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4099831976507711
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g3",
+    "issuer": "INFY",
+    "policy_value": 24515.969220970255,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.41708828372900647
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g4",
+    "issuer": "INFY",
+    "policy_value": 24472.8636176125,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4242198234435582
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g5",
+    "issuer": "INFY",
+    "policy_value": 24423.446674682506,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.43136556092723216
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g6",
+    "issuer": "INFY",
+    "policy_value": 24366.746356021322,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.438510394399809
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g7",
+    "issuer": "INFY",
+    "policy_value": 24301.585768448196,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.44563557149078425
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g8",
+    "issuer": "INFY",
+    "policy_value": 24226.52625585626,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4527175955539431
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g9",
+    "issuer": "INFY",
+    "policy_value": 24139.790408868445,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.45972671415129895
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.13
+    },
+    "case": "w13_g10",
+    "issuer": "INFY",
+    "policy_value": 24039.156203111335,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4666247907964131
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g0",
+    "issuer": "INFY",
+    "policy_value": 22453.949127208667,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.369004521134407
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g1",
+    "issuer": "INFY",
+    "policy_value": 22390.053145950045,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3751147902856248
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g2",
+    "issuer": "INFY",
+    "policy_value": 22319.660939998044,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.38121237092387716
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g3",
+    "issuer": "INFY",
+    "policy_value": 22241.974693858738,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.38728213550761525
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g4",
+    "issuer": "INFY",
+    "policy_value": 22156.06346573893,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3933059431012807
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g5",
+    "issuer": "INFY",
+    "policy_value": 22060.83424620141,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3992619008743352
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g6",
+    "issuer": "INFY",
+    "policy_value": 21954.99512372412,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4051233975259748
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g7",
+    "issuer": "INFY",
+    "policy_value": 21837.007926131206,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.41085782199202914
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g8",
+    "issuer": "INFY",
+    "policy_value": 21705.026654451103,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.4164248410144735
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g9",
+    "issuer": "INFY",
+    "policy_value": 21556.81647483271,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.421774047584382
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.14
+    },
+    "case": "w14_g10",
+    "issuer": "INFY",
+    "policy_value": 21389.645707764386,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.42684169477861267
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g0",
+    "issuer": "INFY",
+    "policy_value": 20599.06177533118,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3440201398397144
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g1",
+    "issuer": "INFY",
+    "policy_value": 20512.8972352449,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3493238068567596
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g2",
+    "issuer": "INFY",
+    "policy_value": 20419.231487477064,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3545688774669254
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g3",
+    "issuer": "INFY",
+    "policy_value": 20317.215429415264,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3597352330725818
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g4",
+    "issuer": "INFY",
+    "policy_value": 20205.86919311245,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.36479894681103675
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g5",
+    "issuer": "INFY",
+    "policy_value": 20084.055991500943,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.36973138308634995
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g6",
+    "issuer": "INFY",
+    "policy_value": 19950.449426158208,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3744980292047893
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g7",
+    "issuer": "INFY",
+    "policy_value": 19803.492266661866,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3790569612715507
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g8",
+    "issuer": "INFY",
+    "policy_value": 19641.343987948712,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3833568034187809
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g9",
+    "issuer": "INFY",
+    "policy_value": 19461.813318345732,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3873339737571042
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.15
+    },
+    "case": "w15_g10",
+    "issuer": "INFY",
+    "policy_value": 19262.270552008347,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.39090890820115914
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.0,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g0",
+    "issuer": "INFY",
+    "policy_value": 18991.68414284988,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.32080240612124594
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.005,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g1",
+    "issuer": "INFY",
+    "policy_value": 18892.074214192395,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.32539461469465825
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.01,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g2",
+    "issuer": "INFY",
+    "policy_value": 18784.670709021924,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3298919412911814
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.015,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g3",
+    "issuer": "INFY",
+    "policy_value": 18668.653932043184,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3342707943733262
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.02,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g4",
+    "issuer": "INFY",
+    "policy_value": 18543.086973261645,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3385032989886369
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.025,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g5",
+    "issuer": "INFY",
+    "policy_value": 18406.89400094144,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.34255631905491163
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.03,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g6",
+    "issuer": "INFY",
+    "policy_value": 18258.83354524437,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.34639019930101517
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.035,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g7",
+    "issuer": "INFY",
+    "policy_value": 18097.465369940703,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3499571283693753
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.04,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g8",
+    "issuer": "INFY",
+    "policy_value": 17921.10906204606,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3531989829488926
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.045,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g9",
+    "issuer": "INFY",
+    "policy_value": 17727.7918187532,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.35604445026276144
+  },
+  {
+    "assumptions": {
+      "growth": 0.05,
+      "high_growth_years": 5,
+      "horizon": 10,
+      "marginal_roic": 0.16,
+      "tax": 0.25,
+      "terminal_growth": 0.05,
+      "terminal_roic": 0.12,
+      "wacc": 0.16
+    },
+    "case": "w16_g10",
+    "issuer": "INFY",
+    "policy_value": 17515.18199443433,
+    "reported_ebit": 4071.0,
+    "terminal_share_of_net_value": 0.3584051304314463
+  }
+]

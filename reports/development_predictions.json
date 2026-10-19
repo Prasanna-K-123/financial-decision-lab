@@ -1,0 +1,3974 @@
+[
+  {
+    "field": "revenue",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "revenue",
+        "fiscal_year": 2023,
+        "locator": "table:24:row:11",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total revenue",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "211915",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__revenue",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "211915"
+  },
+  {
+    "field": "revenue",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "revenue",
+        "fiscal_year": 2023,
+        "locator": "table:24:row:11",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total revenue",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "211915",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__revenue",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "211915"
+  },
+  {
+    "field": "operating_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "operating_income",
+        "fiscal_year": 2023,
+        "locator": "table:13:row:6",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Operating income",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "88523",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__operating_income",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "88523"
+  },
+  {
+    "field": "operating_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "operating_income",
+        "fiscal_year": 2023,
+        "locator": "table:24:row:28",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Operating income",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "88523",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__operating_income",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "88523"
+  },
+  {
+    "field": "net_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "net_income",
+        "fiscal_year": 2023,
+        "locator": "table:13:row:7",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Net income",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "72361",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__net_income",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "72361"
+  },
+  {
+    "field": "net_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "net_income",
+        "fiscal_year": 2023,
+        "locator": "table:24:row:36",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Net income",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "72361",
+        "statement_scope": "income",
+        "unit": "millions"
+      },
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "net_income",
+        "fiscal_year": 2023,
+        "locator": "table:25:row:6",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Net income",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "72361",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__net_income",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "72361"
+  },
+  {
+    "field": "assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "assets",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:27",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total assets",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "411976",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__assets",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "411976"
+  },
+  {
+    "field": "assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "assets",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:27",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total assets",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "411976",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__assets",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "411976"
+  },
+  {
+    "field": "liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "liabilities",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:49",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total liabilities",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "205753",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__liabilities",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "205753"
+  },
+  {
+    "field": "liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "liabilities",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:49",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total liabilities",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "205753",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__liabilities",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "205753"
+  },
+  {
+    "field": "equity",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "equity",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:59",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total stockholders\u2019 equity",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "206223",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__equity",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "206223"
+  },
+  {
+    "field": "equity",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "equity",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:59",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total stockholders\u2019 equity",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "206223",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__equity",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "206223"
+  },
+  {
+    "field": "cash",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cash",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:8",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Cash and cash equivalents",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "34704",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__cash",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "34704"
+  },
+  {
+    "field": "cash",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cash",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:8",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Cash and cash equivalents",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "34704",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__cash",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "34704"
+  },
+  {
+    "field": "current_assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "current_assets",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:18",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total current assets",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "184257",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__current_assets",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "184257"
+  },
+  {
+    "field": "current_assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "current_assets",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:18",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total current assets",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "184257",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__current_assets",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "184257"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "current_liabilities",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:40",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total current liabilities",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "104149",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__current_liabilities",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "104149"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "current_liabilities",
+        "fiscal_year": 2023,
+        "locator": "table:26:row:40",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Total current liabilities",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "104149",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__current_liabilities",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "104149"
+  },
+  {
+    "field": "cfo",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cfo",
+        "fiscal_year": 2023,
+        "locator": "table:27:row:25",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Net cash from operations",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "87582",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__cfo",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "87582"
+  },
+  {
+    "field": "cfo",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cfo",
+        "fiscal_year": 2023,
+        "locator": "table:27:row:25",
+        "normalisation": "reported sign",
+        "period_end": "2023-06-30",
+        "row_label": "Net cash from operations",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "87582",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__cfo",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "87582"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cash_ppe",
+        "fiscal_year": 2023,
+        "locator": "table:27:row:41",
+        "normalisation": "absolute cash outflow",
+        "period_end": "2023-06-30",
+        "row_label": "Additions to property and equipment",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "28107",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2023__cash_ppe",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "28107"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cash_ppe",
+        "fiscal_year": 2023,
+        "locator": "table:27:row:41",
+        "normalisation": "absolute cash outflow",
+        "period_end": "2023-06-30",
+        "row_label": "Additions to property and equipment",
+        "source": "MSFT_2023",
+        "source_sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+        "source_value": "28107",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2023__cash_ppe",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": "28107"
+  },
+  {
+    "field": "da",
+    "method": "literal",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "MSFT_2023__da",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "da",
+    "method": "strict",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "MSFT_2023__da",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "current_share_price",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2023__current_share_price",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "current_share_price",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2023__current_share_price",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2023__customer_count",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2023__customer_count",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2023__undisclosed_future_revenue",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2023__undisclosed_future_revenue",
+    "source_id": "MSFT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "revenue",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "revenue",
+        "fiscal_year": 2024,
+        "locator": "table:24:row:11",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total revenue",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "245122",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__revenue",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "245122"
+  },
+  {
+    "field": "revenue",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "revenue",
+        "fiscal_year": 2024,
+        "locator": "table:24:row:11",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total revenue",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "245122",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__revenue",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "245122"
+  },
+  {
+    "field": "operating_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "operating_income",
+        "fiscal_year": 2024,
+        "locator": "table:13:row:6",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Operating income",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "109433",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__operating_income",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "109433"
+  },
+  {
+    "field": "operating_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "operating_income",
+        "fiscal_year": 2024,
+        "locator": "table:24:row:28",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Operating income",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "109433",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__operating_income",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "109433"
+  },
+  {
+    "field": "net_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "net_income",
+        "fiscal_year": 2024,
+        "locator": "table:13:row:7",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Net income",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "88136",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__net_income",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "88136"
+  },
+  {
+    "field": "net_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "net_income",
+        "fiscal_year": 2024,
+        "locator": "table:24:row:36",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Net income",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "88136",
+        "statement_scope": "income",
+        "unit": "millions"
+      },
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "net_income",
+        "fiscal_year": 2024,
+        "locator": "table:25:row:6",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Net income",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "88136",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__net_income",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "88136"
+  },
+  {
+    "field": "assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "assets",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:27",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total assets",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "512163",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__assets",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "512163"
+  },
+  {
+    "field": "assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "assets",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:27",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total assets",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "512163",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__assets",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "512163"
+  },
+  {
+    "field": "liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "liabilities",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:50",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total liabilities",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "243686",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__liabilities",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "243686"
+  },
+  {
+    "field": "liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "liabilities",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:50",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total liabilities",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "243686",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__liabilities",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "243686"
+  },
+  {
+    "field": "equity",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "equity",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:60",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total stockholders\u2019 equity",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "268477",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__equity",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "268477"
+  },
+  {
+    "field": "equity",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "equity",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:60",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total stockholders\u2019 equity",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "268477",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__equity",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "268477"
+  },
+  {
+    "field": "cash",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:8",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Cash and cash equivalents",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "18315",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__cash",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "18315"
+  },
+  {
+    "field": "cash",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:8",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Cash and cash equivalents",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "18315",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__cash",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "18315"
+  },
+  {
+    "field": "current_assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_assets",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:18",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total current assets",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "159734",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__current_assets",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "159734"
+  },
+  {
+    "field": "current_assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_assets",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:18",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total current assets",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "159734",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__current_assets",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "159734"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_liabilities",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:41",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total current liabilities",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "125286",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__current_liabilities",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "125286"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_liabilities",
+        "fiscal_year": 2024,
+        "locator": "table:26:row:41",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Total current liabilities",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "125286",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__current_liabilities",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "125286"
+  },
+  {
+    "field": "cfo",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cfo",
+        "fiscal_year": 2024,
+        "locator": "table:27:row:25",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Net cash from operations",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "118548",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__cfo",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "118548"
+  },
+  {
+    "field": "cfo",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cfo",
+        "fiscal_year": 2024,
+        "locator": "table:27:row:25",
+        "normalisation": "reported sign",
+        "period_end": "2024-06-30",
+        "row_label": "Net cash from operations",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "118548",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__cfo",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "118548"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash_ppe",
+        "fiscal_year": 2024,
+        "locator": "table:27:row:42",
+        "normalisation": "absolute cash outflow",
+        "period_end": "2024-06-30",
+        "row_label": "Additions to property and equipment",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "44477",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "MSFT_2024__cash_ppe",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "44477"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash_ppe",
+        "fiscal_year": 2024,
+        "locator": "table:27:row:42",
+        "normalisation": "absolute cash outflow",
+        "period_end": "2024-06-30",
+        "row_label": "Additions to property and equipment",
+        "source": "MSFT_2024",
+        "source_sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+        "source_value": "44477",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "MSFT_2024__cash_ppe",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": "44477"
+  },
+  {
+    "field": "da",
+    "method": "literal",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "MSFT_2024__da",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "da",
+    "method": "strict",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "MSFT_2024__da",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "current_share_price",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2024__current_share_price",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "current_share_price",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2024__current_share_price",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2024__customer_count",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2024__customer_count",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2024__undisclosed_future_revenue",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "MSFT_2024__undisclosed_future_revenue",
+    "source_id": "MSFT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "revenue",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "revenue",
+        "fiscal_year": 2023,
+        "locator": "page:5:line:6",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total revenue",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "107412",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__revenue",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "107412"
+  },
+  {
+    "field": "revenue",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "revenue",
+        "fiscal_year": 2023,
+        "locator": "page:46:ocr:line:6",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total revenue",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "107412",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__revenue",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "107412"
+  },
+  {
+    "field": "operating_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "operating_income",
+        "fiscal_year": 2023,
+        "locator": "page:5:line:11",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Operating income",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "5707",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__operating_income",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "5707"
+  },
+  {
+    "field": "operating_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "operating_income",
+        "fiscal_year": 2023,
+        "locator": "page:46:ocr:line:11",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Operating income",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "5707",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__operating_income",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "5707"
+  },
+  {
+    "field": "net_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "net_income",
+        "fiscal_year": 2023,
+        "locator": "page:5:line:18",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Net earnings",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "4138",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__net_income",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "4138"
+  },
+  {
+    "field": "net_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "net_income",
+        "fiscal_year": 2023,
+        "locator": "page:46:ocr:line:16",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Net earnings",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "4138",
+        "statement_scope": "income",
+        "unit": "millions"
+      },
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "net_income",
+        "fiscal_year": 2023,
+        "locator": "page:47:ocr:line:4",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Net earnings",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "4138",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__net_income",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "4138"
+  },
+  {
+    "field": "assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "assets",
+        "fiscal_year": 2023,
+        "locator": "page:48:ocr:line:20",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total assets",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "55356",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__assets",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "55356"
+  },
+  {
+    "field": "assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "assets",
+        "fiscal_year": 2023,
+        "locator": "page:48:ocr:line:20",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total assets",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "55356",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__assets",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "55356"
+  },
+  {
+    "field": "liabilities",
+    "method": "literal",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "TGT_2023__liabilities",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "liabilities",
+    "method": "strict",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "TGT_2023__liabilities",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "equity",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "equity",
+        "fiscal_year": 2023,
+        "locator": "page:48:ocr:line:36",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total shareholders' investment",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "13432",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__equity",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "13432"
+  },
+  {
+    "field": "equity",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "equity",
+        "fiscal_year": 2023,
+        "locator": "page:48:ocr:line:36",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total shareholders' investment",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "13432",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__equity",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "13432"
+  },
+  {
+    "field": "cash",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash",
+        "fiscal_year": 2023,
+        "locator": "page:35:ocr:line:21",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Cash and cash equivalents",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "3805",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__cash",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "3805"
+  },
+  {
+    "field": "cash",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash",
+        "fiscal_year": 2023,
+        "locator": "page:48:ocr:line:6",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Cash and cash equivalents",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "3805",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__cash",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "3805"
+  },
+  {
+    "field": "current_assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_assets",
+        "fiscal_year": 2023,
+        "locator": "page:48:ocr:line:9",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total current assets",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "17498",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__current_assets",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "17498"
+  },
+  {
+    "field": "current_assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_assets",
+        "fiscal_year": 2023,
+        "locator": "page:48:ocr:line:9",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total current assets",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "17498",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__current_assets",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "17498"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_liabilities",
+        "fiscal_year": 2023,
+        "locator": "page:48:ocr:line:25",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total current liabilities",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "19304",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__current_liabilities",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "19304"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_liabilities",
+        "fiscal_year": 2023,
+        "locator": "page:48:ocr:line:25",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Total current liabilities",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "19304",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__current_liabilities",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "19304"
+  },
+  {
+    "field": "cfo",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cfo",
+        "fiscal_year": 2023,
+        "locator": "page:49:ocr:line:17",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Cash provided by operating activities",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "8621",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__cfo",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "8621"
+  },
+  {
+    "field": "cfo",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cfo",
+        "fiscal_year": 2023,
+        "locator": "page:49:ocr:line:17",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Cash provided by operating activities",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "8621",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__cfo",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "8621"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cash_ppe",
+        "fiscal_year": 2023,
+        "locator": "page:49:ocr:line:19",
+        "normalisation": "absolute cash outflow",
+        "period_end": "2024-02-03",
+        "row_label": "Expenditures for property and equipment",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "4806",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__cash_ppe",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "4806"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cash_ppe",
+        "fiscal_year": 2023,
+        "locator": "page:49:ocr:line:19",
+        "normalisation": "absolute cash outflow",
+        "period_end": "2024-02-03",
+        "row_label": "Expenditures for property and equipment",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "4806",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__cash_ppe",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "4806"
+  },
+  {
+    "field": "da",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "da",
+        "fiscal_year": 2023,
+        "locator": "page:49:ocr:line:7",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Depreciation and amortization",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "2801",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2023__da",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "2801"
+  },
+  {
+    "field": "da",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "da",
+        "fiscal_year": 2023,
+        "locator": "page:49:ocr:line:7",
+        "normalisation": "reported sign",
+        "period_end": "2024-02-03",
+        "row_label": "Depreciation and amortization",
+        "source": "TGT_2023",
+        "source_sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+        "source_value": "2801",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2023__da",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": "2801"
+  },
+  {
+    "field": "current_share_price",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2023__current_share_price",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "current_share_price",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2023__current_share_price",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2023__customer_count",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2023__customer_count",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2023__undisclosed_future_revenue",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2023__undisclosed_future_revenue",
+    "source_id": "TGT_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "revenue",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "revenue",
+        "fiscal_year": 2024,
+        "locator": "page:6:line:4",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Net Sales",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "106566",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__revenue",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "106566"
+  },
+  {
+    "field": "revenue",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "revenue",
+        "fiscal_year": 2024,
+        "locator": "page:49:line:5",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Net sales",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "106566",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__revenue",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "106566"
+  },
+  {
+    "field": "operating_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "operating_income",
+        "fiscal_year": 2024,
+        "locator": "page:6:line:9",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Operating income",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "5566",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__operating_income",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "5566"
+  },
+  {
+    "field": "operating_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "operating_income",
+        "fiscal_year": 2024,
+        "locator": "page:49:line:10",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Operating income",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "5566",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__operating_income",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "5566"
+  },
+  {
+    "field": "net_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "net_income",
+        "fiscal_year": 2024,
+        "locator": "page:6:line:14",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Net earnings",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "4091",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__net_income",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "4091"
+  },
+  {
+    "field": "net_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "net_income",
+        "fiscal_year": 2024,
+        "locator": "page:49:line:15",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Net earnings",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "4091",
+        "statement_scope": "income",
+        "unit": "millions"
+      },
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "net_income",
+        "fiscal_year": 2024,
+        "locator": "page:50:line:5",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Net earnings",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "4091",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__net_income",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "4091"
+  },
+  {
+    "field": "assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "assets",
+        "fiscal_year": 2024,
+        "locator": "page:51:line:21",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Total assets",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "57769",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__assets",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "57769"
+  },
+  {
+    "field": "assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "assets",
+        "fiscal_year": 2024,
+        "locator": "page:51:line:21",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Total assets",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "57769",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__assets",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "57769"
+  },
+  {
+    "field": "liabilities",
+    "method": "literal",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "TGT_2024__liabilities",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "liabilities",
+    "method": "strict",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "TGT_2024__liabilities",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "equity",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "equity",
+        "fiscal_year": 2024,
+        "locator": "page:51:line:37",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Total shareholders' investment",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "14666",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__equity",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "14666"
+  },
+  {
+    "field": "equity",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "equity",
+        "fiscal_year": 2024,
+        "locator": "page:51:line:37",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Total shareholders' investment",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "14666",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__equity",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "14666"
+  },
+  {
+    "field": "cash",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "cash",
+        "fiscal_year": 2024,
+        "locator": "page:38:line:28",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Cash and cash equivalents",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "4762",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__cash",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "4762"
+  },
+  {
+    "field": "cash",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "cash",
+        "fiscal_year": 2024,
+        "locator": "page:51:line:7",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Cash and cash equivalents",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "4762",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__cash",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "4762"
+  },
+  {
+    "field": "current_assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "current_assets",
+        "fiscal_year": 2024,
+        "locator": "page:51:line:10",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Total current assets",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "19454",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__current_assets",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "19454"
+  },
+  {
+    "field": "current_assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "current_assets",
+        "fiscal_year": 2024,
+        "locator": "page:51:line:10",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Total current assets",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "19454",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__current_assets",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "19454"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "current_liabilities",
+        "fiscal_year": 2024,
+        "locator": "page:51:line:26",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Total current liabilities",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "20799",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__current_liabilities",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "20799"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2025,
+        "field": "current_liabilities",
+        "fiscal_year": 2024,
+        "locator": "page:51:line:26",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Total current liabilities",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "20799",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__current_liabilities",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "20799"
+  },
+  {
+    "field": "cfo",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cfo",
+        "fiscal_year": 2024,
+        "locator": "page:52:line:17",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Cash provided by operating activities",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "7367",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__cfo",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "7367"
+  },
+  {
+    "field": "cfo",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cfo",
+        "fiscal_year": 2024,
+        "locator": "page:52:line:17",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Cash provided by operating activities",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "7367",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__cfo",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "7367"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash_ppe",
+        "fiscal_year": 2024,
+        "locator": "page:52:line:19",
+        "normalisation": "absolute cash outflow",
+        "period_end": "2025-02-01",
+        "row_label": "Expenditures for property and equipment",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "2891",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__cash_ppe",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "2891"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash_ppe",
+        "fiscal_year": 2024,
+        "locator": "page:52:line:19",
+        "normalisation": "absolute cash outflow",
+        "period_end": "2025-02-01",
+        "row_label": "Expenditures for property and equipment",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "2891",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__cash_ppe",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "2891"
+  },
+  {
+    "field": "da",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "da",
+        "fiscal_year": 2024,
+        "locator": "page:52:line:8",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Depreciation and amortization",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "2981",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "TGT_2024__da",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "2981"
+  },
+  {
+    "field": "da",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "da",
+        "fiscal_year": 2024,
+        "locator": "page:52:line:8",
+        "normalisation": "reported sign",
+        "period_end": "2025-02-01",
+        "row_label": "Depreciation and amortization",
+        "source": "TGT_2024",
+        "source_sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+        "source_value": "2981",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "TGT_2024__da",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": "2981"
+  },
+  {
+    "field": "current_share_price",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2024__current_share_price",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "current_share_price",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2024__current_share_price",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2024__customer_count",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2024__customer_count",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2024__undisclosed_future_revenue",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "TGT_2024__undisclosed_future_revenue",
+    "source_id": "TGT_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "revenue",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "revenue",
+        "fiscal_year": 2023,
+        "locator": "page:163:line:5",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Revenues",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "18212",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__revenue",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "18212"
+  },
+  {
+    "field": "revenue",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "revenue",
+        "fiscal_year": 2023,
+        "locator": "page:163:line:5",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Revenues",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "18212",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__revenue",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "18212"
+  },
+  {
+    "field": "operating_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "operating_income",
+        "fiscal_year": 2023,
+        "locator": "page:67:line:9",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Operating profit",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "3825",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__operating_income",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "3825"
+  },
+  {
+    "field": "operating_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "operating_income",
+        "fiscal_year": 2023,
+        "locator": "page:163:line:12",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Operating profit",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "3825",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__operating_income",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "3825"
+  },
+  {
+    "field": "net_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "net_income",
+        "fiscal_year": 2023,
+        "locator": "page:163:line:17",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Net profit",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "2983",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__net_income",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "2983"
+  },
+  {
+    "field": "net_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "net_income",
+        "fiscal_year": 2023,
+        "locator": "page:163:line:17",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Net profit",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "2983",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__net_income",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "2983"
+  },
+  {
+    "field": "assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "assets",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:26",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total assets",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "15312",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__assets",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "15312"
+  },
+  {
+    "field": "assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "assets",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:26",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total assets",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "15312",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__assets",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "15312"
+  },
+  {
+    "field": "liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "liabilities",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:43",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total liabilities",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "6088",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__liabilities",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "6088"
+  },
+  {
+    "field": "liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "liabilities",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:43",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total liabilities",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "6088",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__liabilities",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "6088"
+  },
+  {
+    "field": "equity",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "equity",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:58",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total equity",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "9224",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__equity",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "9224"
+  },
+  {
+    "field": "equity",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "equity",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:58",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total equity",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "9224",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__equity",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "9224"
+  },
+  {
+    "field": "cash",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cash",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:7",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Cash and cash equivalents",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "1481",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__cash",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "1481"
+  },
+  {
+    "field": "cash",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cash",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:7",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Cash and cash equivalents",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "1481",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__cash",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "1481"
+  },
+  {
+    "field": "current_assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "current_assets",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:14",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total current assets",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "8626",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__current_assets",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "8626"
+  },
+  {
+    "field": "current_assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "current_assets",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:14",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total current assets",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "8626",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__current_assets",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "8626"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "current_liabilities",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:37",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total current liabilities",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "4769",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__current_liabilities",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "4769"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "current_liabilities",
+        "fiscal_year": 2023,
+        "locator": "page:162:line:37",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Total current liabilities",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "4769",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__current_liabilities",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "4769"
+  },
+  {
+    "field": "cfo",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cfo",
+        "fiscal_year": 2023,
+        "locator": "page:73:line:21",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Net cash provided by operating activities",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "2853",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__cfo",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "2853"
+  },
+  {
+    "field": "cfo",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "cfo",
+        "fiscal_year": 2023,
+        "locator": "page:166:line:30",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Net cash generated by operating activities",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "2853",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__cfo",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "2853"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "literal",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "INFY_2023__cash_ppe",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "cash_ppe",
+    "method": "strict",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "INFY_2023__cash_ppe",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "da",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "da",
+        "fiscal_year": 2023,
+        "locator": "page:65:line:19",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Depreciation and amortization",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "466",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2023__da",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "466"
+  },
+  {
+    "field": "da",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2023,
+        "field": "da",
+        "fiscal_year": 2023,
+        "locator": "page:166:line:14",
+        "normalisation": "reported sign",
+        "period_end": "2023-03-31",
+        "row_label": "Depreciation and amortization",
+        "source": "INFY_2023",
+        "source_sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+        "source_value": "524",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2023__da",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": "524"
+  },
+  {
+    "field": "current_share_price",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2023__current_share_price",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "current_share_price",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2023__current_share_price",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2023__customer_count",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2023__customer_count",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2023__undisclosed_future_revenue",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2023__undisclosed_future_revenue",
+    "source_id": "INFY_2023",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "revenue",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "revenue",
+        "fiscal_year": 2024,
+        "locator": "page:61:line:26",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Revenues",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "18562",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__revenue",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "18562"
+  },
+  {
+    "field": "revenue",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "revenue",
+        "fiscal_year": 2024,
+        "locator": "page:160:line:5",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Revenues",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "18562",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__revenue",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "18562"
+  },
+  {
+    "field": "operating_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "operating_income",
+        "fiscal_year": 2024,
+        "locator": "page:61:line:27",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Operating profit",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "3834",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__operating_income",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "3834"
+  },
+  {
+    "field": "operating_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "operating_income",
+        "fiscal_year": 2024,
+        "locator": "page:160:line:12",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Operating profit",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "3834",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__operating_income",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "3834"
+  },
+  {
+    "field": "net_income",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "net_income",
+        "fiscal_year": 2024,
+        "locator": "page:61:line:28",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Net profit",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "3169",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__net_income",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "3169"
+  },
+  {
+    "field": "net_income",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "net_income",
+        "fiscal_year": 2024,
+        "locator": "page:160:line:17",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Net profit",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "3169",
+        "statement_scope": "income",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__net_income",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "3169"
+  },
+  {
+    "field": "assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "assets",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:26",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total assets",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "16523",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__assets",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "16523"
+  },
+  {
+    "field": "assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "assets",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:26",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total assets",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "16523",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__assets",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "16523"
+  },
+  {
+    "field": "liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "liabilities",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:43",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total liabilities",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "5918",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__liabilities",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "5918"
+  },
+  {
+    "field": "liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "liabilities",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:43",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total liabilities",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "5918",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__liabilities",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "5918"
+  },
+  {
+    "field": "equity",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "equity",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:58",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total equity",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "10605",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__equity",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "10605"
+  },
+  {
+    "field": "equity",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "equity",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:58",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total equity",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "10605",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__equity",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "10605"
+  },
+  {
+    "field": "cash",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:7",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Cash and cash equivalents",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "1773",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__cash",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "1773"
+  },
+  {
+    "field": "cash",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cash",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:7",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Cash and cash equivalents",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "1773",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__cash",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "1773"
+  },
+  {
+    "field": "current_assets",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_assets",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:14",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total current assets",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "10722",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__current_assets",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "10722"
+  },
+  {
+    "field": "current_assets",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_assets",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:14",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total current assets",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "10722",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__current_assets",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "10722"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_liabilities",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:37",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total current liabilities",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "4651",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__current_liabilities",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "4651"
+  },
+  {
+    "field": "current_liabilities",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "current_liabilities",
+        "fiscal_year": 2024,
+        "locator": "page:159:line:37",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Total current liabilities",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "4651",
+        "statement_scope": "balance",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__current_liabilities",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "4651"
+  },
+  {
+    "field": "cfo",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cfo",
+        "fiscal_year": 2024,
+        "locator": "page:73:line:24",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Net cash provided by operating activities",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "3148",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__cfo",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "3148"
+  },
+  {
+    "field": "cfo",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "cfo",
+        "fiscal_year": 2024,
+        "locator": "page:164:line:32",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Net cash generated by operating activities",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "3148",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__cfo",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "3148"
+  },
+  {
+    "field": "cash_ppe",
+    "method": "literal",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "INFY_2024__cash_ppe",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "cash_ppe",
+    "method": "strict",
+    "provenance": [],
+    "reason": "no_supported_row_year_scope",
+    "request_id": "INFY_2024__cash_ppe",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "da",
+    "method": "literal",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "da",
+        "fiscal_year": 2024,
+        "locator": "page:65:line:18",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Depreciation and amortization",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "524",
+        "statement_scope": null,
+        "unit": "millions"
+      }
+    ],
+    "reason": "literal_lookup",
+    "request_id": "INFY_2024__da",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "524"
+  },
+  {
+    "field": "da",
+    "method": "strict",
+    "provenance": [
+      {
+        "currency": "USD",
+        "display_column_year": 2024,
+        "field": "da",
+        "fiscal_year": 2024,
+        "locator": "page:164:line:14",
+        "normalisation": "reported sign",
+        "period_end": "2024-03-31",
+        "row_label": "Depreciation and amortization",
+        "source": "INFY_2024",
+        "source_sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+        "source_value": "565",
+        "statement_scope": "cashflow",
+        "unit": "millions"
+      }
+    ],
+    "reason": "statement_scoped",
+    "request_id": "INFY_2024__da",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": "565"
+  },
+  {
+    "field": "current_share_price",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2024__current_share_price",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "current_share_price",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2024__current_share_price",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2024__customer_count",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "customer_count",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2024__customer_count",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "literal",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2024__undisclosed_future_revenue",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": null
+  },
+  {
+    "field": "undisclosed_future_revenue",
+    "method": "strict",
+    "provenance": [],
+    "reason": "outside_supported_financial_contract",
+    "request_id": "INFY_2024__undisclosed_future_revenue",
+    "source_id": "INFY_2024",
+    "split": "development",
+    "value": null
+  }
+]

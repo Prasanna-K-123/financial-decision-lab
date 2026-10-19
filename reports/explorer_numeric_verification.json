@@ -1,0 +1,10 @@
+{
+  "actual_embedded_script_checked": true,
+  "numeric_comparisons": 1159,
+  "python_case_evaluations": 519,
+  "max_absolute_error_usd_millions": 4.656612873077393e-10,
+  "zero_and_invalid_boundary_checks": true,
+  "local_deliverable_links_present": true,
+  "portfolio_studies": 7,
+  "scope": "Node VM execution of the exact published script; rendered browser, keyboard and live-link checks are separate."
+}

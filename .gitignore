@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+source_cache/
+work/
+tmp/
+decoded/

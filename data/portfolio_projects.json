@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Credit risk and model validation",
+    "repo": "credit-risk-model-validation",
+    "description": "300,000 mortgages and 20.15 million monthly records. Chronological SQL snapshots, censored outcomes, fixed models and economic-stress validation. Better held-out discrimination did not justify unchanged probabilities: calibration failures are disclosed.",
+    "roles": "Credit risk, model validation, risk analytics"
+  },
+  {
+    "name": "Insurance pricing and reserve uncertainty",
+    "repo": "insurance-price-reserve-risk",
+    "description": "French motor pricing and a separate US auto-reserving study. Fixed pricing comparisons and reserve interval scores expose conditional-calibration and coverage failures. The two populations are not joined.",
+    "roles": "Actuarial analytics, insurance risk, uncertainty modelling"
+  },
+  {
+    "name": "Causal customer decisions",
+    "repo": "causal-customer-decisions",
+    "description": "A 64,000-customer, three-arm randomized experiment. Frozen policies and doubly robust evaluation did not establish that personalized targeting beats the selected simple campaign. Explicit margin and contact costs are scenarios.",
+    "roles": "Product analytics, experimentation, causal inference"
+  },
+  {
+    "name": "Treasury ALM and liquidity",
+    "repo": "treasury-alm",
+    "description": "Interest-rate hedging, published Treasury curves and hypothetical benefit cash flows. Four hedge policies, 56 rate stresses and 108 liquidity-runoff cases. Independent Decimal and formula-workbook reconciliations support the modelling.",
+    "roles": "Treasury, ALM, financial risk"
+  },
+  {
+    "name": "Demand, capital and inventory",
+    "repo": "demand-inventory",
+    "description": "210 historical M5 item-store series link probabilistic forecasts to replenishment under common capital/capacity constraints. Fifteen final weekly origins and overlapping horizons limit inference. Operating effects are simulations, not observed retailer savings.",
+    "roles": "Business analytics, forecasting, operations and working capital"
+  },
+  {
+    "name": "Indian inflation release vintages",
+    "repo": "inflation-vintages",
+    "description": "48 official releases and 144 vintage observations. An 18-release final check retains persistence: RMSE 0.8185 pp versus 1.6901 for fixed AR(1). Release dates and the later base revision remain separate. No current inflation forecast is claimed.",
+    "roles": "Economic research, time series, publication-aware data"
+  },
+  {
+    "name": "Corporate Finance Decision Lab",
+    "repo": "financial-decision-lab",
+    "description": "Nine issuer reports, a traced financial spread and a funded-growth policy model. Final extraction: 33 supported correct /36 financial targets for both methods, three justified abstentions. 519 independent valuation checks and a reconciled formula workbook.",
+    "roles": "Corporate finance, FP&A, financial research and finance data"
+  }
+]
