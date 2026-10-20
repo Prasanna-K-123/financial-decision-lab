@@ -1,0 +1,50 @@
+{
+  "cases_checked": [
+    {
+      "case": "MSFT downside",
+      "policy_value": 963959.9999999993
+    },
+    {
+      "case": "MSFT reference",
+      "policy_value": 1316560.3705399348
+    },
+    {
+      "case": "MSFT expansion",
+      "policy_value": 1855713.0897227111
+    },
+    {
+      "case": "TGT downside",
+      "policy_value": 37731.59689694647
+    },
+    {
+      "case": "TGT reference",
+      "policy_value": 39143.0861196015
+    },
+    {
+      "case": "TGT expansion",
+      "policy_value": 44096.054699703534
+    },
+    {
+      "case": "INFY downside",
+      "policy_value": 30532.499999999978
+    },
+    {
+      "case": "INFY reference",
+      "policy_value": 35379.31748055826
+    },
+    {
+      "case": "INFY expansion",
+      "policy_value": 43527.97370075293
+    }
+  ],
+  "engine": "Artifact Tool 2.8; native Excel not executed",
+  "export_reopen_recalculated": true,
+  "formula_error_scan_matches": 0,
+  "independent_excel_profit_layer_identity": true,
+  "input_change_and_blank_zero_boundaries_passed": true,
+  "numeric_reconciliations": 932,
+  "source_facts_restored": true,
+  "visual_review": "All four worksheets and all issuer sections checked; third-source saved workbook independently imported, inspected and freshly rendered. Final edit right-aligns unavailable ratio values only; numeric checks unchanged.",
+  "visual_review_pending": false,
+  "workbook_sha256": "81b8d409e4d4c96d2ffd5ea083ab785fcfdb0e8723630d66df7f55b035a6d019"
+}

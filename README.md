@@ -49,6 +49,13 @@ claims to analytically monotone regimes. Other endpoint failures are labelled
 and freeze are retained; integrity checks permit only the exact documented
 validation/status patches. No financial formula, saved scenario, prediction or reported score changed.
 
+The [workbook validation revision](reports/workbook_validation_revision_20261020.json)
+applies the same roundoff rule to the saved XLSX and its builder. An
+[independent LibreOffice Calc check](reports/workbook_application_verification_20261020.json)
+opens, recalculates, saves and reopens the delivered workbooks. The finance
+workbook retains all nine policy cases and 297 formula cells; 51 probes below,
+at and above the minimum spread pass. Native Microsoft Excel was not executed.
+
 ## Evidence that can be checked
 
 | Check | Result | Interpretation |
@@ -58,7 +65,7 @@ validation/status patches. No financial formula, saved scenario, prediction or r
 | Financial controls | All nine balance identities, cash-flow sums and ending-cash bridges reconcile | Target liabilities use independently reported current/noncurrent subtotals, not an assets-minus-equity plug. |
 | Conditional model | Nine scenarios, 363 sensitivity cases, 147 constant-regime cases and nine reverse cases | Two reverse targets are unreachable in the fixed bracket; they are not extrapolated. |
 | Independent mathematics | 519 case evaluations checked by 45-digit Decimal profit-layer valuation | Different formulation from the main cash-flow discounting implementation; no external-review claim. |
-| Workbook | 932 numeric reconciliations; all nine cases; editable-input, missing/zero and export/reopen checks | Verified in Artifact Tool; native Excel was not executed. |
+| Workbook | 932 construction reconciliations; 297 formula cells recalculated; all nine policies and 51 spread-boundary probes | Artifact Tool construction plus independent LibreOffice import, input-change and saved-file checks. Native Excel was not executed. |
 | Clean raw-source reconstruction | Eleven scientific outputs identical after repeating all report decoding/OCR | Same environment, pinned cached bytes. Not a fresh-network or cross-platform replication claim. |
 
 Only three final report clusters are available. These are already-public,
@@ -82,6 +89,20 @@ PYTHONPATH=src python tools/reproduce_numeric.py
 
 This numeric route does not independently re-audit the original PDF/DOCX cells.
 The workflow runs it on each push. Source extraction has its own reproduction.
+
+## Reproduce the independent workbook check
+
+On Ubuntu with LibreOffice Calc and its system Python UNO bridge:
+
+```bash
+sudo apt-get install --no-install-recommends libreoffice-calc python3-uno
+/usr/bin/python3 tools/audit_workbooks_libreoffice.py
+```
+
+The audit verifies pinned workbook/reference identities, compares recalculated
+cells with the stored values, changes the declared controls, checks the minimum
+spread and missing/invalid inputs, then saves and reopens disposable copies.
+It preserves the delivered files and does not refit a model.
 
 ## Reproduce the original source-cell pipeline
 

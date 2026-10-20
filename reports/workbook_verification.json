@@ -46,5 +46,8 @@
   "source_facts_restored": true,
   "visual_review": "All four worksheets and all issuer sections checked; third-source saved workbook independently imported, inspected and freshly rendered. Final edit right-aligns unavailable ratio values only; numeric checks unchanged.",
   "visual_review_pending": false,
-  "workbook_sha256": "81b8d409e4d4c96d2ffd5ea083ab785fcfdb0e8723630d66df7f55b035a6d019"
+  "workbook_sha256": "56926847b3a6a9555cb7b4b4ddc187aeb8d207d1e6b66fafd83f05d16823ef9b",
+  "original_workbook_sha256": "81b8d409e4d4c96d2ffd5ea083ab785fcfdb0e8723630d66df7f55b035a6d019",
+  "post_export_validation_revision": "reports/workbook_validation_revision_20261020.json",
+  "verification_scope_note": "The 932 construction checks describe the original Artifact Tool build. The later terminal-spread guard revision is separately checked in LibreOffice Calc; see workbook_application_verification_20261020.json. Native Microsoft Excel was not executed."
 }
