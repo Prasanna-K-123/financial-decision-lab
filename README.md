@@ -27,6 +27,11 @@ nonoperating assets and equity adjustments; no target share price is claimed.
 · [Formula workbook](artifacts/Corporate_Finance_Decision_Lab.xlsx)
 · [Seven-study portfolio](docs/portfolio.html)
 
+The FY 2025 policy anchors form a fixed retrospective research sample; they are
+not a claim to use each issuer's latest available filing. The
+[live browser verification](reports/live_browser_verification.json) checks all
+nine rendered scenarios, all 363 sensitivity cells and the nine source displays.
+
 ## Evidence that can be checked
 
 | Check | Result | Interpretation |

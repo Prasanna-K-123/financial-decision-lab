@@ -1,0 +1,74 @@
+{
+  "verified_utc_date": "2026-10-20",
+  "url": "https://prasanna-k-123.github.io/financial-decision-lab/",
+  "method": "Actual Chromium DOM observations after ordinary UI selections; comparison with frozen Python outputs and published source annotations.",
+  "scenarios": 9,
+  "year_ledger_rows": 99,
+  "counts": {
+    "model_numbers": 414,
+    "sensitivity_cells": 363,
+    "source_cells": 432,
+    "source_urls": 9
+  },
+  "max_absolute_rounding_error_usd_millions": 4.999983502784744e-07,
+  "display_tolerance_usd_millions": 5.1e-07,
+  "source_cases": 9,
+  "financial_target_rows": 108,
+  "blank_and_invalid_spread": {
+    "blank": {
+      "error": "Enter the required Initial profit growth (%).",
+      "error_visible": true,
+      "results_hidden": true
+    },
+    "invalid_spread": {
+      "error": "Use tax below 100% and WACC at least 0.01 percentage points above terminal growth.",
+      "error_visible": true,
+      "results_hidden": true
+    }
+  },
+  "keyboard_grid_activation": {
+    "terminal_growth": "2.5",
+    "value": "1,125,080.121396",
+    "wacc": "11"
+  },
+  "keyboard_tab_focus": {
+    "active_id": "tax"
+  },
+  "downloads": [
+    {
+      "artifact": "P7_Decision_Memo.pdf",
+      "bytes": 118212,
+      "sha256": "6ecc9719f07e82281cc6fc9763890a9d1cffc527a2d35d12ed1be7c54a88e44c",
+      "independent_live_http_bytes_match_release": true,
+      "browser_downloader_completed": true,
+      "browser_download_bytes_materialized_in_host": false
+    },
+    {
+      "artifact": "Corporate_Finance_Decision_Lab.xlsx",
+      "bytes": 22529,
+      "sha256": "81b8d409e4d4c96d2ffd5ea083ab785fcfdb0e8723630d66df7f55b035a6d019",
+      "independent_live_http_bytes_match_release": true,
+      "browser_downloader_completed": true,
+      "browser_download_bytes_materialized_in_host": false
+    },
+    {
+      "artifact": "P7_Technical_Report.pdf",
+      "bytes": 129268,
+      "sha256": "ebc631eb5189f2518a3a0f54b7a89e4d3a55d4845945f319a3f35fb5e8f241b3",
+      "independent_live_http_bytes_match_release": true,
+      "browser_downloader_completed": true,
+      "browser_download_bytes_materialized_in_host": false
+    },
+    {
+      "artifact": "Prasanna_K_Research_Portfolio.pdf",
+      "bytes": 50838,
+      "sha256": "4011c10591dab27b04847c32895f2b6532c1ea6ffdb4375d5b441430278ec01d",
+      "independent_live_http_bytes_match_release": true,
+      "browser_downloader_completed": true,
+      "browser_download_bytes_materialized_in_host": false
+    }
+  ],
+  "download_scope": "All four browser download controls completed. Their browser paths did not synchronize to the host within five seconds. Separately fetched public HTTPS bytes match every release artifact exactly; no claim of hashing the browser download files.",
+  "failures": [],
+  "scope_limit": "Desktop browser verification; no claim of every browser, device, assistive technology or native desktop Excel."
+}
