@@ -34,8 +34,7 @@
       "repo": "treasury-alm",
       "path": "docs/index.html",
       "url": "/treasury-alm/",
-      "expected_blob": "aa4efd56a0e2411271724210bfaed60a4463a0c2",
-      "candidate_path": "audit/candidates/treasury-alm/docs/index.html"
+      "expected_blob": "aa4efd56a0e2411271724210bfaed60a4463a0c2"
     },
     {
       "id": "demand",
@@ -49,33 +48,16 @@
       "repo": "inflation-vintages",
       "path": "docs/index.html",
       "url": "/inflation-vintages/",
-      "expected_blob": "3fb937d6dc3b1f02a508a3149fd18cbea70b5688",
-      "candidate_path": "audit/candidates/inflation-vintages/docs/index.html"
+      "expected_blob": "3fb937d6dc3b1f02a508a3149fd18cbea70b5688"
     },
     {
       "id": "finance",
       "repo": "financial-decision-lab",
       "path": "docs/index.html",
       "url": "/financial-decision-lab/",
-      "expected_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
-      "candidate_path": "audit/candidates/financial-decision-lab/docs/index.html"
+      "expected_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99"
     }
   ],
-  "figures": [
-    {
-      "id": "insurance",
-      "url": "https://raw.githubusercontent.com/Prasanna-K-123/insurance-price-reserve-risk/ea1cccd2fee9f7d78654ae0d5b26ab38d118ac2e/reports/validation_diagnostics.svg",
-      "expected_blob": "5cdbdd26ed93e9d411819e0b28ef326536f6b4d3"
-    },
-    {
-      "id": "causal",
-      "url": "https://raw.githubusercontent.com/Prasanna-K-123/causal-customer-decisions/8a6faff353761b4f7a3e24335f8057135f093b10/reports/policy_comparison.svg",
-      "expected_blob": "9cdb570caad6a0748f1a8b7f37eee7aba6e8b0e4"
-    },
-    {
-      "id": "demand",
-      "url": "https://raw.githubusercontent.com/Prasanna-K-123/demand-inventory/db9217a84ae9a29df4e3e7f519c262bdf4edc118/reports/diagnostics.svg",
-      "expected_blob": "275677e7bac4962d79d9d5fe4f2777b2beb4d5ff"
-    }
-  ]
+  "figures": [],
+  "mode": "live-deployed acceptance after presentation publication"
 }
