@@ -8,7 +8,7 @@ on:
       - reports/application_audit_plan_20261020.json
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   recalculate:
     runs-on: ubuntu-24.04
@@ -23,5 +23,11 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends libreoffice-calc python3-uno fonts-liberation2
+      - name: Apply the isolated workbook guard correction
+        run: /usr/bin/python3 tools/patch_workbook_boundary.py
       - name: Recalculate both pinned workbooks and check frozen references
         run: /usr/bin/python3 tools/audit_workbooks_libreoffice.py
+      - name: Save only the verified repair on the audit branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: /usr/bin/python3 tools/publish_workbook_repair.py

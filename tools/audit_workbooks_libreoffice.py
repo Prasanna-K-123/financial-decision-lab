@@ -63,8 +63,11 @@ def close(actual, expected, label, group="financial", atol=0.0001, rtol=0):
 def fetch(book, file):
     url = "https://raw.githubusercontent.com/Prasanna-K-123/{}/{}/{}".format(
         book["repo"], book["commit"], file["path"])
-    with urllib.request.urlopen(url, timeout=60) as response:
-        raw = response.read()
+    if book["commit"] == "CHECKOUT":
+        raw = Path(file["path"]).read_bytes()
+    else:
+        with urllib.request.urlopen(url, timeout=60) as response:
+            raw = response.read()
     blob = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
     require(blob == file["blob"], "Pinned source blob differs: " + file["path"])
     return raw
@@ -318,16 +321,24 @@ def finance_checks(doc, refs):
     boundary = []
     for j in range(17):
         g = j * 0.005
-        cell(doc, "Assumptions", "E22").setValue(g)
-        cell(doc, "Assumptions", "E23").setValue(g + 0.0001)
-        doc.calculateAll()
-        error = cell(doc, "Policy review", "D6").getError()
-        boundary.append({"terminal_growth": g, "wacc": g + 0.0001, "error_code": error})
-        if error:
-            REPORT["failures"].append({
-                "label": "Exact one-basis-point spreadsheet boundary",
-                "terminal_growth": g, "wacc": g + 0.0001, "error_code": error,
-            })
+        for name, spread, expected_error in [
+            ("below", 0.0000999, True), ("exact", 0.0001, False),
+            ("above", 0.0001001, False),
+        ]:
+            cell(doc, "Assumptions", "E22").setValue(g)
+            cell(doc, "Assumptions", "E23").setValue(g + spread)
+            doc.calculateAll()
+            error = cell(doc, "Policy review", "D6").getError()
+            boundary.append({"terminal_growth": g, "wacc": g + spread,
+                             "position": name, "error_code": error,
+                             "expected_error": expected_error})
+            if bool(error) != expected_error:
+                REPORT["failures"].append({
+                    "label": "One-basis-point spreadsheet boundary",
+                    "terminal_growth": g, "wacc": g + spread,
+                    "position": name, "error_code": error,
+                    "expected_error": expected_error,
+                })
     cell(doc, "Assumptions", "E22").setValue(terminal)
     cell(doc, "Assumptions", "E23").setValue(wacc)
     select(2)
@@ -378,7 +389,7 @@ def main():
             require(list(doc.Sheets.getElementNames()) == list(originals), "Worksheet identities differ.")
             doc.enableAutomaticCalculation(True)
             doc.calculateAll()
-            record = {"key": book["key"], "commit": book["commit"],
+            record = {"key": book["key"], "commit": os.environ["GITHUB_SHA"] if book["commit"] == "CHECKOUT" else book["commit"],
                       "original_sha256": original_sha, "sheet_names": list(originals)}
             record["formula_cells"] = sum(len(v) for v in originals.values())
             record["cached_formula_comparisons"] = formula_cache_check(
