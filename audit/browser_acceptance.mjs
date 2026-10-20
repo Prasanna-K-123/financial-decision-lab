@@ -67,6 +67,43 @@ async function exercise(p,r,seen){
   if(!t.restored_text)r.warnings.push({kind:"text_not_identical_after_restore",id:m.id});
  }
 }
+
+async function readable(p,r,label){
+ if(!["finance","inflation"].includes(r.page))return;
+ const selector=r.page==="finance"?"#historical-plot svg":"#forecast-chart svg";
+ const result=await p.locator(selector).evaluate(svg=>{
+  const box=svg.getBoundingClientRect();
+  const labels=[...svg.querySelectorAll("text")].map(e=>{const t=e.getBoundingClientRect(),m=e.getScreenCTM(),scale=Math.hypot(m.a,m.b);return {text:e.textContent,font_pixels:parseFloat(getComputedStyle(e).fontSize)*scale,x:t.x-box.x,y:t.y-box.y,width:t.width,height:t.height};});
+  const overlaps=[];for(let i=0;i<labels.length;i++)for(let j=i+1;j<labels.length;j++){const a=labels[i],b=labels[j];if(Math.min(a.x+a.width,b.x+b.width)-Math.max(a.x,b.x)>.8&&Math.min(a.y+a.height,b.y+b.height)-Math.max(a.y,b.y)>.8)overlaps.push([a.text,b.text]);}
+  return {width:box.width,height:box.height,labels,minimum_font:Math.min(...labels.map(t=>t.font_pixels)),overlaps,clipped:labels.filter(t=>t.x<-.8||t.y<-.8||t.x+t.width>box.width+.8||t.y+t.height>box.height+.8)};
+ });
+ (r.readability_views??=[]).push({label,...result});
+ if(result.minimum_font<10.9)fail(r,"chart_text_too_small",{label,minimum_font:result.minimum_font});
+ if(result.overlaps.length)fail(r,"chart_label_overlap",{label,pairs:result.overlaps});
+ if(result.clipped.length)fail(r,"chart_label_clipping",{label,labels:result.clipped});
+}
+async function presentationChecks(p,r){
+ if(r.page==="finance"){
+  const initial=await p.locator("#company").inputValue();
+  for(const v of ["MSFT","TGT","INFY"]){await p.locator("#company").selectOption(v);await readable(p,r,"company="+v);}
+  await p.locator("#company").selectOption(initial);
+ }else if(r.page==="inflation"){
+  const im=await p.locator("#method").inputValue(),it=await p.locator("#target").inputValue();
+  for(const method of ["persistence","ridge_ar1","seasonal_12month"])for(const target of ["first","later"]){await p.locator("#method").selectOption(method);await p.locator("#target").selectOption(target);await readable(p,r,method+"/"+target);}
+  await p.locator("#method").selectOption(im);await p.locator("#target").selectOption(it);
+ }else if(r.page==="treasury"&&r.viewport.width<720){
+  const region=p.locator(".figure-scroll");await region.focus();await p.keyboard.press("ArrowRight");await p.waitForTimeout(180);
+  r.chart_scroll=await region.evaluate(e=>({client_width:e.clientWidth,scroll_width:e.scrollWidth,scroll_left:e.scrollLeft,image_width:e.querySelector("img").getBoundingClientRect().width,accessible_name:e.getAttribute("aria-label"),tabindex:e.tabIndex}));
+  if(r.chart_scroll.image_width<953||r.chart_scroll.scroll_left<=0)fail(r,"chart_keyboard_scroll_failed",r.chart_scroll);
+  await region.evaluate(e=>e.scrollLeft=0);
+  if(r.browser==="chromium"&&r.viewport.width===390){await region.scrollIntoViewIfNeeded();r.screenshots.push(await shot(p,"treasury-chromium-390-chart-left.png"));await region.evaluate(e=>e.scrollLeft=e.scrollWidth);r.screenshots.push(await shot(p,"treasury-chromium-390-chart-right.png"));await region.evaluate(e=>e.scrollLeft=0);}
+ }
+ if(["finance","inflation"].includes(r.page)&&r.viewport.width===1440){
+  r.resize_checks=[];
+  for(const width of [320,390,1440]){await p.setViewportSize({width,height:width===1440?1000:844});await p.waitForTimeout(120);const g=await geometry(p);r.resize_checks.push(g);if(g.document_width>width+1)fail(r,"resize_horizontal_overflow",g);await readable(p,r,"resize="+width);}
+ }
+}
+
 const cached=new Map();
 async function links(p,r,context){
  r.links=await p.locator("a[href]").evaluateAll(els=>els.map(e=>({href:e.href,text:e.innerText.trim()})));
@@ -103,6 +140,7 @@ try{
     const r={page:item.id,url:plan.host+item.url,browser:engine,browser_version:browser.version(),viewport,controls:[],tabs:[],anchors:[],keyboard:[],screenshots:[],warnings:[],failures:[],console_errors:[],page_errors:[]};report.pages.push(r);
     p.on("pageerror",e=>r.page_errors.push(String(e)));p.on("console",m=>{if(m.type()==="error")r.console_errors.push(m.text());});
     try{
+     r.render_target=item.candidate_path?"local candidate HTML at the deployed base URL":"live deployed page";if(item.candidate_path)await p.route(r.url,route=>route.fulfill({status:200,contentType:"text/html; charset=utf-8",body:fs.readFileSync(item.candidate_path)}));
      const response=await p.goto(r.url,{waitUntil:"networkidle",timeout:30000});r.http_status=response.status();const b=await response.body();
      r.delivered_blob=crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");r.expected_blob=item.expected_blob;
      if(r.delivered_blob!==item.expected_blob)fail(r,"deployed_source_mismatch",{expected:item.expected_blob,delivered:r.delivered_blob});
@@ -126,6 +164,7 @@ try{
      if(await reset.count()&&await reset.first().isVisible()){await reset.first().click();r.reset_clicked=true;r.reset_invalid_visible=await p.locator("input:visible,select:visible").evaluateAll(els=>els.filter(e=>!e.checkValidity()).map(e=>e.id));if(r.reset_invalid_visible.length)fail(r,"reset_invalid_input",r.reset_invalid_visible);}
      r.final_geometry=await geometry(p);if(r.final_geometry.document_width>viewport.width+1)fail(r,"post_interaction_horizontal_overflow",r.final_geometry);
      if(engine==="chromium"&&viewport.width===390){const chart=p.locator("svg,figure img,.chart,.plot").first();if(await chart.count()&&await chart.isVisible()){await chart.scrollIntoViewIfNeeded();r.screenshots.push(await shot(p,item.id+"-chromium-390-chart.png"));}}
+     await presentationChecks(p,r);
      if(engine==="chromium"&&viewport.width===1440)await links(p,r,context);
      if(r.page_errors.length)fail(r,"browser_script_error",r.page_errors);
     }catch(error){fail(r,"audit_exception",String(error));try{r.screenshots.push(await shot(p,item.id+"-"+engine+"-"+viewport.width+"-exception.png"));}catch{}}
@@ -135,6 +174,23 @@ try{
   }
   await browser.close();
  }
+
+ const imageBrowser=await chromium.launch({headless:true}),imageContext=await imageBrowser.newContext({viewport:{width:1280,height:760}});
+ report.figure_renders=[];
+ for(const figure of plan.figures||[]){
+  const p=await imageContext.newPage(),r={page:"figure-"+figure.id,browser:"chromium",viewport:{width:1280,height:760},failures:[]};report.figure_renders.push(r);
+  try{
+   const response=await imageContext.request.get(figure.url,{timeout:20000}),b=await response.body();
+   r.http_status=response.status();r.source_blob=crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");r.expected_blob=figure.expected_blob;
+   if(r.http_status!==200||r.source_blob!==figure.expected_blob)fail(r,"figure_source_mismatch",{http_status:r.http_status,source_blob:r.source_blob,expected_blob:r.expected_blob});
+   await p.setContent('<body style="margin:16px;background:white"><img alt="Research diagnostic" style="display:block;width:100%;height:auto" src="data:image/svg+xml;base64,'+b.toString("base64")+'"></body>',{waitUntil:"load"});
+   r.image=await p.locator("img").evaluate(e=>({width:e.naturalWidth,height:e.naturalHeight,complete:e.complete}));
+   if(!r.image.complete||!r.image.width)fail(r,"svg_not_rendered",r.image);
+   r.screenshot=await shot(p,"figure-"+figure.id+".png",true);
+  }catch(error){fail(r,"figure_render_exception",String(error));}await p.close();
+ }
+ await imageContext.close();await imageBrowser.close();
+
 }catch(error){report.fatal_error=String(error);report.failures.push({kind:"fatal_audit_error",detail:String(error)});}
 report.finished_at=new Date().toISOString();report.summary={renders:report.pages.length,controls:report.pages.reduce((n,p)=>n+p.controls.length,0),input_checks:report.pages.reduce((n,p)=>n+p.controls.reduce((m,c)=>m+c.checks.length,0),0),keyboard_stops:report.pages.reduce((n,p)=>n+p.keyboard.length,0),internal_delivery_checks:report.links.length,failures:report.failures.length};
 fs.writeFileSync(path.join(out,"report.json"),JSON.stringify(report,null,2)+"\n");

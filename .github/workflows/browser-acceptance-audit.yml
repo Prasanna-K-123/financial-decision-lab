@@ -5,6 +5,8 @@ on:
     paths:
       - audit/browser_acceptance.mjs
       - audit/browser-plan.json
+      - audit/check_candidate_sources.py
+      - audit/candidates/**
       - audit/publish_browser_evidence.py
       - .github/workflows/browser-acceptance-audit.yml
   workflow_dispatch:
@@ -29,6 +31,8 @@ jobs:
         run: |
           npm install --prefix audit/runtime --ignore-scripts --no-audit --no-fund playwright@1.64.1
           audit/runtime/node_modules/.bin/playwright install --with-deps chromium firefox
+      - name: Verify candidate build-source parity and existing numerical explorer checks
+        run: python3 audit/check_candidate_sources.py
       - name: Exercise actual deployed desktop and mobile viewports
         run: node audit/browser_acceptance.mjs
       - name: Preserve bounded evidence on isolated audit branch
