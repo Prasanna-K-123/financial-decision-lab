@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-20",
+  "scope": "Public explorer validation only; historical source extraction, financial case results, workbook and PDFs unchanged",
+  "before": {
+    "default_native_step_mismatches": [
+      "marginal_roic",
+      "terminal_roic",
+      "wacc"
+    ],
+    "exact_minimum_spread_rejected": {
+      "wacc_percent": 3.01,
+      "terminal_growth_percent": 3
+    },
+    "below_declared_minimum_calculated": {
+      "field": "marginal_roic",
+      "value_percent": 0.001,
+      "minimum_percent": 0.01
+    }
+  },
+  "changes": [
+    "Required fields accept decimal percentages rather than a mismatched step lattice",
+    "Displayed minimum/maximum bounds are enforced before calculation",
+    "Invalid input is connected to the visible error with aria-invalid and aria-describedby",
+    "The minimum spread comparison allows IEEE-754 rounding at the exact one-basis-point boundary"
+  ],
+  "offline_checks": {
+    "saved_numeric_comparisons": 1159,
+    "saved_case_evaluations": 519,
+    "decimal_spread_accept_reject_checks": 1602,
+    "percentage_parser_checks": 12,
+    "python_unit_tests_passed": 16,
+    "public_numeric_outputs_reconstructed": 9,
+    "prediction_seals_checked": 2,
+    "frozen_method_hashes_unchanged": 6,
+    "scientific_output_hashes_unchanged": 11
+  },
+  "live_after_deployment_pending": true
+}

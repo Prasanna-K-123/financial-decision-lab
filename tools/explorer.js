@@ -3,12 +3,24 @@ let DATA;
 const DRIVER_KEYS=['growth','marginal_roic','terminal_roic','terminal_growth','wacc','tax'];
 const el=id=>document.getElementById(id);
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function validDiscountSpread(wacc,growth){
+ const minimum=.0001;
+ const roundoff=8*Number.EPSILON*Math.max(Math.abs(wacc),Math.abs(growth),minimum);
+ return wacc-growth>=minimum-roundoff;
+}
+function readPercentage(text,label,minimum,maximum){
+ if(typeof text!=='string'||text.trim()==='')throw Error('Enter the required '+label+'.');
+ const value=Number(text);
+ if(!Number.isFinite(value))throw Error(label+' must be a finite number.');
+ if(value<minimum||value>maximum)throw Error(label+' must be between '+minimum+' and '+maximum+'.');
+ return value/100;
+}
 function calculate(ebit,a){
  const fields=DRIVER_KEYS.map(k=>a[k]);
  if(fields.some(x=>typeof x!=='number'||!Number.isFinite(x))||typeof ebit!=='number'||!Number.isFinite(ebit)||ebit<0)throw Error('All required assumptions and the EBIT anchor must be finite numbers.');
  if(a.growth<-.25||a.growth>.5||a.terminal_growth<0||a.terminal_growth>.08)throw Error('Growth is outside the documented model domain.');
  if(Math.min(a.marginal_roic,a.terminal_roic)<=0||Math.max(a.marginal_roic,a.terminal_roic)>1)throw Error('Marginal ROIC must be above zero and no greater than 100%.');
- if(a.tax<0||a.tax>=1||a.wacc<=0||a.wacc>.5||a.wacc-a.terminal_growth<.0001)throw Error('Use tax below 100% and WACC at least 0.01 percentage points above terminal growth.');
+ if(a.tax<0||a.tax>=1||a.wacc<=0||a.wacc>.5||!validDiscountSpread(a.wacc,a.terminal_growth))throw Error('Use tax below 100% and WACC at least 0.01 percentage points above terminal growth.');
  const n=[ebit*(1-a.tax)],growth=[null],ledger=[];
  for(let t=1;t<=11;t++){const g=t<=5?a.growth:t<=10?a.growth+(a.terminal_growth-a.growth)*(t-5)/5:a.terminal_growth;growth.push(g);n.push(n[t-1]*(1+g));}
  let sum=0,initial;
@@ -25,7 +37,18 @@ function money(x,precision){return x===null||x===undefined?'Unavailable':new Int
 function percent(x){return x===null?'n.a.':(x*100).toFixed(1)+'%';}
 function selected(){return DATA.cases.find(x=>x.issuer===el('company').value&&x.case===el('scenario').value);}
 function precision(){return el('full-precision').checked?6:1;}
-function assumptions(){const a={};DRIVER_KEYS.forEach(k=>{const text=el(k).value;if(text==='')throw Error('Enter the required '+el(k).closest('label').innerText.trim()+'.');a[k]=Number(text)/100;});return a;}
+function assumptions(){
+ const a={};
+ DRIVER_KEYS.forEach(k=>{el(k).removeAttribute('aria-invalid');el(k).removeAttribute('aria-describedby');});
+ const invalid=(field,message)=>{field.setAttribute('aria-invalid','true');field.setAttribute('aria-describedby','model-error');throw Error(message);};
+ DRIVER_KEYS.forEach(k=>{
+  const field=el(k),label=field.closest('label').innerText.trim();
+  try{a[k]=readPercentage(field.value,label,Number(field.min),Number(field.max));}
+  catch(error){invalid(field,error.message);}
+ });
+ if(!validDiscountSpread(a.wacc,a.terminal_growth))invalid(el('wacc'),'WACC must be at least 0.01 percentage points above terminal growth.');
+ return a;
+}
 function th(x,numeric){return '<th'+(numeric?' class="number"':'')+'>'+esc(x)+'</th>';}
 function td(x,numeric){return '<td'+(numeric?' class="number"':'')+'>'+esc(x)+'</td>';}
 function historical(){

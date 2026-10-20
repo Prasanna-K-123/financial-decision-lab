@@ -6,5 +6,7 @@
   "zero_and_invalid_boundary_checks": true,
   "local_deliverable_links_present": true,
   "portfolio_studies": 7,
+  "decimal_boundary_checks": 1602,
+  "percentage_input_guard_checks": 12,
   "scope": "Node VM execution of the exact published script; rendered browser, keyboard and live-link checks are separate."
 }

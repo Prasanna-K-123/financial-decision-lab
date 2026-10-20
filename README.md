@@ -38,6 +38,11 @@ The [20 October editorial revision](reports/editorial_revision_20261020.json)
 corrects report spacing. All eleven scientific outputs, the frozen method and
 the original v1.0.0 research record are unchanged.
 
+The [20 October input-validation revision](reports/input_validation_revision_20261020.json)
+accepts decimal percentages, enforces the displayed field bounds and associates
+errors with their input. It also handles roundoff at the declared minimum WACC
+spread. Saved research outputs and frozen Python methods are unchanged.
+
 ## Evidence that can be checked
 
 | Check | Result | Interpretation |
