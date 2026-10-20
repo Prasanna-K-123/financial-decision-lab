@@ -1,0 +1,27 @@
+name: Independent workbook application audit
+on:
+  push:
+    branches: [audit/workbook-application-20261020]
+    paths:
+      - .github/workflows/workbook-application.yml
+      - tools/audit_workbooks_libreoffice.py
+      - reports/application_audit_plan_20261020.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recalculate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Compile the audit
+        run: /usr/bin/python3 -m py_compile tools/audit_workbooks_libreoffice.py
+      - name: Install the independent spreadsheet application
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-calc python3-uno fonts-liberation2
+      - name: Recalculate both pinned workbooks and check frozen references
+        run: /usr/bin/python3 tools/audit_workbooks_libreoffice.py

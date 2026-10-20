@@ -1,0 +1,50 @@
+{
+  "schema": "independent-workbook-application-audit-v1",
+  "scope": "Fresh independent LibreOffice Calc import, full recalculation and roundtrip; no native Microsoft Excel or visual inspection claim.",
+  "books": [
+    {
+      "key": "treasury",
+      "repo": "treasury-alm",
+      "workbook": {
+        "path": "artifacts/Treasury_ALM_Reconciliation.xlsx",
+        "blob": "6ecf6d9a748b197d1c8add765dce31e7bc9c680e"
+      },
+      "sha256": "be7fbc52a87221855447d91850037d3234f6eeaac97ca92dcef9d3b5ddc99858",
+      "refs": [
+        {
+          "path": "reports/current_case_20261019/current_case.json",
+          "blob": "557f611c942b2e0c64756dbd24a3cf23fb44fe8e"
+        },
+        {
+          "path": "reports/current_case_20261019/runoff_years.csv",
+          "blob": "19bf59cc5d20036e7cb960109854de3b1ecaed22"
+        },
+        {
+          "path": "reports/treasury_20261019/final_predictions.json",
+          "blob": "21b9760f9c440ac8abc150d2550173127ec4765b"
+        },
+        {
+          "path": "reports/treasury_20261019/final_results.json",
+          "blob": "a5daabe84f69a663641fe507eed12e580b441f0f"
+        }
+      ],
+      "commit": "119ec32111cca06d13d2a83dc1c36aba3f0f3652"
+    },
+    {
+      "key": "finance",
+      "repo": "financial-decision-lab",
+      "workbook": {
+        "path": "artifacts/Corporate_Finance_Decision_Lab.xlsx",
+        "blob": "6525bcd04ff9b9bffedaf8bd22208e2d8a4c5f9c"
+      },
+      "sha256": "81b8d409e4d4c96d2ffd5ea083ab785fcfdb0e8723630d66df7f55b035a6d019",
+      "refs": [
+        {
+          "path": "reports/valuation_scenarios.json",
+          "blob": "abb617e4dca9983bab4a044e90a2eb0089211bbd"
+        }
+      ],
+      "commit": "84d9e45602202dfc431771018cc55ea292e1428d"
+    }
+  ]
+}
