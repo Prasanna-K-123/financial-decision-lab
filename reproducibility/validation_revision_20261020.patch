@@ -1,0 +1,58 @@
+--- original_valuation.py
++++ src/finance_lab/valuation.py
+@@ -26,7 +26,8 @@
+             raise ValueError('Growth outside the stated model domain')
+         if min(self.marginal_roic,self.terminal_roic) <= 0 or max(self.marginal_roic,self.terminal_roic)>1:
+             raise ValueError('Positive ROIC no greater than100% required')
+-        if not 0<=self.tax<1 or not 0<self.wacc<=0.50 or self.wacc-self.terminal_growth<0.0001:
++        spread_roundoff = 8 * math.ulp(1.0) * max(abs(self.wacc), abs(self.terminal_growth), 0.0001)
++        if not 0<=self.tax<1 or not 0<self.wacc<=0.50 or self.wacc-self.terminal_growth<0.0001-spread_roundoff:
+             raise ValueError('Tax/WACC domain or terminal discount spread invalid')
+         if type(self.horizon) is not int or type(self.high_growth_years) is not int \
+                 or not 1<=self.high_growth_years<self.horizon<=50:
+@@ -75,6 +76,8 @@
+     cash_pv=sum(x['present_value'] for x in years)
+     value=-investment[0]+cash_pv+terminal_pv
+     flat=n[0]/a.wacc
++    if not all(math.isfinite(x) for x in [*n, *investment, cash_pv, terminal_cash, terminal_value, terminal_pv, value, flat]):
++        raise ValueError('Calculated values exceed the finite numeric domain')
+     return {'reported_ebit':float(ebit),'assumptions':asdict(a),'base_normalised_nopat':n[0],
+         'upfront_investment':investment[0],'annual_cash_pv':cash_pv,'terminal_cash_flow':terminal_cash,
+         'terminal_value_at_horizon':terminal_value,'terminal_present_value':terminal_pv,
+@@ -85,12 +88,23 @@
+ 
+ 
+ def reverse_growth(ebit, assumptions, target_value, *, lower=0.0, upper=0.25):
++    """Solve a bracketed root; certify unreachability only in monotone regimes.
++
++    Nonnegative growth and ROIC entirely on one side of WACC give monotone
++    incremental-profit layers. Mixed-return or negative-growth brackets may
++    be nonmonotone: endpoint failure then means not bracketed, not no root.
++    """
+     if not math.isfinite(target_value):
+         raise ValueError('Finite target required')
+     lo=policy_value(ebit,replace(assumptions,growth=lower))['policy_value']-target_value
+     hi=policy_value(ebit,replace(assumptions,growth=upper))['policy_value']-target_value
+-    if lo*hi>0:
+-        return {'status':'unreachable_in_declared_bracket','lower':lower,'upper':upper,
++    if not math.isfinite(lo) or not math.isfinite(hi):
++        raise ValueError('Finite bracket residuals required')
++    if (lo > 0 and hi > 0) or (lo < 0 and hi < 0):
++        monotone = 0 <= lower <= upper and (min(assumptions.marginal_roic, assumptions.terminal_roic) >= assumptions.wacc
++                                  or max(assumptions.marginal_roic, assumptions.terminal_roic) <= assumptions.wacc)
++        status = 'unreachable_in_declared_bracket' if monotone or ebit == 0 else 'not_bracketed'
++        return {'status':status,'lower':lower,'upper':upper,
+                 'lower_value':lo+target_value,'upper_value':hi+target_value,'target_value':target_value}
+     if lo==0: root=lower
+     elif hi==0: root=upper
+@@ -99,7 +113,9 @@
+         for _ in range(100):
+             root=(left+right)/2
+             mid=policy_value(ebit,replace(assumptions,growth=root))['policy_value']-target_value
+-            if lo*mid<=0:right=root
++            if not math.isfinite(mid):
++                raise ValueError('Finite root residual required')
++            if (lo <= 0 <= mid) or (mid <= 0 <= lo):right=root
+             else:left=root;lo=mid
+     result=policy_value(ebit,replace(assumptions,growth=root))
+     return {'status':'solved','growth':root,'target_value':target_value,

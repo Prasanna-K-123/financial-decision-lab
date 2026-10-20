@@ -13,4 +13,5 @@ with tempfile.TemporaryDirectory() as tmp:
  for name,h in expected.items():
   if name.endswith('_predictions.json'):continue
   assert hashlib.sha256((out/name).read_bytes()).hexdigest()==h,name;checked.append(name)
+ assert verify_method_integrity(root)==method_check,'Method identity changed during numeric reconstruction'
  print(json.dumps({'passed':True,'reconstructed_scientific_outputs':len(checked),'unchanged_prediction_seals':2,'method_integrity':method_check,'scope':'Public numeric facts/references and sealed predictions; source PDF/DOCX audit and OCR are separate raw-source reproduction.'}))

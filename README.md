@@ -43,9 +43,11 @@ accepts decimal percentages, enforces the displayed field bounds and associates
 errors with their input. It also handles roundoff at the declared minimum WACC
 spread. Saved research outputs are unchanged. The subsequent
 [Python validation correction](reports/python_validation_revision_20261020.json)
-applies the same roundoff handling to the Python API. The original method file
-and freeze are retained; integrity checks permit only this exact validation
-patch. No financial formula, saved scenario, prediction or reported score changed.
+applies the same roundoff handling to the Python API and restricts no-root
+claims to analytically monotone regimes. Other endpoint failures are labelled
+`not_bracketed`. The original method file
+and freeze are retained; integrity checks permit only the exact documented
+validation/status patches. No financial formula, saved scenario, prediction or reported score changed.
 
 ## Evidence that can be checked
 
@@ -120,3 +122,8 @@ combined/derived controls keep separate labels. IFRS/US-GAAP lease, interest,
 expense and tax conventions remain. Code tests, mathematical agreement and a
 small retrospective check do not establish universal extraction accuracy,
 commercial deployment, investment returns or regulatory compliance.
+
+The [20 October dependency revision](reports/dependency_revision_20261020.json)
+updates the PDF parser to PyMuPDF 1.26.7. All eleven finance source-reconstruction
+outputs remain identical in the patched environment. Original environment pins
+are retained alongside the dated dependency-audit scope.

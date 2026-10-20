@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-20",
+  "package": "PyMuPDF",
+  "previous_version": "1.26.6",
+  "patched_version": "1.26.7",
+  "advisory": "https://github.com/advisories/GHSA-cxqh-p2w9-fmr7",
+  "original_environment_pins_retained": true,
+  "finance_source_compatibility": {
+    "original_issuer_files_reacquired_and_hash_verified": 9,
+    "scientific_output_hashes_unchanged": 11,
+    "fresh_decoding_and_ocr_wall_seconds": 1009.7939221369998,
+    "same_python_environment_with_parser_update": true
+  },
+  "dependency_audit": {
+    "tool": "pip-audit 2.10.1",
+    "service": "PyPI vulnerability data",
+    "direct_pinned_packages": 19,
+    "resolved_packages_including_transitive_dependencies": 26,
+    "known_vulnerabilities_reported_after_patch": 0,
+    "skipped_packages": 0,
+    "checked_on": "2026-10-20"
+  },
+  "scope": "A dated known-advisory scan and compatibility check. No claim of absence of undisclosed vulnerabilities, binary-engine certification or cross-platform reconstruction."
+}

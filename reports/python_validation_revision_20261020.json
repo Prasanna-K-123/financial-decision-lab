@@ -3,17 +3,17 @@
   "type": "Explicit post-freeze input-validation correction; not a new pre-test freeze",
   "preserved_original": "reproducibility/original_valuation.py",
   "original_sha256": "bd2a2d47a196aad9d42e81703e397fb0132496bff756a20fca7b13e16a7631d8",
-  "revised_sha256": "43ce5354644f0e36a3cfe8c987db8d5bf7efa780948168056739f603e24d7964",
+  "revised_sha256": "4fb068ce802a9622f2223139190bfb047e0af5b0504881e26abcf448964eba6e",
   "before": "Python rejected some exact 0.01-percentage-point WACC spreads because floating subtraction fell below 0.0001. Reproduced at terminal growth 1%, 2% and 3%.",
   "correction": "Allow eight machine-epsilon units scaled to the rate magnitudes in the validation comparison only. Financial cash flows, discounting and solver code are unchanged.",
-  "integrity_policy": "Original extractor_freeze.json and scientific_hashes.json are retained unchanged. The verifier checks the preserved original against its original hash and requires the current file to be exactly the declared guard patch.",
+  "integrity_policy": "Original freeze retained. The preserved original must match its original SHA-256; the exact revised method and readable patch must match the explicit revision hashes. Other frozen methods and original tests remain unchanged.",
   "new_boundary_cases": {
     "exact_minimum_accepted": 1602,
     "insufficient_spread_rejected": 1602
   },
   "verification_pending": false,
   "verification": {
-    "python_unit_tests_passed": 18,
+    "python_unit_tests_passed": 22,
     "original_frozen_tests_retained": 16,
     "numeric_scientific_outputs_reconstructed_byte_identically": 9,
     "prediction_seals_unchanged": 2,
@@ -23,6 +23,14 @@
     "unchanged_original_method_or_test_files": 5,
     "javascript_numeric_comparisons": 1159,
     "javascript_spread_boundary_checks": 1602,
-    "javascript_percentage_parser_checks": 12
-  }
+    "javascript_percentage_parser_checks": 12,
+    "new_reverse_and_finite_numeric_tests_passed": 4,
+    "original_scientific_output_hashes_after_reverse_revision": 11,
+    "new_random_decimal_profit_layer_comparisons": 1000
+  },
+  "additional_counterexample": "Mixed ROIC/WACC can make policy value nonmonotone. A 30-year synthetic case has values above target at growth 0 and 0.25 but below target inside the bracket. Endpoint signs alone do not prove unreachability.",
+  "reverse_status_correction": "Preserve unreachable status only when nonnegative growth and same-side ROIC/WACC prove monotonicity (or EBIT is zero). Otherwise return not_bracketed. No exhaustive root search or unique-root claim.",
+  "revision_patch": "reproducibility/validation_revision_20261020.patch",
+  "revision_patch_sha256": "bbc071c33d3316e3e8e5e68eae4136367241012620082b82e63545851acc7753",
+  "finite_numeric_guards": "Reject overflow/nonfinite outputs and residuals. Compare residual signs directly rather than multiplying, which can underflow for tiny finite anchors."
 }
