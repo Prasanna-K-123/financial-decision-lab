@@ -35,16 +35,16 @@
       "repo": "financial-decision-lab",
       "workbook": {
         "path": "artifacts/Corporate_Finance_Decision_Lab.xlsx",
-        "blob": "6525bcd04ff9b9bffedaf8bd22208e2d8a4c5f9c"
+        "blob": "23fd0bd638396f812894aefa9c54fe455a9a3016"
       },
-      "sha256": "81b8d409e4d4c96d2ffd5ea083ab785fcfdb0e8723630d66df7f55b035a6d019",
+      "sha256": "56926847b3a6a9555cb7b4b4ddc187aeb8d207d1e6b66fafd83f05d16823ef9b",
       "refs": [
         {
           "path": "reports/valuation_scenarios.json",
           "blob": "abb617e4dca9983bab4a044e90a2eb0089211bbd"
         }
       ],
-      "commit": "84d9e45602202dfc431771018cc55ea292e1428d"
+      "commit": "CHECKOUT"
     }
   ]
 }

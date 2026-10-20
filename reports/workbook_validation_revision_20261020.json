@@ -1,0 +1,18 @@
+{
+  "status": "passed_independent_application_rerun",
+  "finding": "Valid exact-one-basis-point terminal spreads could be rejected by floating-point subtraction.",
+  "original_workbook_sha256": "81b8d409e4d4c96d2ffd5ea083ab785fcfdb0e8723630d66df7f55b035a6d019",
+  "revised_workbook_sha256": "56926847b3a6a9555cb7b4b4ddc187aeb8d207d1e6b66fafd83f05d16823ef9b",
+  "revised_workbook_git_blob": "23fd0bd638396f812894aefa9c54fe455a9a3016",
+  "sheet": "Assumptions",
+  "cell": "D12",
+  "original_guard": "INDEX($D$23:$L$23,1,$D$4)-$D$11>=0.0001",
+  "revised_guard": "INDEX($D$23:$L$23,1,$D$4)-$D$11>=0.0001-1.7763568394002505E-15*MAX(ABS(INDEX($D$23:$L$23,1,$D$4)),ABS($D$11),0.0001)",
+  "roundoff_rule": "Eight times the double-precision spacing at 1, scaled by max(|WACC|, |terminal growth|, 0.0001), matching the Python validation contract.",
+  "original_xml_member": "xl/worksheets/sheet2.xml",
+  "all_other_xlsx_members_and_cached_values_unchanged": true,
+  "published_scenario_results_changed": false,
+  "original_release_retained": "v1.0.2",
+  "verification": "reports/workbook_application_verification_20261020.json",
+  "audit_run_url": "https://github.com/Prasanna-K-123/financial-decision-lab/actions/runs/39477057046"
+}

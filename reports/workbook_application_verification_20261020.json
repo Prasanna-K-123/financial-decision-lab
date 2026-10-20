@@ -1,0 +1,474 @@
+{
+  "engine": "LibreOffice 24.2.7.2 420(Build:2)",
+  "scope": "Independent LibreOffice Calc; native Microsoft Excel and visual review not performed.",
+  "checks": 38935,
+  "books": [
+    {
+      "key": "treasury",
+      "commit": "119ec32111cca06d13d2a83dc1c36aba3f0f3652",
+      "original_sha256": "be7fbc52a87221855447d91850037d3234f6eeaac97ca92dcef9d3b5ddc99858",
+      "sheet_names": [
+        "ALM review",
+        "Controls",
+        "Benefits",
+        "Curve",
+        "Runoff",
+        "Historical",
+        "Sources"
+      ],
+      "formula_cells": 5000,
+      "cached_formula_comparisons": 5000,
+      "scenarios": {
+        "instantaneous_cases": 56,
+        "runoff_cases": 108,
+        "runoff_years": 1080,
+        "historical_repricing_cases": 12,
+        "boundary_checks": 6
+      },
+      "restored_formula_comparisons": 5000,
+      "saved_reopen_formula_comparisons": 5000,
+      "source_preserved": true
+    },
+    {
+      "key": "finance",
+      "commit": "838c844f63f114fa63eb9fd69c0037a794b0afff",
+      "original_sha256": "56926847b3a6a9555cb7b4b4ddc187aeb8d207d1e6b66fafd83f05d16823ef9b",
+      "sheet_names": [
+        "Policy review",
+        "Assumptions",
+        "Statements",
+        "Audit"
+      ],
+      "formula_cells": 297,
+      "cached_formula_comparisons": 297,
+      "scenarios": {
+        "scenario_cases": 9,
+        "ledger_rows": 90,
+        "boundary_checks": 9,
+        "exact_one_basis_point_cases": [
+          {
+            "terminal_growth": 0.0,
+            "wacc": 9.99e-05,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.0,
+            "wacc": 0.0001,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.0,
+            "wacc": 0.0001001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.005,
+            "wacc": 0.0050999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.005,
+            "wacc": 0.0051,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.005,
+            "wacc": 0.0051001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.01,
+            "wacc": 0.0100999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.01,
+            "wacc": 0.0101,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.01,
+            "wacc": 0.0101001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.015,
+            "wacc": 0.0150999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.015,
+            "wacc": 0.015099999999999999,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.015,
+            "wacc": 0.0151001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.02,
+            "wacc": 0.0200999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.02,
+            "wacc": 0.0201,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.02,
+            "wacc": 0.0201001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.025,
+            "wacc": 0.0250999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.025,
+            "wacc": 0.0251,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.025,
+            "wacc": 0.0251001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.03,
+            "wacc": 0.0300999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.03,
+            "wacc": 0.0301,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.03,
+            "wacc": 0.030100099999999998,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.035,
+            "wacc": 0.0350999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.035,
+            "wacc": 0.035100000000000006,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.035,
+            "wacc": 0.0351001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.04,
+            "wacc": 0.0400999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.04,
+            "wacc": 0.040100000000000004,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.04,
+            "wacc": 0.0401001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.045,
+            "wacc": 0.0450999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.045,
+            "wacc": 0.0451,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.045,
+            "wacc": 0.0451001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.05,
+            "wacc": 0.0500999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.05,
+            "wacc": 0.050100000000000006,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.05,
+            "wacc": 0.0501001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.055,
+            "wacc": 0.0550999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.055,
+            "wacc": 0.0551,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.055,
+            "wacc": 0.0551001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.06,
+            "wacc": 0.0600999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.06,
+            "wacc": 0.0601,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.06,
+            "wacc": 0.0601001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.065,
+            "wacc": 0.0650999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.065,
+            "wacc": 0.0651,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.065,
+            "wacc": 0.06510010000000001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.07,
+            "wacc": 0.0700999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.07,
+            "wacc": 0.07010000000000001,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.07,
+            "wacc": 0.07010010000000001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.075,
+            "wacc": 0.0750999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.075,
+            "wacc": 0.0751,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.075,
+            "wacc": 0.0751001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.08,
+            "wacc": 0.0800999,
+            "position": "below",
+            "error_code": 32767,
+            "expected_error": true
+          },
+          {
+            "terminal_growth": 0.08,
+            "wacc": 0.0801,
+            "position": "exact",
+            "error_code": 0,
+            "expected_error": false
+          },
+          {
+            "terminal_growth": 0.08,
+            "wacc": 0.08010010000000001,
+            "position": "above",
+            "error_code": 0,
+            "expected_error": false
+          }
+        ]
+      },
+      "restored_formula_comparisons": 297,
+      "saved_reopen_formula_comparisons": 297,
+      "source_preserved": true
+    }
+  ],
+  "failures": [],
+  "worst_differences": {
+    "treasury_cached": {
+      "label": "treasury/fresh_import/Benefits!P18",
+      "difference": 3.5762786865234375e-07
+    },
+    "financial": {
+      "label": "Treasury runoff/92/10/surplus_after_unpaid_usd",
+      "difference": 2.1606683731079102e-07
+    },
+    "historical_fraction": {
+      "label": "Treasury historical surplus/2019-01/key_rate",
+      "difference": 2.3002704341995583e-16
+    },
+    "historical_bps": {
+      "label": "Treasury final bias/five_year",
+      "difference": 1.7763568394002505e-15
+    },
+    "quoted_curve_bps": {
+      "label": "Treasury quoted curve/34",
+      "difference": 0.004750277617926457
+    },
+    "risk_pv": {
+      "label": "Treasury risk/pv",
+      "difference": 0.0
+    },
+    "risk_duration": {
+      "label": "Treasury risk/duration",
+      "difference": 1.7763568394002505e-15
+    },
+    "risk_convexity": {
+      "label": "Treasury risk/convexity",
+      "difference": 1.4210854715202004e-14
+    },
+    "risk_dv01_usd": {
+      "label": "Treasury risk/dv01_usd",
+      "difference": 1.4551915228366852e-11
+    },
+    "risk_post30_pv_usd": {
+      "label": "Treasury risk/post30_pv_usd",
+      "difference": 1.1641532182693481e-10
+    },
+    "finance_cached": {
+      "label": "finance/saved_reopen/Audit!D9",
+      "difference": 4.889443516731262e-09
+    },
+    "finance_scenarios": {
+      "label": "Finance summary/2/2",
+      "difference": 1.1641532182693481e-10
+    },
+    "finance_identity": {
+      "label": "Finance audit/D8",
+      "difference": 0.0
+    },
+    "statement_identity": {
+      "label": "Statement identity",
+      "difference": 0.0
+    }
+  },
+  "passed": true,
+  "audit_run_url": "https://github.com/Prasanna-K-123/financial-decision-lab/actions/runs/39477057046"
+}

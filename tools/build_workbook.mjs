@@ -75,7 +75,7 @@ drivers.forEach(([label,key,low,high],j)=>{
  put(assume,`C${8+j}`,label);put(assume,`C${19+j}`,label);
  cases.forEach((x,k)=>{const c=letter(k+3);if(key==='reported_ebit'){formula(assume,`${c}${19+j}`,`='Statements'!F${sourceRows[x.issuer]}`);assume.getRange(`${c}${19+j}`).format.font.color=green;}else put(assume,`${c}${19+j}`,x.assumptions[key]);});
  const selected=`INDEX($D$${19+j}:$L$${19+j},1,$D$4)`,filled=`COUNTBLANK(INDEX($D$${19+j}:$L$${19+j},1,$D$4))=0`;
- let checks=[filled,`ISNUMBER(${selected})`,`${selected}${[1,2,4].includes(j)?'>':'>='}${low}`];if(high!==null)checks.push(`${selected}${j===5?'<':'<='}${high}`);if(j===4)checks.push(`${selected}-$D$11>=0.0001`);
+ let checks=[filled,`ISNUMBER(${selected})`,`${selected}${[1,2,4].includes(j)?'>':'>='}${low}`];if(high!==null)checks.push(`${selected}${j===5?'<':'<='}${high}`);if(j===4)checks.push(`${selected}-$D$11>=0.0001-1.7763568394002505E-15*MAX(ABS(${selected}),ABS($D$11),0.0001)`);
  formula(assume,`D${8+j}`,`=IF(AND(ISNUMBER($D$4),$D$4=INT($D$4),$D$4>=1,$D$4<=9),IF(AND(${checks.join(',')}),${selected},NA()),NA())`);
 });
 assume.getRange('D19:L24').format={font:{color:blue},fill:'#F4F7FB'};assume.getRange('D19:L24').setNumberFormat('0.0%');assume.getRange('D8:D13').setNumberFormat('0.0%');assume.getRange('D14').setNumberFormat(money);assume.getRange('D25:L25').setNumberFormat(money);
