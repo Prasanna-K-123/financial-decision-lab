@@ -1,0 +1,41 @@
+{
+  "schema": "presentation-maintenance-v1",
+  "saved_at": "2026-10-20T19:46:32.476Z",
+  "finding": "F12 mobile chart readability",
+  "previous_audited_commit": "0810d053709bdd95e01b49527f735ee233f48f32",
+  "scope": "Presentation and matching build sources only; scientific data, valuation/forecast methods, saved outcomes and workbooks are unchanged.",
+  "changes": [
+    "Use the actual chart width so amount/year labels remain at least 12px.",
+    "Keep three fiscal-year groups readable without overlapping labels across Microsoft, Target and Infosys.",
+    "Redraw on viewport resize and keep the author name on one line.",
+    "Synchronize the exact inline script and build template, including the existing workbook-verification footer."
+  ],
+  "approved_source_git_blobs": {
+    "docs/index.html": "996c411e881e944a0b46f9df4f665f1368e9fa99",
+    "tools/explorer.js": "2b00766925d42ff1ce46b80eff6f03fb6e345425",
+    "tools/explorer_template.html": "2ff00ddfb1b50641dc405fa1e371099586b0cf52"
+  },
+  "verification": {
+    "candidate_browser_run": 39485825169,
+    "source_commit": "44c3ccbe0a59acfc8e98b44e6c4a41288daa3455",
+    "evidence_commit": "74eb642e9b5916f0f546da55ea3b24d753c2a236",
+    "report_url": "https://github.com/Prasanna-K-123/financial-decision-lab/blob/74eb642e9b5916f0f546da55ea3b24d753c2a236/audit/browser-evidence/report.json",
+    "project_renders": 6,
+    "browsers": [
+      "chromium 156.0.8078.4",
+      "firefox 157.0"
+    ],
+    "viewport_widths": [
+      320,
+      390,
+      1440
+    ],
+    "failures": [],
+    "chart_readability_views": 24,
+    "minimum_svg_label_pixels": 12,
+    "keyboard_chart_scroll": [],
+    "builder_exact_check": "passed in candidate preflight"
+  },
+  "historical_evidence": "Original construction receipts, prior releases and scientific verification records are retained. This dated presentation record identifies the revised HTML rather than rewriting earlier receipt hashes.",
+  "limits": "Candidate checks used explicitly fulfilled HTML at the deployed base URL. Live deployment and exact release/main alignment are verified separately after publication; this record does not assert global optimality or unexecuted interfaces."
+}

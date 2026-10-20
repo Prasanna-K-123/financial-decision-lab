@@ -55,9 +55,16 @@ function historical(){
  const issuer=el('company').value,rows=DATA.spread.filter(x=>x.issuer===issuer),combined=issuer==='INFY';
  const metrics=[['Revenue / total net sales',x=>x.facts.revenue],['Reported operating income',x=>x.facts.operating_income],['Operating margin',x=>percent(x.reported_operating_margin)],['Operating cash flow',x=>x.facts.cfo],[combined?'Cash PPE and intangibles':'Gross cash PPE purchases',x=>combined?x.combined_ppe_intangibles_cash_outflow:x.facts.cash_ppe],[combined?'CFO less combined PPE / intangibles':'CFO less pure cash PPE',x=>combined?x.cash_generation_after_combined_investment:x.cash_generation_cfo_minus_cash_ppe]];
  el('historical-table').innerHTML='<table><thead><tr>'+th('USD millions, except margin')+rows.map(x=>th('FY'+x.fiscal_year,true)).join('')+'</tr></thead><tbody>'+metrics.map(m=>'<tr>'+td(m[0])+rows.map(x=>td(typeof m[1](x)==='number'?money(m[1](x),1):m[1](x),true)).join('')+'</tr>').join('')+'</tbody></table>';
- const max=Math.max.apply(null,rows.map(x=>x.facts.cfo)),height=160,baseline=190;
- let svg='<svg role="img" aria-label="Operating cash flow and cash investment across three fiscal years" viewBox="0 0 900 225"><line x1="25" x2="880" y1="190" y2="190" stroke="#b0bec8"/>';
- rows.forEach((x,i)=>{const inv=combined?x.combined_ppe_intangibles_cash_outflow:x.facts.cash_ppe;[[x.facts.cfo,'#246279'],[inv,'#a86a3d']].forEach((pair,j)=>{const h=pair[0]/max*height,xp=120+i*280+j*65;svg+='<rect x="'+xp+'" y="'+(baseline-h)+'" width="47" height="'+h+'" rx="2" fill="'+pair[1]+'"/><text x="'+(xp+23.5)+'" y="'+(baseline-h-7)+'" text-anchor="middle" font-size="12" fill="#203d57">'+money(pair[0],0)+'</text>';});svg+='<text x="'+(155+i*280)+'" y="216" text-anchor="middle" font-size="14" fill="#203d57">FY'+x.fiscal_year+'</text>';});
+ const width=Math.max(220,Math.min(900,el('historical-plot').clientWidth||900)),height=150,baseline=195;
+ const investments=rows.map(x=>combined?x.combined_ppe_intangibles_cash_outflow:x.facts.cash_ppe);
+ const max=Math.max(1,...rows.map(x=>x.facts.cfo),...investments),group=(width-30)/rows.length;
+ const barWidth=Math.min(47,group*.23),gap=Math.min(18,group*.12);
+ let svg='<svg role="img" aria-label="Operating cash flow and cash investment, USD millions, across three fiscal years" viewBox="0 0 '+width+' 245"><line x1="15" x2="'+(width-15)+'" y1="'+baseline+'" y2="'+baseline+'" stroke="#b0bec8"/>';
+ rows.forEach((x,i)=>{const values=[x.facts.cfo,investments[i]],heights=values.map(v=>v/max*height),labels=heights.map(h=>baseline-h-7),center=15+(i+.5)*group;
+  if(Math.abs(labels[0]-labels[1])<18)labels[0]=Math.min(...labels)-18;
+  values.forEach((v,j)=>{const xp=center-(2*barWidth+gap)/2+j*(barWidth+gap);svg+='<rect x="'+xp+'" y="'+(baseline-heights[j])+'" width="'+barWidth+'" height="'+heights[j]+'" rx="2" fill="'+(j?'#a86a3d':'#246279')+'"/><text x="'+(xp+barWidth/2)+'" y="'+labels[j]+'" text-anchor="middle" font-size="12" fill="#203d57">'+money(v,0)+'</text>';});
+  svg+='<text x="'+center+'" y="228" text-anchor="middle" font-size="14" fill="#203d57">FY'+x.fiscal_year+'</text>';
+ });
  el('historical-plot').innerHTML=svg+'</svg>';el('investment-legend').innerHTML='<span><i style="background:#246279"></i>Operating cash flow</span><span><i style="background:#a86a3d"></i>'+(combined?'Combined PPE / intangibles cash':'Gross cash PPE')+'</span>';
  const insights={MSFT:'FY 2025 cash PPE grew 45.1%, versus 14.9% revenue growth. CFO less cash PPE fell 3.3% to USD 71,611m despite higher operating earnings.',TGT:'FY 2025 operating margin was 4.9%. CFO less cash PPE fell 36.7% to USD 2,835m, as operating cash declined and cash PPE increased.',INFY:'The FY 2025 CFO increase of USD 1,203m includes USD 751m higher pre-tax operating cash and USD 452m lower cash taxes. The tax component is 37.6% of the increase.'};
  el('historical-insight').textContent=insights[issuer];
@@ -92,6 +99,7 @@ function boot(){
  DATA=JSON.parse(el('lab-data').textContent);
  el('company').addEventListener('change',applyCase);el('scenario').addEventListener('change',applyCase);DRIVER_KEYS.forEach(k=>el(k).addEventListener('input',renderModel));el('full-precision').addEventListener('change',renderModel);
  el('report-case').innerHTML=DATA.spread.map(x=>'<option value="'+x.id+'">'+x.issuer+' FY'+x.fiscal_year+' · end '+x.period_end+'</option>').join('');el('report-case').value='MSFT_2025';el('report-case').addEventListener('change',sourceEvidence);
+ let resizeFrame=0;window.addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(historical);});
  applyCase();sourceEvidence();
 }
 if(typeof document!=='undefined')boot();
