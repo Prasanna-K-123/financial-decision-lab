@@ -5,6 +5,8 @@ on:
     paths:
       - .github/workflows/workbook-application.yml
       - tools/audit_workbooks_libreoffice.py
+      - tools/patch_workbook_boundary.py
+      - tools/publish_workbook_repair.py
       - reports/application_audit_plan_20261020.json
   workflow_dispatch:
 permissions:
@@ -18,7 +20,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Compile the audit
-        run: /usr/bin/python3 -m py_compile tools/audit_workbooks_libreoffice.py
+        run: /usr/bin/python3 -m py_compile tools/audit_workbooks_libreoffice.py tools/patch_workbook_boundary.py tools/publish_workbook_repair.py
       - name: Install the independent spreadsheet application
         run: |
           sudo apt-get update -qq

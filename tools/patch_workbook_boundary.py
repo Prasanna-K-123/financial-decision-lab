@@ -39,7 +39,10 @@ with zipfile.ZipFile(io.BytesIO(raw)) as original:
     if formula.count(OLD_GUARD) != 1:
         raise RuntimeError("Original terminal-spread guard differs.")
     revised_formula = formula.replace(OLD_GUARD, NEW_GUARD)
-    pattern = re.compile(r'(<c\b[^>]*\br="D12"[^>]*>.*?<f\b[^>]*>)(.*?)(</f>)', re.S)
+    pattern = re.compile(
+        r'(<(?:[A-Za-z_][\w.-]*:)?c\b[^>]*\br\s*=\s*[\x22\x27]D12[\x22\x27][^>]*>'
+        r'.*?<(?:[A-Za-z_][\w.-]*:)?f\b[^>]*>)(.*?)(</(?:[A-Za-z_][\w.-]*:)?f>)',
+        re.S)
     match = pattern.search(text)
     if not match:
         raise RuntimeError("Target formula XML was not found.")
