@@ -6,8 +6,7 @@
       "repo": "financial-decision-lab",
       "path": "docs/portfolio.html",
       "url": "/financial-decision-lab/portfolio.html",
-      "expected_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
-      "candidate_path": "audit/candidates/financial-decision-lab/docs/index.html"
+      "expected_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071"
     },
     {
       "id": "credit",

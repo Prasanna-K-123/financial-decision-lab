@@ -145,6 +145,7 @@ try{
      r.delivered_blob=crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");r.expected_blob=item.expected_blob;
      if(r.delivered_blob!==item.expected_blob)fail(r,"deployed_source_mismatch",{expected:item.expected_blob,delivered:r.delivered_blob});
      if(r.http_status!==200)fail(r,"page_http_status",r.http_status);
+     if(item.id==="hub"){r.hub_card_count=await p.locator("article").count();if(r.hub_card_count!==7)fail(r,"hub_content_mismatch",{cards:r.hub_card_count});}
      await p.evaluate(()=>document.fonts.ready);
      const h=await p.evaluate(()=>document.documentElement.scrollHeight);
      for(let y=0;y<h;y+=Math.max(500,viewport.height-100)){await p.evaluate(y=>window.scrollTo({top:y,behavior:"instant"}),y);await p.waitForTimeout(25);}
