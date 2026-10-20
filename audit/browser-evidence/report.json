@@ -1,8 +1,8 @@
 {
   "schema": "portfolio-browser-acceptance-v1",
-  "started_at": "2026-10-20T19:37:26.178Z",
-  "audit_commit": "e967545aacdb40a68c81943bdd13687d70d983ef",
-  "run_id": "39484952759",
+  "started_at": "2026-10-20T19:43:44.499Z",
+  "audit_commit": "44c3ccbe0a59acfc8e98b44e6c4a41288daa3455",
+  "run_id": "39485825169",
   "playwright": "1.64.1",
   "pages": [
     {
@@ -14,689 +14,204 @@
         "width": 1440,
         "height": 1000
       },
-      "controls": [
-        {
-          "id": "company",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Company\nMicrosoft\nTarget\nInfosys",
-          "options": [
-            "MSFT",
-            "TGT",
-            "INFY"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "TGT",
-              "actual": "TGT",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT",
-          "restored_text": true
-        },
-        {
-          "id": "scenario",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "reference",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Scenario\nDownside\nReference\nExpansion",
-          "options": [
-            "downside",
-            "reference",
-            "expansion"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "downside",
-              "actual": "downside",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "reference",
-          "restored_text": true
-        },
-        {
-          "id": "growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "-25",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-27.5",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "marginal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "18",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "18.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "18",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "12",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "12.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "12",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "2.5",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "8",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "2.55",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            },
-            {
-              "kind": "above_max",
-              "value": "9",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            }
-          ],
-          "restored_value": "2.5",
-          "restored_text": true
-        },
-        {
-          "id": "wacc",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "WACC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required WACC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "tax",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "25",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "99.99",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Normalised tax rate (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "25.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Normalised tax rate (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            },
-            {
-              "kind": "above_max",
-              "value": "109.98899999999999",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            }
-          ],
-          "restored_value": "25",
-          "restored_text": true
-        },
-        {
-          "id": "full-precision",
-          "tag": "INPUT",
-          "type": "checkbox",
-          "value": "on",
-          "checked": false,
-          "disabled": false,
-          "min": "",
-          "max": "",
-          "step": "",
-          "required": false,
-          "valid": true,
-          "label": "Show six decimal places in model results",
-          "options": [],
-          "checks": [
-            {
-              "kind": "checkbox_change",
-              "actual": true,
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "on",
-          "restored_text": true
-        },
-        {
-          "id": "report-case",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT_2025",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Report case\nMSFT FY2023 · end 2023-06-30\nMSFT FY2024 · end 2024-06-30\nMSFT FY2025 · end 2025-06-30\nTGT FY2023 · end 2024-02-03\nTGT FY2024 · end 2025-02-01\nTGT FY2025 · end 2026-01-31\nINFY FY2023 · end 2023-03-31\nINFY FY2024 · end 2024-03-31\nINFY FY2025 · end 2025-03-31",
-          "options": [
-            "MSFT_2023",
-            "MSFT_2024",
-            "MSFT_2025",
-            "TGT_2023",
-            "TGT_2024",
-            "TGT_2025",
-            "INFY_2023",
-            "INFY_2024",
-            "INFY_2025"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "MSFT_2023",
-              "actual": "MSFT_2023",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT_2025",
-          "restored_text": true
-        }
-      ],
+      "controls": [],
       "tabs": [],
-      "anchors": [
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html#historical",
-          "found": true
-        },
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html#policy",
-          "found": true
-        },
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html#evidence",
-          "found": true
-        }
-      ],
+      "anchors": [],
       "keyboard": [
         {
           "tag": "A",
           "id": "",
-          "text": "Prasanna K",
+          "text": "GitHub",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 178,
-            "y": 17,
-            "width": 105.484375,
-            "height": 24.796875
+            "x": 1130.1875,
+            "y": 29,
+            "width": 48.796875,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Financials",
+          "text": "LinkedIn",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 856.25,
-            "y": 18.234375,
-            "width": 70.515625,
-            "height": 22.328125
+            "x": 1196.984375,
+            "y": 29,
+            "width": 59.015625,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Policy model",
+          "text": "Read the portfolio guide",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 948.765625,
-            "y": 18.234375,
-            "width": 90.78125,
-            "height": 22.328125
+            "x": 184,
+            "y": 390.796875,
+            "width": 227.359375,
+            "height": 47.59375
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Source evidence",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 1061.546875,
-            "y": 18.234375,
-            "width": 119.25,
-            "height": 22.328125
+            "x": 212,
+            "y": 753.984375,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Portfolio",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 1202.796875,
-            "y": 18.234375,
-            "width": 59.203125,
-            "height": 22.328125
+            "x": 351.953125,
+            "y": 753.984375,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Read the decision memo",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 178,
-            "y": 375.546875,
-            "width": 232.484375,
-            "height": 49.171875
+            "x": 759,
+            "y": 729.921875,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Open the formula workbook",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 421.484375,
-            "y": 375.546875,
-            "width": 257.671875,
-            "height": 49.171875
+            "x": 898.953125,
+            "y": 729.921875,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Technical report",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 690.15625,
-            "y": 375.546875,
-            "width": 161.421875,
-            "height": 49.171875
+            "x": 212,
+            "y": 491.609375,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
-          "tag": "SELECT",
-          "id": "company",
-          "text": "Microsoft\nTarget\nInfosys",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 209,
-            "y": 758.46875,
-            "width": 355,
-            "height": 40.59375
+            "x": 351.953125,
+            "y": 491.609375,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
-          "tag": "SELECT",
-          "id": "scenario",
-          "text": "Downside\nReference\nExpansion",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 584,
-            "y": 758.46875,
-            "width": 355,
-            "height": 40.59375
+            "x": 759,
+            "y": 491.609375,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
-          "tag": "INPUT",
-          "id": "growth",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 209,
-            "y": 477.453125,
-            "width": 330.65625,
-            "height": 44.390625
+            "x": 898.953125,
+            "y": 491.609375,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
-          "tag": "INPUT",
-          "id": "marginal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 554.65625,
-            "y": 477.453125,
-            "width": 330.671875,
-            "height": 44.390625
+            "x": 212,
+            "y": 855.296875,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
-          "tag": "INPUT",
-          "id": "terminal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 900.328125,
-            "y": 477.453125,
-            "width": 330.65625,
-            "height": 44.390625
+            "x": 351.953125,
+            "y": 855.296875,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
-          "tag": "INPUT",
-          "id": "terminal_growth",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 209,
-            "y": 563.421875,
-            "width": 330.65625,
-            "height": 44.390625
+            "x": 759,
+            "y": 855.296875,
+            "width": 121.953125,
+            "height": 16
           }
         }
       ],
@@ -707,10 +222,11 @@
       "failures": [],
       "console_errors": [],
       "page_errors": [],
-      "render_target": "local candidate HTML at the deployed base URL",
+      "render_target": "live deployed page",
       "http_status": 200,
-      "delivered_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
-      "expected_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
+      "delivered_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "expected_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "hub_card_count": 7,
       "geometry": {
         "width": 1440,
         "height": 1000,
@@ -718,7 +234,7 @@
         "body_width": 1440,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       },
@@ -730,66 +246,78 @@
         "body_width": 1440,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       },
       "links": [
         {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html",
-          "text": "Prasanna K"
+          "href": "https://github.com/Prasanna-K-123",
+          "text": "GitHub"
         },
         {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html#historical",
-          "text": "Financials"
-        },
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html#policy",
-          "text": "Policy model"
-        },
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html#evidence",
-          "text": "Source evidence"
-        },
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html",
-          "text": "Portfolio"
-        },
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/exports/P7_Decision_Memo.pdf",
-          "text": "Read the decision memo"
-        },
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/exports/Corporate_Finance_Decision_Lab.xlsx",
-          "text": "Open the formula workbook"
-        },
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/exports/P7_Technical_Report.pdf",
-          "text": "Technical report"
-        },
-        {
-          "href": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/MSFT_FY25q4_10K",
-          "text": "Read the original MSFT FY2025 report"
-        },
-        {
-          "href": "https://github.com/Prasanna-K-123/financial-decision-lab",
-          "text": ""
-        },
-        {
-          "href": "https://github.com/Prasanna-K-123/financial-decision-lab/blob/main/reports/error_ledger.json",
-          "text": ""
-        },
-        {
-          "href": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html",
-          "text": "View all seven studies"
+          "href": "https://www.linkedin.com/in/prasanna-k-964716384/",
+          "text": "LinkedIn"
         },
         {
           "href": "https://prasanna-k-123.github.io/financial-decision-lab/exports/Prasanna_K_Research_Portfolio.pdf",
-          "text": "Portfolio guide"
+          "text": "Read the portfolio guide"
+        },
+        {
+          "href": "https://prasanna-k-123.github.io/credit-risk-model-validation/",
+          "text": "Evidence browser"
+        },
+        {
+          "href": "https://github.com/Prasanna-K-123/credit-risk-model-validation",
+          "text": "Code and research"
+        },
+        {
+          "href": "https://prasanna-k-123.github.io/insurance-price-reserve-risk/",
+          "text": "Evidence browser"
+        },
+        {
+          "href": "https://github.com/Prasanna-K-123/insurance-price-reserve-risk",
+          "text": "Code and research"
+        },
+        {
+          "href": "https://prasanna-k-123.github.io/causal-customer-decisions/",
+          "text": "Evidence browser"
+        },
+        {
+          "href": "https://github.com/Prasanna-K-123/causal-customer-decisions",
+          "text": "Code and research"
+        },
+        {
+          "href": "https://prasanna-k-123.github.io/treasury-alm/",
+          "text": "Evidence browser"
+        },
+        {
+          "href": "https://github.com/Prasanna-K-123/treasury-alm",
+          "text": "Code and research"
+        },
+        {
+          "href": "https://prasanna-k-123.github.io/demand-inventory/",
+          "text": "Evidence browser"
+        },
+        {
+          "href": "https://github.com/Prasanna-K-123/demand-inventory",
+          "text": "Code and research"
+        },
+        {
+          "href": "https://prasanna-k-123.github.io/inflation-vintages/",
+          "text": "Evidence browser"
+        },
+        {
+          "href": "https://github.com/Prasanna-K-123/inflation-vintages",
+          "text": "Code and research"
+        },
+        {
+          "href": "https://prasanna-k-123.github.io/financial-decision-lab/",
+          "text": "Evidence browser"
         },
         {
           "href": "https://github.com/Prasanna-K-123/financial-decision-lab",
-          "text": "Research repository"
+          "text": "Code and research"
         }
       ]
     },
@@ -5248,692 +4776,220 @@
         "width": 390,
         "height": 844
       },
-      "controls": [
-        {
-          "id": "company",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Company\nMicrosoft\nTarget\nInfosys",
-          "options": [
-            "MSFT",
-            "TGT",
-            "INFY"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "TGT",
-              "actual": "TGT",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT",
-          "restored_text": true
-        },
-        {
-          "id": "scenario",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "reference",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Scenario\nDownside\nReference\nExpansion",
-          "options": [
-            "downside",
-            "reference",
-            "expansion"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "downside",
-              "actual": "downside",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "reference",
-          "restored_text": true
-        },
-        {
-          "id": "growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "-25",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-27.5",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "marginal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "18",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "18.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "18",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "12",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "12.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "12",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "2.5",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "8",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "2.55",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            },
-            {
-              "kind": "above_max",
-              "value": "9",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            }
-          ],
-          "restored_value": "2.5",
-          "restored_text": true
-        },
-        {
-          "id": "wacc",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "WACC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required WACC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "tax",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "25",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "99.99",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Normalised tax rate (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "25.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Normalised tax rate (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            },
-            {
-              "kind": "above_max",
-              "value": "109.98899999999999",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            }
-          ],
-          "restored_value": "25",
-          "restored_text": true
-        },
-        {
-          "id": "full-precision",
-          "tag": "INPUT",
-          "type": "checkbox",
-          "value": "on",
-          "checked": false,
-          "disabled": false,
-          "min": "",
-          "max": "",
-          "step": "",
-          "required": false,
-          "valid": true,
-          "label": "Show six decimal places in model results",
-          "options": [],
-          "checks": [
-            {
-              "kind": "checkbox_change",
-              "actual": true,
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "on",
-          "restored_text": true
-        },
-        {
-          "id": "report-case",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT_2025",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Report case\nMSFT FY2023 · end 2023-06-30\nMSFT FY2024 · end 2024-06-30\nMSFT FY2025 · end 2025-06-30\nTGT FY2023 · end 2024-02-03\nTGT FY2024 · end 2025-02-01\nTGT FY2025 · end 2026-01-31\nINFY FY2023 · end 2023-03-31\nINFY FY2024 · end 2024-03-31\nINFY FY2025 · end 2025-03-31",
-          "options": [
-            "MSFT_2023",
-            "MSFT_2024",
-            "MSFT_2025",
-            "TGT_2023",
-            "TGT_2024",
-            "TGT_2025",
-            "INFY_2023",
-            "INFY_2024",
-            "INFY_2025"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "MSFT_2023",
-              "actual": "MSFT_2023",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT_2025",
-          "restored_text": true
-        }
-      ],
+      "controls": [],
       "tabs": [],
       "anchors": [],
       "keyboard": [
         {
           "tag": "A",
           "id": "",
-          "text": "Prasanna K",
+          "text": "GitHub",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 0,
-            "width": 105.484375,
-            "height": 24.796875
+            "x": 246.1875,
+            "y": 23,
+            "width": 48.796875,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Financials",
+          "text": "LinkedIn",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 224.234375,
-            "y": 0,
-            "width": 61.109375,
-            "height": 19.34375
+            "x": 312.984375,
+            "y": 23,
+            "width": 59.015625,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Policy model",
+          "text": "Read the portfolio guide",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 295.34375,
-            "y": 0,
-            "width": 78.65625,
-            "height": 19.34375
+            "x": 18,
+            "y": 408.953125,
+            "width": 227.359375,
+            "height": 47.59375
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Source evidence",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 209.375,
-            "y": 29.34375,
-            "width": 103.328125,
-            "height": 19.34375
+            "x": 40,
+            "y": 414.265625,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Portfolio",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 322.703125,
-            "y": 29.34375,
-            "width": 51.296875,
-            "height": 19.34375
+            "x": 179.953125,
+            "y": 414.265625,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Read the decision memo",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 338.96875,
-            "width": 232.484375,
-            "height": 49.171875
+            "x": 40,
+            "y": 827.734375,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Open the formula workbook",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 399.140625,
-            "width": 257.671875,
-            "height": 49.171875
+            "x": 179.953125,
+            "y": 827.734375,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Technical report",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 459.3125,
-            "width": 161.421875,
-            "height": 49.171875
+            "x": 40,
+            "y": 414.265625,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
-          "tag": "SELECT",
-          "id": "company",
-          "text": "Microsoft\nTarget\nInfosys",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 401.453125,
-            "width": 322,
-            "height": 40.59375
+            "x": 179.953125,
+            "y": 414.265625,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
-          "tag": "SELECT",
-          "id": "scenario",
-          "text": "Downside\nReference\nExpansion",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 488.625,
-            "width": 322,
-            "height": 40.59375
+            "x": 40,
+            "y": 814.078125,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
-          "tag": "DIV",
-          "id": "historical-table",
-          "text": "USD millions, except margin\tFY2023\tFY2024\tFY2025\nRevenue / total net sales\t211,9",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 284.21875,
-            "width": 322,
-            "height": 560.5625
+            "x": 179.953125,
+            "y": 814.078125,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
-          "tag": "INPUT",
-          "id": "growth",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 399.453125,
-            "width": 153.5,
-            "height": 44.390625
+            "x": 40,
+            "y": 413.609375,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
-          "tag": "INPUT",
-          "id": "marginal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 202.5,
-            "y": 399.453125,
-            "width": 153.5,
-            "height": 44.390625
+            "x": 179.953125,
+            "y": 413.609375,
+            "width": 129.296875,
+            "height": 16
           }
         },
         {
-          "tag": "INPUT",
-          "id": "terminal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 506,
-            "width": 153.5,
-            "height": 44.390625
+            "x": 40,
+            "y": 828.140625,
+            "width": 121.953125,
+            "height": 16
           }
         }
       ],
       "screenshots": [
         "hub-chromium-390-top.png",
-        "hub-chromium-390-full.png",
-        "hub-chromium-390-chart.png"
+        "hub-chromium-390-full.png"
       ],
       "warnings": [],
       "failures": [],
       "console_errors": [],
       "page_errors": [],
-      "render_target": "local candidate HTML at the deployed base URL",
+      "render_target": "live deployed page",
       "http_status": 200,
-      "delivered_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
-      "expected_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
+      "delivered_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "expected_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "hub_card_count": 7,
       "geometry": {
         "width": 390,
         "height": 844,
@@ -5941,7 +4997,7 @@
         "body_width": 390,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       },
@@ -5953,7 +5009,7 @@
         "body_width": 390,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       }
@@ -9512,676 +8568,204 @@
         "width": 320,
         "height": 800
       },
-      "controls": [
-        {
-          "id": "company",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Company\nMicrosoft\nTarget\nInfosys",
-          "options": [
-            "MSFT",
-            "TGT",
-            "INFY"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "TGT",
-              "actual": "TGT",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT",
-          "restored_text": true
-        },
-        {
-          "id": "scenario",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "reference",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Scenario\nDownside\nReference\nExpansion",
-          "options": [
-            "downside",
-            "reference",
-            "expansion"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "downside",
-              "actual": "downside",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "reference",
-          "restored_text": true
-        },
-        {
-          "id": "growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "-25",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-27.5",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "marginal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "18",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "18.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "18",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "12",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "12.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "12",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "2.5",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "8",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "2.55",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            },
-            {
-              "kind": "above_max",
-              "value": "9",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            }
-          ],
-          "restored_value": "2.5",
-          "restored_text": true
-        },
-        {
-          "id": "wacc",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "WACC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required WACC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "tax",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "25",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "99.99",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Normalised tax rate (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "25.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Normalised tax rate (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            },
-            {
-              "kind": "above_max",
-              "value": "109.98899999999999",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            }
-          ],
-          "restored_value": "25",
-          "restored_text": true
-        },
-        {
-          "id": "full-precision",
-          "tag": "INPUT",
-          "type": "checkbox",
-          "value": "on",
-          "checked": false,
-          "disabled": false,
-          "min": "",
-          "max": "",
-          "step": "",
-          "required": false,
-          "valid": true,
-          "label": "Show six decimal places in model results",
-          "options": [],
-          "checks": [
-            {
-              "kind": "checkbox_change",
-              "actual": true,
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "on",
-          "restored_text": true
-        },
-        {
-          "id": "report-case",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT_2025",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Report case\nMSFT FY2023 · end 2023-06-30\nMSFT FY2024 · end 2024-06-30\nMSFT FY2025 · end 2025-06-30\nTGT FY2023 · end 2024-02-03\nTGT FY2024 · end 2025-02-01\nTGT FY2025 · end 2026-01-31\nINFY FY2023 · end 2023-03-31\nINFY FY2024 · end 2024-03-31\nINFY FY2025 · end 2025-03-31",
-          "options": [
-            "MSFT_2023",
-            "MSFT_2024",
-            "MSFT_2025",
-            "TGT_2023",
-            "TGT_2024",
-            "TGT_2025",
-            "INFY_2023",
-            "INFY_2024",
-            "INFY_2025"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "MSFT_2023",
-              "actual": "MSFT_2023",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT_2025",
-          "restored_text": true
-        }
-      ],
+      "controls": [],
       "tabs": [],
       "anchors": [],
       "keyboard": [
         {
           "tag": "A",
           "id": "",
-          "text": "Prasanna K",
+          "text": "GitHub",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 0,
-            "width": 105.484375,
-            "height": 24.796875
+            "x": 176.1875,
+            "y": 23,
+            "width": 48.796875,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Financials",
+          "text": "LinkedIn",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 154.234375,
-            "y": 0,
-            "width": 61.109375,
-            "height": 19.34375
+            "x": 242.984375,
+            "y": 23,
+            "width": 59.015625,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Policy model",
+          "text": "Read the portfolio guide",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 225.34375,
-            "y": 0,
-            "width": 78.65625,
-            "height": 19.34375
+            "x": 18,
+            "y": 495.96875,
+            "width": 227.359375,
+            "height": 47.59375
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Source evidence",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 200.671875,
-            "y": 29.34375,
-            "width": 103.328125,
-            "height": 19.34375
+            "x": 40,
+            "y": 392.1875,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Portfolio",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 252.703125,
-            "y": 58.6875,
-            "width": 51.296875,
-            "height": 19.34375
+            "x": 40,
+            "y": 392.1875,
+            "width": 205.40625,
+            "height": 40.0625
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Read the decision memo",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 393.109375,
-            "width": 232.484375,
-            "height": 49.171875
+            "x": 40,
+            "y": 391.84375,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Open the formula workbook",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 453.28125,
-            "width": 257.671875,
-            "height": 49.171875
+            "x": 40,
+            "y": 391.84375,
+            "width": 205.40625,
+            "height": 40.0625
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Technical report",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 513.453125,
-            "width": 161.421875,
-            "height": 49.171875
+            "x": 40,
+            "y": 391.5,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
-          "tag": "SELECT",
-          "id": "company",
-          "text": "Microsoft\nTarget\nInfosys",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 379.734375,
-            "width": 252,
-            "height": 40.59375
+            "x": 40,
+            "y": 391.5,
+            "width": 205.40625,
+            "height": 40.0625
           }
         },
         {
-          "tag": "SELECT",
-          "id": "scenario",
-          "text": "Downside\nReference\nExpansion",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 466.90625,
-            "width": 252,
-            "height": 40.59375
+            "x": 40,
+            "y": 391.5,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
-          "tag": "DIV",
-          "id": "historical-table",
-          "text": "USD millions, except margin\tFY2023\tFY2024\tFY2025\nRevenue / total net sales\t211,9",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 240.5,
-            "width": 252,
-            "height": 560.5625
+            "x": 40,
+            "y": 391.5,
+            "width": 205.40625,
+            "height": 40.0625
           }
         },
         {
-          "tag": "INPUT",
-          "id": "growth",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 377.734375,
-            "width": 118.5,
-            "height": 44.390625
+            "x": 40,
+            "y": 392.28125,
+            "width": 121.953125,
+            "height": 16
           }
         },
         {
-          "tag": "INPUT",
-          "id": "marginal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 167.5,
-            "y": 377.734375,
-            "width": 118.5,
-            "height": 44.390625
+            "x": 40,
+            "y": 392.28125,
+            "width": 205.40625,
+            "height": 40.0625
           }
         },
         {
-          "tag": "INPUT",
-          "id": "terminal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 504.859375,
-            "width": 118.5,
-            "height": 44.390625
+            "x": 40,
+            "y": 392,
+            "width": 121.953125,
+            "height": 16
           }
         }
       ],
@@ -10190,10 +8774,11 @@
       "failures": [],
       "console_errors": [],
       "page_errors": [],
-      "render_target": "local candidate HTML at the deployed base URL",
+      "render_target": "live deployed page",
       "http_status": 200,
-      "delivered_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
-      "expected_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
+      "delivered_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "expected_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "hub_card_count": 7,
       "geometry": {
         "width": 320,
         "height": 800,
@@ -10201,7 +8786,7 @@
         "body_width": 320,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       },
@@ -10213,7 +8798,7 @@
         "body_width": 320,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       }
@@ -13752,676 +12337,204 @@
         "width": 1440,
         "height": 1000
       },
-      "controls": [
-        {
-          "id": "company",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Company",
-          "options": [
-            "MSFT",
-            "TGT",
-            "INFY"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "TGT",
-              "actual": "TGT",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT",
-          "restored_text": true
-        },
-        {
-          "id": "scenario",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "reference",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Scenario",
-          "options": [
-            "downside",
-            "reference",
-            "expansion"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "downside",
-              "actual": "downside",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "reference",
-          "restored_text": true
-        },
-        {
-          "id": "growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "-25",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-27.5",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "marginal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "18",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "18.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "18",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "12",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "12.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "12",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "2.5",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "8",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "2.55",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            },
-            {
-              "kind": "above_max",
-              "value": "9",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            }
-          ],
-          "restored_value": "2.5",
-          "restored_text": true
-        },
-        {
-          "id": "wacc",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "WACC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required WACC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "tax",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "25",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "99.99",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Normalised tax rate (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "25.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Normalised tax rate (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            },
-            {
-              "kind": "above_max",
-              "value": "109.98899999999999",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            }
-          ],
-          "restored_value": "25",
-          "restored_text": true
-        },
-        {
-          "id": "full-precision",
-          "tag": "INPUT",
-          "type": "checkbox",
-          "value": "on",
-          "checked": false,
-          "disabled": false,
-          "min": "",
-          "max": "",
-          "step": "",
-          "required": false,
-          "valid": true,
-          "label": "Show six decimal places in model results",
-          "options": [],
-          "checks": [
-            {
-              "kind": "checkbox_change",
-              "actual": true,
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "on",
-          "restored_text": true
-        },
-        {
-          "id": "report-case",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT_2025",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Report case",
-          "options": [
-            "MSFT_2023",
-            "MSFT_2024",
-            "MSFT_2025",
-            "TGT_2023",
-            "TGT_2024",
-            "TGT_2025",
-            "INFY_2023",
-            "INFY_2024",
-            "INFY_2025"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "MSFT_2023",
-              "actual": "MSFT_2023",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT_2025",
-          "restored_text": true
-        }
-      ],
+      "controls": [],
       "tabs": [],
       "anchors": [],
       "keyboard": [
         {
           "tag": "A",
           "id": "",
-          "text": "Prasanna K",
+          "text": "GitHub",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 178,
-            "y": 17,
-            "width": 105.43333435058594,
-            "height": 24.800003051757812
+            "x": 1130.2166748046875,
+            "y": 28.300003051757812,
+            "width": 48.78334045410156,
+            "height": 18
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Financials",
+          "text": "LinkedIn",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 855.88330078125,
-            "y": 18.23333740234375,
-            "width": 70.58332824707031,
-            "height": 22.333328247070312
+            "x": 1197,
+            "y": 28.300003051757812,
+            "width": 59,
+            "height": 18
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Policy model",
+          "text": "Read the portfolio guide",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 948.4666748046875,
-            "y": 18.23333740234375,
-            "width": 90.88334655761719,
-            "height": 22.333328247070312
+            "x": 184,
+            "y": 390.91668701171875,
+            "width": 227.31666564941406,
+            "height": 47.59999084472656
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Source evidence",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 1061.3499755859375,
-            "y": 18.23333740234375,
-            "width": 119.39999389648438,
-            "height": 22.333328247070312
+            "x": 212,
+            "y": 754.3333129882812,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Portfolio",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 1202.75,
-            "y": 18.23333740234375,
-            "width": 59.25,
-            "height": 22.333328247070312
+            "x": 352.066650390625,
+            "y": 754.3333129882812,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Read the decision memo",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 178,
-            "y": 375.51666259765625,
-            "width": 232.4499969482422,
-            "height": 49.19999694824219
+            "x": 759,
+            "y": 760.25,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Open the formula workbook",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 421.45001220703125,
-            "y": 375.51666259765625,
-            "width": 257.6166687011719,
-            "height": 49.19999694824219
+            "x": 899.066650390625,
+            "y": 760.25,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Technical report",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 690.066650390625,
-            "y": 375.51666259765625,
-            "width": 161.4166717529297,
-            "height": 49.19999694824219
+            "x": 212,
+            "y": 493.08331298828125,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
-          "tag": "SELECT",
-          "id": "company",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 209,
-            "y": 758.4666748046875,
-            "width": 355,
-            "height": 38.600006103515625
+            "x": 352.066650390625,
+            "y": 493.08331298828125,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
-          "tag": "SELECT",
-          "id": "scenario",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 584,
-            "y": 758.4666748046875,
-            "width": 355,
-            "height": 38.600006103515625
+            "x": 759,
+            "y": 493.08331298828125,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
-          "tag": "INPUT",
-          "id": "growth",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 209,
-            "y": 477.5333251953125,
-            "width": 330.66668701171875,
-            "height": 44.399993896484375
+            "x": 899.066650390625,
+            "y": 493.08331298828125,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
-          "tag": "INPUT",
-          "id": "marginal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 554.6666870117188,
-            "y": 477.5333251953125,
-            "width": 330.6666564941406,
-            "height": 44.399993896484375
+            "x": 212,
+            "y": 857,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
-          "tag": "INPUT",
-          "id": "terminal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 900.3333129882812,
-            "y": 477.5333251953125,
-            "width": 330.66668701171875,
-            "height": 44.399993896484375
+            "x": 352.066650390625,
+            "y": 857,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
-          "tag": "INPUT",
-          "id": "terminal_growth",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 209,
-            "y": 563.5166625976562,
-            "width": 330.66668701171875,
-            "height": 44.40000915527344
+            "x": 759,
+            "y": 857,
+            "width": 122.06666564941406,
+            "height": 17
           }
         }
       ],
@@ -14430,10 +12543,11 @@
       "failures": [],
       "console_errors": [],
       "page_errors": [],
-      "render_target": "local candidate HTML at the deployed base URL",
+      "render_target": "live deployed page",
       "http_status": 200,
-      "delivered_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
-      "expected_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
+      "delivered_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "expected_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "hub_card_count": 7,
       "geometry": {
         "width": 1440,
         "height": 1000,
@@ -14441,7 +12555,7 @@
         "body_width": 1440,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       },
@@ -14453,7 +12567,7 @@
         "body_width": 1440,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       }
@@ -18666,676 +16780,204 @@
         "width": 390,
         "height": 844
       },
-      "controls": [
-        {
-          "id": "company",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Company",
-          "options": [
-            "MSFT",
-            "TGT",
-            "INFY"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "TGT",
-              "actual": "TGT",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT",
-          "restored_text": true
-        },
-        {
-          "id": "scenario",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "reference",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Scenario",
-          "options": [
-            "downside",
-            "reference",
-            "expansion"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "downside",
-              "actual": "downside",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "reference",
-          "restored_text": true
-        },
-        {
-          "id": "growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "-25",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-27.5",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "marginal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "18",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "18.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "18",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "12",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "12.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "12",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "2.5",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "8",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "2.55",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            },
-            {
-              "kind": "above_max",
-              "value": "9",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            }
-          ],
-          "restored_value": "2.5",
-          "restored_text": true
-        },
-        {
-          "id": "wacc",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "WACC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required WACC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "tax",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "25",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "99.99",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Normalised tax rate (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "25.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Normalised tax rate (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            },
-            {
-              "kind": "above_max",
-              "value": "109.98899999999999",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            }
-          ],
-          "restored_value": "25",
-          "restored_text": true
-        },
-        {
-          "id": "full-precision",
-          "tag": "INPUT",
-          "type": "checkbox",
-          "value": "on",
-          "checked": false,
-          "disabled": false,
-          "min": "",
-          "max": "",
-          "step": "",
-          "required": false,
-          "valid": true,
-          "label": "Show six decimal places in model results",
-          "options": [],
-          "checks": [
-            {
-              "kind": "checkbox_change",
-              "actual": true,
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "on",
-          "restored_text": true
-        },
-        {
-          "id": "report-case",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT_2025",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Report case",
-          "options": [
-            "MSFT_2023",
-            "MSFT_2024",
-            "MSFT_2025",
-            "TGT_2023",
-            "TGT_2024",
-            "TGT_2025",
-            "INFY_2023",
-            "INFY_2024",
-            "INFY_2025"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "MSFT_2023",
-              "actual": "MSFT_2023",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT_2025",
-          "restored_text": true
-        }
-      ],
+      "controls": [],
       "tabs": [],
       "anchors": [],
       "keyboard": [
         {
           "tag": "A",
           "id": "",
-          "text": "Prasanna K",
+          "text": "GitHub",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 0,
-            "width": 105.43333435058594,
-            "height": 24.800003051757812
+            "x": 246.21665954589844,
+            "y": 22.300003051757812,
+            "width": 48.78334045410156,
+            "height": 18
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Financials",
+          "text": "LinkedIn",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 224.10000610351562,
-            "y": 0,
-            "width": 61.166656494140625,
-            "height": 19.350006103515625
+            "x": 313,
+            "y": 22.300003051757812,
+            "width": 59,
+            "height": 18
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Policy model",
+          "text": "Read the portfolio guide",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 295.26666259765625,
-            "y": 0,
-            "width": 78.73333740234375,
-            "height": 19.350006103515625
+            "x": 18,
+            "y": 451.20001220703125,
+            "width": 227.31666564941406,
+            "height": 47.600006103515625
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Source evidence",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 209.1999969482422,
-            "y": 29.350006103515625,
-            "width": 103.44999694824219,
-            "height": 19.349990844726562
+            "x": 40,
+            "y": 415.7833251953125,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Portfolio",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 322.6499938964844,
-            "y": 29.350006103515625,
-            "width": 51.350006103515625,
-            "height": 19.349990844726562
+            "x": 180.06666564941406,
+            "y": 415.7833251953125,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Read the decision memo",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 339.01666259765625,
-            "width": 232.4499969482422,
-            "height": 49.19999694824219
+            "x": 40,
+            "y": 415.51666259765625,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Open the formula workbook",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 399.2166748046875,
-            "width": 257.6166687011719,
-            "height": 49.20001220703125
+            "x": 180.06666564941406,
+            "y": 415.51666259765625,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Technical report",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 459.41668701171875,
-            "width": 161.4166717529297,
-            "height": 49.19999694824219
+            "x": 40,
+            "y": 415.33331298828125,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
-          "tag": "SELECT",
-          "id": "company",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 402.58331298828125,
-            "width": 322,
-            "height": 38.600006103515625
+            "x": 180.06666564941406,
+            "y": 415.33331298828125,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
-          "tag": "SELECT",
-          "id": "scenario",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 487.76666259765625,
-            "width": 322,
-            "height": 38.600006103515625
+            "x": 40,
+            "y": 415.41668701171875,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
-          "tag": "DIV",
-          "id": "historical-table",
-          "text": "USD millions, except margin\tFY2023\tFY2024\tFY2025\nRevenue / total net sales\t211,9",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 548.36669921875,
-            "width": 322,
-            "height": 560.6666870117188
+            "x": 180.06666564941406,
+            "y": 415.41668701171875,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
-          "tag": "INPUT",
-          "id": "growth",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 400.26666259765625,
-            "width": 153.5,
-            "height": 44.40000915527344
+            "x": 40,
+            "y": 415.23333740234375,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
-          "tag": "INPUT",
-          "id": "marginal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 202.5,
-            "y": 400.26666259765625,
-            "width": 153.5,
-            "height": 44.40000915527344
+            "x": 180.06666564941406,
+            "y": 415.23333740234375,
+            "width": 129.39999389648438,
+            "height": 17
           }
         },
         {
-          "tag": "INPUT",
-          "id": "terminal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 506.83331298828125,
-            "width": 153.5,
-            "height": 44.40000915527344
+            "x": 40,
+            "y": 415.04998779296875,
+            "width": 122.06666564941406,
+            "height": 17
           }
         }
       ],
@@ -19344,10 +16986,11 @@
       "failures": [],
       "console_errors": [],
       "page_errors": [],
-      "render_target": "local candidate HTML at the deployed base URL",
+      "render_target": "live deployed page",
       "http_status": 200,
-      "delivered_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
-      "expected_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
+      "delivered_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "expected_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "hub_card_count": 7,
       "geometry": {
         "width": 390,
         "height": 844,
@@ -19355,7 +16998,7 @@
         "body_width": 390,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       },
@@ -19367,7 +17010,7 @@
         "body_width": 390,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       }
@@ -22906,676 +20549,204 @@
         "width": 320,
         "height": 800
       },
-      "controls": [
-        {
-          "id": "company",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Company",
-          "options": [
-            "MSFT",
-            "TGT",
-            "INFY"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "TGT",
-              "actual": "TGT",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT",
-          "restored_text": true
-        },
-        {
-          "id": "scenario",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "reference",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Scenario",
-          "options": [
-            "downside",
-            "reference",
-            "expansion"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "downside",
-              "actual": "downside",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "reference",
-          "restored_text": true
-        },
-        {
-          "id": "growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "-25",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-27.5",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial profit growth (%) must be between -25 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "marginal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "18",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Initial marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "18.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Initial marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Initial marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "18",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_roic",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "12",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "100",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal marginal ROIC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "12.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal marginal ROIC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            },
-            {
-              "kind": "above_max",
-              "value": "110",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal marginal ROIC (%) must be between 0.01 and 100."
-            }
-          ],
-          "restored_value": "12",
-          "restored_text": true
-        },
-        {
-          "id": "terminal_growth",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "2.5",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "8",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Terminal profit growth (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "2.55",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Terminal profit growth (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            },
-            {
-              "kind": "above_max",
-              "value": "9",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Terminal profit growth (%) must be between 0 and 8."
-            }
-          ],
-          "restored_value": "2.5",
-          "restored_text": true
-        },
-        {
-          "id": "wacc",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "10",
-          "checked": false,
-          "disabled": false,
-          "min": "0.01",
-          "max": "50",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "WACC (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "10.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required WACC (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-0.99",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            },
-            {
-              "kind": "above_max",
-              "value": "55",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "WACC (%) must be between 0.01 and 50."
-            }
-          ],
-          "restored_value": "10",
-          "restored_text": true
-        },
-        {
-          "id": "tax",
-          "tag": "INPUT",
-          "type": "number",
-          "value": "25",
-          "checked": false,
-          "disabled": false,
-          "min": "0",
-          "max": "99.99",
-          "step": "any",
-          "required": true,
-          "valid": true,
-          "label": "Normalised tax rate (%)",
-          "options": [],
-          "checks": [
-            {
-              "kind": "valid_number_change",
-              "actual": "25.05",
-              "valid": true,
-              "render_text_changed": true
-            },
-            {
-              "kind": "missing",
-              "value": "",
-              "valid": false,
-              "missing": true,
-              "underflow": false,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Enter the required Normalised tax rate (%)."
-            },
-            {
-              "kind": "below_min",
-              "value": "-1",
-              "valid": false,
-              "missing": false,
-              "underflow": true,
-              "overflow": false,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            },
-            {
-              "kind": "above_max",
-              "value": "109.98899999999999",
-              "valid": false,
-              "missing": false,
-              "underflow": false,
-              "overflow": true,
-              "aria_invalid": "true",
-              "describedby": "model-error",
-              "error_visible": true,
-              "error_text": "Normalised tax rate (%) must be between 0 and 99.99."
-            }
-          ],
-          "restored_value": "25",
-          "restored_text": true
-        },
-        {
-          "id": "full-precision",
-          "tag": "INPUT",
-          "type": "checkbox",
-          "value": "on",
-          "checked": false,
-          "disabled": false,
-          "min": "",
-          "max": "",
-          "step": "",
-          "required": false,
-          "valid": true,
-          "label": "Show six decimal places in model results",
-          "options": [],
-          "checks": [
-            {
-              "kind": "checkbox_change",
-              "actual": true,
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "on",
-          "restored_text": true
-        },
-        {
-          "id": "report-case",
-          "tag": "SELECT",
-          "type": "select-one",
-          "value": "MSFT_2025",
-          "disabled": false,
-          "required": false,
-          "valid": true,
-          "label": "Report case",
-          "options": [
-            "MSFT_2023",
-            "MSFT_2024",
-            "MSFT_2025",
-            "TGT_2023",
-            "TGT_2024",
-            "TGT_2025",
-            "INFY_2023",
-            "INFY_2024",
-            "INFY_2025"
-          ],
-          "checks": [
-            {
-              "kind": "select_change",
-              "chosen": "MSFT_2023",
-              "actual": "MSFT_2023",
-              "render_text_changed": true
-            }
-          ],
-          "restored_value": "MSFT_2025",
-          "restored_text": true
-        }
-      ],
+      "controls": [],
       "tabs": [],
       "anchors": [],
       "keyboard": [
         {
           "tag": "A",
           "id": "",
-          "text": "Prasanna K",
+          "text": "GitHub",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 0,
-            "width": 105.43333435058594,
-            "height": 24.800003051757812
+            "x": 176.21665954589844,
+            "y": 22.300003051757812,
+            "width": 48.78334045410156,
+            "height": 18
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Financials",
+          "text": "LinkedIn",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 154.10000610351562,
-            "y": 0,
-            "width": 61.166656494140625,
-            "height": 19.350006103515625
+            "x": 243,
+            "y": 22.300003051757812,
+            "width": 59,
+            "height": 18
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Policy model",
+          "text": "Read the portfolio guide",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 225.26666259765625,
-            "y": 0,
-            "width": 78.73333740234375,
-            "height": 19.350006103515625
+            "x": 18,
+            "y": 538.2166748046875,
+            "width": 227.31666564941406,
+            "height": 47.600006103515625
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Source evidence",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 200.5500030517578,
-            "y": 29.350006103515625,
-            "width": 103.44999694824219,
-            "height": 19.349990844726562
+            "x": 40,
+            "y": 393.7833251953125,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Portfolio",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 252.64999389648438,
-            "y": 58.69999694824219,
-            "width": 51.350006103515625,
-            "height": 19.350006103515625
+            "x": 40,
+            "y": 393.7833251953125,
+            "width": 205.56666564941406,
+            "height": 41.08332824707031
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Read the decision memo",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 432.04998779296875,
-            "width": 232.4499969482422,
-            "height": 49.19999694824219
+            "x": 40,
+            "y": 393.76666259765625,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Open the formula workbook",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 492.25,
-            "width": 257.6166687011719,
-            "height": 49.19999694824219
+            "x": 40,
+            "y": 393.76666259765625,
+            "width": 205.56666564941406,
+            "height": 41.083343505859375
           }
         },
         {
           "tag": "A",
           "id": "",
-          "text": "Technical report",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 16,
-            "y": 552.4500122070312,
-            "width": 161.4166717529297,
-            "height": 49.19999694824219
+            "x": 40,
+            "y": 393.75,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
-          "tag": "SELECT",
-          "id": "company",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 380.25,
-            "width": 252,
-            "height": 38.600006103515625
+            "x": 40,
+            "y": 393.75,
+            "width": 205.56666564941406,
+            "height": 41.08332824707031
           }
         },
         {
-          "tag": "SELECT",
-          "id": "scenario",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 465.433349609375,
-            "width": 252,
-            "height": 38.600006103515625
+            "x": 40,
+            "y": 393.08331298828125,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
-          "tag": "DIV",
-          "id": "historical-table",
-          "text": "USD millions, except margin\tFY2023\tFY2024\tFY2025\nRevenue / total net sales\t211,9",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 526.0333251953125,
-            "width": 252,
-            "height": 560.6666259765625
+            "x": 40,
+            "y": 393.08331298828125,
+            "width": 205.56666564941406,
+            "height": 41.083343505859375
           }
         },
         {
-          "tag": "INPUT",
-          "id": "growth",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 378.04998779296875,
-            "width": 118.5,
-            "height": 44.399993896484375
+            "x": 40,
+            "y": 393.23333740234375,
+            "width": 122.06666564941406,
+            "height": 17
           }
         },
         {
-          "tag": "INPUT",
-          "id": "marginal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Code and research",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 167.5,
-            "y": 378.04998779296875,
-            "width": 118.5,
-            "height": 44.399993896484375
+            "x": 40,
+            "y": 393.23333740234375,
+            "width": 205.56666564941406,
+            "height": 41.08332824707031
           }
         },
         {
-          "tag": "INPUT",
-          "id": "terminal_roic",
-          "text": "",
+          "tag": "A",
+          "id": "",
+          "text": "Evidence browser",
           "focus_visible": true,
           "outline_style": "solid",
           "outline_width": "3px",
           "rect": {
-            "x": 34,
-            "y": 505.20001220703125,
-            "width": 118.5,
-            "height": 44.40000915527344
+            "x": 40,
+            "y": 393.29998779296875,
+            "width": 122.06666564941406,
+            "height": 17
           }
         }
       ],
@@ -23584,10 +20755,11 @@
       "failures": [],
       "console_errors": [],
       "page_errors": [],
-      "render_target": "local candidate HTML at the deployed base URL",
+      "render_target": "live deployed page",
       "http_status": 200,
-      "delivered_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
-      "expected_blob": "996c411e881e944a0b46f9df4f665f1368e9fa99",
+      "delivered_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "expected_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071",
+      "hub_card_count": 7,
       "geometry": {
         "width": 320,
         "height": 800,
@@ -23595,7 +20767,7 @@
         "body_width": 320,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       },
@@ -23607,7 +20779,7 @@
         "body_width": 320,
         "device_pixel_ratio": 1,
         "h1": [
-          "Corporate Finance\nDecision Lab"
+          "Risk, finance and applied economic research."
         ],
         "overflow_candidates": []
       }
@@ -27140,42 +24312,6 @@
   ],
   "links": [
     {
-      "url": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html",
-      "status": 200,
-      "content_type": "text/html; charset=utf-8",
-      "method": "HEAD"
-    },
-    {
-      "url": "https://prasanna-k-123.github.io/financial-decision-lab/exports/P7_Decision_Memo.pdf",
-      "status": 200,
-      "content_type": "application/pdf",
-      "method": "HEAD",
-      "sample_status": 206,
-      "magic_hex": "255044462d312e34",
-      "delivered_bytes": 16,
-      "signature_ok": true
-    },
-    {
-      "url": "https://prasanna-k-123.github.io/financial-decision-lab/exports/Corporate_Finance_Decision_Lab.xlsx",
-      "status": 200,
-      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-      "method": "HEAD",
-      "sample_status": 206,
-      "magic_hex": "504b030414000000",
-      "delivered_bytes": 16,
-      "signature_ok": true
-    },
-    {
-      "url": "https://prasanna-k-123.github.io/financial-decision-lab/exports/P7_Technical_Report.pdf",
-      "status": 200,
-      "content_type": "application/pdf",
-      "method": "HEAD",
-      "sample_status": 206,
-      "magic_hex": "255044462d312e34",
-      "delivered_bytes": 16,
-      "signature_ok": true
-    },
-    {
       "url": "https://prasanna-k-123.github.io/financial-decision-lab/exports/Prasanna_K_Research_Portfolio.pdf",
       "status": 200,
       "content_type": "application/pdf",
@@ -27184,6 +24320,48 @@
       "magic_hex": "255044462d312e34",
       "delivered_bytes": 16,
       "signature_ok": true
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/credit-risk-model-validation/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "method": "HEAD"
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/insurance-price-reserve-risk/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "method": "HEAD"
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/causal-customer-decisions/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "method": "HEAD"
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/treasury-alm/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "method": "HEAD"
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/demand-inventory/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "method": "HEAD"
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/inflation-vintages/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "method": "HEAD"
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/financial-decision-lab/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "method": "HEAD"
     },
     {
       "url": "https://prasanna-k-123.github.io/credit-risk-model-validation/exports/technical_report.html",
@@ -27306,6 +24484,42 @@
       "status": 200,
       "content_type": "text/html; charset=utf-8",
       "method": "HEAD"
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "method": "HEAD"
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/financial-decision-lab/exports/P7_Decision_Memo.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "method": "HEAD",
+      "sample_status": 206,
+      "magic_hex": "255044462d312e34",
+      "delivered_bytes": 16,
+      "signature_ok": true
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/financial-decision-lab/exports/Corporate_Finance_Decision_Lab.xlsx",
+      "status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "method": "HEAD",
+      "sample_status": 206,
+      "magic_hex": "504b030414000000",
+      "delivered_bytes": 16,
+      "signature_ok": true
+    },
+    {
+      "url": "https://prasanna-k-123.github.io/financial-decision-lab/exports/P7_Technical_Report.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "method": "HEAD",
+      "sample_status": 206,
+      "magic_hex": "255044462d312e34",
+      "delivered_bytes": 16,
+      "signature_ok": true
     }
   ],
   "failures": [],
@@ -27371,13 +24585,13 @@
       "screenshot": "figure-demand.png"
     }
   ],
-  "finished_at": "2026-10-20T19:38:52.656Z",
+  "finished_at": "2026-10-20T19:44:59.724Z",
   "summary": {
     "renders": 48,
-    "controls": 276,
-    "input_checks": 492,
+    "controls": 216,
+    "input_checks": 324,
     "keyboard_stops": 672,
-    "internal_delivery_checks": 22,
+    "internal_delivery_checks": 29,
     "failures": 0
   }
 }
