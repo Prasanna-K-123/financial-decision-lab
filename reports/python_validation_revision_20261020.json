@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "type": "Explicit post-freeze input-validation correction; not a new pre-test freeze",
+  "preserved_original": "reproducibility/original_valuation.py",
+  "original_sha256": "bd2a2d47a196aad9d42e81703e397fb0132496bff756a20fca7b13e16a7631d8",
+  "revised_sha256": "43ce5354644f0e36a3cfe8c987db8d5bf7efa780948168056739f603e24d7964",
+  "before": "Python rejected some exact 0.01-percentage-point WACC spreads because floating subtraction fell below 0.0001. Reproduced at terminal growth 1%, 2% and 3%.",
+  "correction": "Allow eight machine-epsilon units scaled to the rate magnitudes in the validation comparison only. Financial cash flows, discounting and solver code are unchanged.",
+  "integrity_policy": "Original extractor_freeze.json and scientific_hashes.json are retained unchanged. The verifier checks the preserved original against its original hash and requires the current file to be exactly the declared guard patch.",
+  "new_boundary_cases": {
+    "exact_minimum_accepted": 1602,
+    "insufficient_spread_rejected": 1602
+  },
+  "verification_pending": false,
+  "verification": {
+    "python_unit_tests_passed": 18,
+    "original_frozen_tests_retained": 16,
+    "numeric_scientific_outputs_reconstructed_byte_identically": 9,
+    "prediction_seals_unchanged": 2,
+    "all_original_scientific_output_hashes_unchanged": 11,
+    "original_freeze_unchanged": true,
+    "original_method_copy_hash_verified": true,
+    "unchanged_original_method_or_test_files": 5,
+    "javascript_numeric_comparisons": 1159,
+    "javascript_spread_boundary_checks": 1602,
+    "javascript_percentage_parser_checks": 12
+  }
+}

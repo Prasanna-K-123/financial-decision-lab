@@ -1,8 +1,9 @@
 """Public-file numeric reproduction. Does not re-audit original source reports."""
 from pathlib import Path
 import subprocess,sys,json,hashlib,tempfile,os
+from method_integrity import verify_method_integrity
 root=Path(__file__).resolve().parents[1];seal=json.loads((root/'reports/prediction_seal.json').read_text());freeze=json.loads((root/'reports/extractor_freeze.json').read_text())
-for name,h in freeze['source_code_sha256'].items():assert hashlib.sha256((root/name).read_bytes()).hexdigest()==h,name
+method_check=verify_method_integrity(root)
 for name in ['development_predictions.json','final_predictions.json']:assert hashlib.sha256((root/'reports'/name).read_bytes()).hexdigest()==seal['files']['reports/'+name]['sha256'],name
 with tempfile.TemporaryDirectory() as tmp:
  out=Path(tmp);env={**os.environ,'PYTHONPATH':str(root/'src')}
@@ -12,4 +13,4 @@ with tempfile.TemporaryDirectory() as tmp:
  for name,h in expected.items():
   if name.endswith('_predictions.json'):continue
   assert hashlib.sha256((out/name).read_bytes()).hexdigest()==h,name;checked.append(name)
- print(json.dumps({'passed':True,'reconstructed_scientific_outputs':len(checked),'unchanged_prediction_seals':2,'scope':'Public numeric facts/references and sealed predictions; source PDF/DOCX audit and OCR are separate raw-source reproduction.'}))
+ print(json.dumps({'passed':True,'reconstructed_scientific_outputs':len(checked),'unchanged_prediction_seals':2,'method_integrity':method_check,'scope':'Public numeric facts/references and sealed predictions; source PDF/DOCX audit and OCR are separate raw-source reproduction.'}))

@@ -41,7 +41,11 @@ the original v1.0.0 research record are unchanged.
 The [20 October input-validation revision](reports/input_validation_revision_20261020.json)
 accepts decimal percentages, enforces the displayed field bounds and associates
 errors with their input. It also handles roundoff at the declared minimum WACC
-spread. Saved research outputs and frozen Python methods are unchanged.
+spread. Saved research outputs are unchanged. The subsequent
+[Python validation correction](reports/python_validation_revision_20261020.json)
+applies the same roundoff handling to the Python API. The original method file
+and freeze are retained; integrity checks permit only this exact validation
+patch. No financial formula, saved scenario, prediction or reported score changed.
 
 ## Evidence that can be checked
 
@@ -63,7 +67,8 @@ baseline provenance. No final-error retuning or artificial scope penalty.
 
 ## Reproduce the numeric research from this public checkout
 
-Python 3.12 and the pinned packages. This checks frozen code/prediction hashes,
+Python 3.12 and the pinned packages. This checks the original freeze, the
+documented validation correction and prediction hashes,
 rebuilds nine scientific outputs from the published numeric facts and annotations,
 and reconciles the valuation through the separate Decimal formulation:
 

@@ -1,6 +1,6 @@
 {
   "date": "2026-10-20",
-  "scope": "Public explorer validation only; historical source extraction, financial case results, workbook and PDFs unchanged",
+  "scope": "Explorer validation and a separately documented Python boundary validation correction; original financial results, workbook and PDFs unchanged",
   "before": {
     "default_native_step_mismatches": [
       "marginal_roic",
@@ -31,8 +31,24 @@
     "python_unit_tests_passed": 16,
     "public_numeric_outputs_reconstructed": 9,
     "prediction_seals_checked": 2,
-    "frozen_method_hashes_unchanged": 6,
-    "scientific_output_hashes_unchanged": 11
+    "scientific_output_hashes_unchanged": 11,
+    "frozen_method_hashes_unchanged_before_python_revision": 6
   },
-  "live_after_deployment_pending": true
+  "live_after_deployment_pending": false,
+  "live_verification": {
+    "url": "https://prasanna-k-123.github.io/financial-decision-lab/",
+    "checked_at": "2026-10-20T14:13:23.112Z",
+    "observations": 17,
+    "presets_valid": 9,
+    "default_fields_valid": 6,
+    "decimal_growth_10_25_accepted": true,
+    "exact_one_basis_point_spread_accepted": true,
+    "insufficient_spread_rejected": true,
+    "below_minimum_roic_rejected": true,
+    "above_maximum_tax_rejected": true,
+    "blank_required_growth_rejected": true,
+    "invalid_results_hidden_and_error_associated": true,
+    "defaults_restored": true
+  },
+  "subsequent_python_revision": "python_validation_revision_20261020.json"
 }

@@ -1,11 +1,11 @@
 """One command to reconstruct scientific outputs from pinned original reports."""
 from pathlib import Path
 import argparse,subprocess,sys,json,hashlib,time,resource,os
+from method_integrity import verify_method_integrity
 p=argparse.ArgumentParser();p.add_argument('--sources',required=True);p.add_argument('--output',required=True);p.add_argument('--decoded',required=True);a=p.parse_args()
 root=Path(__file__).resolve().parents[1];out=Path(a.output);out.mkdir(parents=True,exist_ok=True);start=time.perf_counter()
 freeze=json.loads((root/'reports/extractor_freeze.json').read_text())
-for name,expected in freeze['source_code_sha256'].items():
- if hashlib.sha256((root/name).read_bytes()).hexdigest()!=expected:raise ValueError('Frozen extraction/model boundary code changed: '+name)
+verify_method_integrity(root)
 env={**os.environ,'PYTHONPATH':str(root/'src')};commands=[
  [sys.executable,'tools/predict.py',a.sources,a.decoded,str(out)],
  [sys.executable,'tools/evaluate.py',str(out),str(root/'data/references.json'),str(out)],

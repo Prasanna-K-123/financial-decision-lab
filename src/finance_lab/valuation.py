@@ -26,7 +26,8 @@ class Assumptions:
             raise ValueError('Growth outside the stated model domain')
         if min(self.marginal_roic,self.terminal_roic) <= 0 or max(self.marginal_roic,self.terminal_roic)>1:
             raise ValueError('Positive ROIC no greater than100% required')
-        if not 0<=self.tax<1 or not 0<self.wacc<=0.50 or self.wacc-self.terminal_growth<0.0001:
+        spread_roundoff = 8 * math.ulp(1.0) * max(abs(self.wacc), abs(self.terminal_growth), 0.0001)
+        if not 0<=self.tax<1 or not 0<self.wacc<=0.50 or self.wacc-self.terminal_growth<0.0001-spread_roundoff:
             raise ValueError('Tax/WACC domain or terminal discount spread invalid')
         if type(self.horizon) is not int or type(self.high_growth_years) is not int \
                 or not 1<=self.high_growth_years<self.horizon<=50:
