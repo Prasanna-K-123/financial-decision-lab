@@ -1,0 +1,61 @@
+{
+  "host": "https://prasanna-k-123.github.io",
+  "pages": [
+    {
+      "id": "hub",
+      "repo": "financial-decision-lab",
+      "path": "docs/portfolio.html",
+      "url": "/financial-decision-lab/portfolio.html",
+      "expected_blob": "9ab7953f708df96cdd5243951a90ebd0beed4071"
+    },
+    {
+      "id": "credit",
+      "repo": "credit-risk-model-validation",
+      "path": "docs/index.html",
+      "url": "/credit-risk-model-validation/",
+      "expected_blob": "c94738840eadcfd61ac739324027c85e1c8c271e"
+    },
+    {
+      "id": "insurance",
+      "repo": "insurance-price-reserve-risk",
+      "path": "docs/index.html",
+      "url": "/insurance-price-reserve-risk/",
+      "expected_blob": "b4cfb6507c8adca0cf34be8bec50c131b859b160"
+    },
+    {
+      "id": "causal",
+      "repo": "causal-customer-decisions",
+      "path": "docs/index.html",
+      "url": "/causal-customer-decisions/",
+      "expected_blob": "74e3a31a0588e21675ecb9bcf8fe27df3ef76d10"
+    },
+    {
+      "id": "treasury",
+      "repo": "treasury-alm",
+      "path": "docs/index.html",
+      "url": "/treasury-alm/",
+      "expected_blob": "8ec6e2b9f97034a5318dbd931e18195e58a28393"
+    },
+    {
+      "id": "demand",
+      "repo": "demand-inventory",
+      "path": "docs/index.html",
+      "url": "/demand-inventory/",
+      "expected_blob": "71c0045a47ae8630c6b33537587620d780760886"
+    },
+    {
+      "id": "inflation",
+      "repo": "inflation-vintages",
+      "path": "docs/index.html",
+      "url": "/inflation-vintages/",
+      "expected_blob": "a5c6431ec43f4ff44cf274b1c527845e4933df8b"
+    },
+    {
+      "id": "finance",
+      "repo": "financial-decision-lab",
+      "path": "docs/index.html",
+      "url": "/financial-decision-lab/",
+      "expected_blob": "17b363bb4995a2b9b6687309b5ba6c359a8006c1"
+    }
+  ]
+}
