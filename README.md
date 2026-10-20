@@ -1,5 +1,7 @@
 # Corporate Finance Decision Lab
 
+[![Public research checks](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml/badge.svg)](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml)
+
 **Annual-report facts, cash-generation analysis and the capital required to fund growth.**
 
 Prasanna K · M.A. Actuarial Economics, Madras School of Economics
@@ -31,6 +33,10 @@ The FY 2025 policy anchors form a fixed retrospective research sample; they are
 not a claim to use each issuer's latest available filing. The
 [live browser verification](reports/live_browser_verification.json) checks all
 nine rendered scenarios, all 363 sensitivity cells and the nine source displays.
+
+The [20 October editorial revision](reports/editorial_revision_20261020.json)
+corrects report spacing. All eleven scientific outputs, the frozen method and
+the original v1.0.0 research record are unchanged.
 
 ## Evidence that can be checked
 

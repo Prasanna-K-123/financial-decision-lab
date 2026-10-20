@@ -1,3 +1,11 @@
+# v1.0.1 — report typography and public verification
+
+Corrects spacing in the technical report, decision memo and Markdown alternative.
+Adds pinned, read-only public verification. Scientific outputs, original method
+hashes, sealed predictions, workbook and source annotations remain unchanged.
+The original v1.0.0 research record is preserved. The editorial revision receipt
+records original and revised document hashes.
+
 # Version 1.0.0 research release
 
 Corporate Finance Decision Lab · Prasanna K

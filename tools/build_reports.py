@@ -83,7 +83,7 @@ scenario_rows=[['Policy','Initial growth','ROIC initial / terminal','Terminal gr
 for x in cases:
  a=x['assumptions'];scenario_rows.append([x['issuer']+' '+x['case'],pct(a['growth']),pct(a['marginal_roic'])+' / '+pct(a['terminal_roic']),pct(a['terminal_growth']),money(x['policy_value']),money(x['upfront_investment']),pct(x['terminal_share_of_net_value'])])
 tech +=[table(scenario_rows,[99,50,91,55,79,75,W-449]),p('Values in USDm. Common illustrative WACC 10% and normalised tax 25%. Values are operating-policy scenarios before financing, cash/nonoperating assets, NCI, pension and option adjustments. They retain reported EBIT accounting and are not observed enterprise/equity values, share-price targets or market-calibrated forecasts.','small')]
-tech +=[p('Sensitivity and reverse cases','h2'),p('Reference-policy sensitivity uses WACC 6%–16% in 1 pp steps and terminal growth 0%–5% in 0.5 pp steps: 121 cases per issuer, 363 total. A49-regime growth/ROIC grid is repeated at each issuer’s profit scale (147 evaluations), not 147 independent economic patterns. Reverse cases target 80%,100% and 120% of reference policy value, solving initial growth only on[0%, 25%]. Seven targets solve; Target and Infosys 80% targets are unreachable in that bracket. No extrapolation or implied market expectation is claimed.')]
+tech +=[p('Sensitivity and reverse cases','h2'),p('Reference-policy sensitivity uses WACC 6%–16% in 1 pp steps and terminal growth 0%–5% in 0.5 pp steps: 121 cases per issuer, 363 total. A 49-regime growth/ROIC grid is repeated at each issuer’s profit scale (147 evaluations), not 147 independent economic patterns. Reverse cases target 80%, 100% and 120% of reference policy value, solving initial growth only on [0%, 25%]. Seven targets solve; Target and Infosys 80% targets are unreachable in that bracket. No extrapolation or implied market expectation is claimed.')]
 tech +=[p('The funding amount is aggregate net growth investment after maintenance, including working-capital and intangible needs on the chosen EBIT basis. It is not a mechanical substitution of historical CFO-minus-PPE for unlevered free cash flow. Comparing I0 with historical post-PPE cash is only a scale diagnostic.')]
 tech +=[PageBreak(),p('Independent checks and reproducibility','h1')]
 tech +=[Image(str(D/'growth_return_policy.png'),width=W,height=W*2.7/7.1),p('Illustrative constant-return/growth policies. Negative forced-policy value is possible when growth consumes more capital than the specified policy earns; it is not a negative limited-liability equity valuation. At ROIC=WACC, growth is value-neutral after funding I0.','small')]
@@ -104,7 +104,7 @@ memo +=[Image(str(D/'growth_return_policy.png'),width=W,height=W*2.7/7.1)]
 memo +=[table([['Reference policy','Initial growth / ROIC','Terminal growth / ROIC','Policy value (USDm)','Immediate I0 (USDm)'],['Microsoft','10% /18%','2.5% /12%','1,316,560','53,553'],['Target','2% /12%','2% /10%','39,143','640'],['Infosys','5% /16%','2.5% /12%','35,379','954']],[92,112,117,103,W-424])]
 memo +=[p('Illustrative common WACC 10% and normalised tax 25%. These are conditional operating-policy values, before the financing/nonoperating adjustments needed for an enterprise/equity assessment. They retain reported EBIT’s expense/lease basis. Assumed marginal ROIC is not an estimate derived from observed historical ROIC.','small')]
 memo +=[p('Questions before an actual investment decision','h2'),p('Which incremental return is supported by operating evidence? What working capital, intangible and fixed capital must be paid before the first growth year? What lease/interest adjustments are required on the chosen EBIT basis? How much of cash conversion reflects tax timing? What growth/return fade is economically sustainable?')]
-memo +=[p('Sensitivity, not forecast certainty','h2'),p('The release contains 363 WACC/terminal-growth cases and 147 fixed-regime evaluations. Reference terminal PV shares are 64.2% for Microsoft, 47.0% for Target and 54.6% for Infosys. Two of nine reverse targets are unreachable in the declared[0%, 25%] growth bracket; the model reports that limit instead of extrapolating. No probability weights or market-implied growth claim are attached to these scenarios.')]
+memo +=[p('Sensitivity, not forecast certainty','h2'),p('The release contains 363 WACC/terminal-growth cases and 147 fixed-regime evaluations. Reference terminal PV shares are 64.2% for Microsoft, 47.0% for Target and 54.6% for Infosys. Two of nine reverse targets are unreachable in the declared [0%, 25%] growth bracket; the model reports that limit instead of extrapolating. No probability weights or market-implied growth claim are attached to these scenarios.')]
 memo +=[p('Read the audit trail','h2'),p('<link href="https://github.com/Prasanna-K-123/financial-decision-lab" color="#006B70">Repository, technical report, source locators and formula workbook</link><br/><link href="https://prasanna-k-123.github.io/financial-decision-lab/" color="#006B70">Interactive financial evidence and policy explorer</link>','small')]
 pdf('P7_Decision_Memo.pdf',memo,'Cash Generation and Capital Allocation — Decision Memo')
 
@@ -200,7 +200,7 @@ Nine scenarios, 363 sensitivity cases, 147 constant-regime evaluations and nine
 reverse cases are fixed in the protocol. 519 case evaluations match a separately
 implemented 45-digit Decimal incremental-profit-layer formulation. The normalized
 49-regime grid repeats at three profit scales; these are not independent data.
-Seven reverse targets solve; two 80% targets are unreachable in[0%, 25%] growth.
+Seven reverse targets solve; two 80% targets are unreachable in [0%, 25%] growth.
 
 The formula workbook has 932 numeric reconciliations across all nine cases,
 input-change and missing/zero boundaries, independent profit-layer checks and
@@ -212,7 +212,7 @@ A fresh source/code directory repeated all original report decoding/OCR and
 reproduced eleven scientific outputs byte for byte in 565.57 seconds. Maximum
 child RSS 553,208 KiB; Python 3.12.14, PyMuPDF 1.26.6, Tesseract 5.3.4 and a pinned
 English trained-data hash. No source cache of decoded rows was reused.
-An 8.71second run with all nine decoded structures cached is reported separately.
+An 8.71-second run with all nine decoded structures cached is reported separately.
 No fresh-network, cross-platform, external-review or human-time-saving claim.
 
 The public numeric route rebuilds nine outputs from published facts/sealed

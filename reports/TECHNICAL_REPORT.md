@@ -46,7 +46,7 @@ Nine scenarios, 363 sensitivity cases, 147 constant-regime evaluations and nine
 reverse cases are fixed in the protocol. 519 case evaluations match a separately
 implemented 45-digit Decimal incremental-profit-layer formulation. The normalized
 49-regime grid repeats at three profit scales; these are not independent data.
-Seven reverse targets solve; two 80% targets are unreachable in[0%, 25%] growth.
+Seven reverse targets solve; two 80% targets are unreachable in [0%, 25%] growth.
 
 The formula workbook has 932 numeric reconciliations across all nine cases,
 input-change and missing/zero boundaries, independent profit-layer checks and
@@ -58,7 +58,7 @@ A fresh source/code directory repeated all original report decoding/OCR and
 reproduced eleven scientific outputs byte for byte in 565.57 seconds. Maximum
 child RSS 553,208 KiB; Python 3.12.14, PyMuPDF 1.26.6, Tesseract 5.3.4 and a pinned
 English trained-data hash. No source cache of decoded rows was reused.
-An 8.71second run with all nine decoded structures cached is reported separately.
+An 8.71-second run with all nine decoded structures cached is reported separately.
 No fresh-network, cross-platform, external-review or human-time-saving claim.
 
 The public numeric route rebuilds nine outputs from published facts/sealed

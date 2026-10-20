@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-20",
+  "scope": "Editorial spacing corrections only; no numerical research change",
+  "corrections": {
+    "A49-regime": "A 49-regime",
+    "80%,100%": "80%, 100%",
+    "only on[0%": "only on [0%",
+    "declared[0%": "declared [0%",
+    "unreachable in[0%": "unreachable in [0%",
+    "8.71second": "8.71-second"
+  },
+  "documents": [
+    {
+      "file": "P7_Technical_Report.pdf",
+      "pages": 5,
+      "original_sha256": "ebc631eb5189f2518a3a0f54b7a89e4d3a55d4845945f319a3f35fb5e8f241b3",
+      "revised_sha256": "e5c9d65aa2bf4575c51e165e4022c37b7a46422449cea75d05960a40ad995a2c",
+      "numeric_tokens_unchanged": true,
+      "all_pages_rendered_and_text_bounds_passed": true
+    },
+    {
+      "file": "P7_Decision_Memo.pdf",
+      "pages": 2,
+      "original_sha256": "6ecc9719f07e82281cc6fc9763890a9d1cffc527a2d35d12ed1be7c54a88e44c",
+      "revised_sha256": "13365bb5b5a582f7e5a33bca259085efe05e4ab2d7d5d6c42e4e7f3f87ee689c",
+      "numeric_tokens_unchanged": true,
+      "all_pages_rendered_and_text_bounds_passed": true
+    }
+  ],
+  "all_scientific_outputs_unchanged": 11,
+  "all_frozen_method_files_unchanged": 6,
+  "portfolio_guide_and_charts_unchanged": true,
+  "workbook_unchanged": true,
+  "visual_review_pending": false,
+  "visual_review": "All seven editorially revised pages re-rendered and visually inspected. Typography and numeric-token checks pass. The original two-page portfolio guide is unchanged and was visually reviewed in the same audit."
+}
