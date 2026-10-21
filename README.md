@@ -34,28 +34,6 @@ not a claim to use each issuer's latest available filing. The
 [live browser verification](reports/live_browser_verification.json) checks all
 nine rendered scenarios, all 363 sensitivity cells and the nine source displays.
 
-The [20 October editorial revision](reports/editorial_revision_20261020.json)
-corrects report spacing. All eleven scientific outputs, the frozen method and
-the original v1.0.0 research record are unchanged.
-
-The [20 October input-validation revision](reports/input_validation_revision_20261020.json)
-accepts decimal percentages, enforces the displayed field bounds and associates
-errors with their input. It also handles roundoff at the declared minimum WACC
-spread. Saved research outputs are unchanged. The subsequent
-[Python validation correction](reports/python_validation_revision_20261020.json)
-applies the same roundoff handling to the Python API and restricts no-root
-claims to analytically monotone regimes. Other endpoint failures are labelled
-`not_bracketed`. The original method file
-and freeze are retained; integrity checks permit only the exact documented
-validation/status patches. No financial formula, saved scenario, prediction or reported score changed.
-
-The [workbook validation revision](reports/workbook_validation_revision_20261020.json)
-applies the same roundoff rule to the saved XLSX and its builder. An
-[independent LibreOffice Calc check](reports/workbook_application_verification_20261020.json)
-opens, recalculates, saves and reopens the delivered workbooks. The finance
-workbook retains all nine policy cases and 297 formula cells; 51 probes below,
-at and above the minimum spread pass. Native Microsoft Excel was not executed.
-
 ## Evidence that can be checked
 
 | Check | Result | Interpretation |
@@ -144,7 +122,34 @@ expense and tax conventions remain. Code tests, mathematical agreement and a
 small retrospective check do not establish universal extraction accuracy,
 commercial deployment, investment returns or regulatory compliance.
 
+<details>
+<summary>Maintenance history and verification records</summary>
+
+The [20 October editorial revision](reports/editorial_revision_20261020.json)
+corrects report spacing. All eleven scientific outputs, the frozen method and
+the original v1.0.0 research record are unchanged.
+
+The [20 October input-validation revision](reports/input_validation_revision_20261020.json)
+accepts decimal percentages, enforces the displayed field bounds and associates
+errors with their input. It also handles roundoff at the declared minimum WACC
+spread. Saved research outputs are unchanged. The subsequent
+[Python validation correction](reports/python_validation_revision_20261020.json)
+applies the same roundoff handling to the Python API and restricts no-root
+claims to analytically monotone regimes. Other endpoint failures are labelled
+`not_bracketed`. The original method file
+and freeze are retained; integrity checks permit only the exact documented
+validation/status patches. No financial formula, saved scenario, prediction or reported score changed.
+
+The [workbook validation revision](reports/workbook_validation_revision_20261020.json)
+applies the same roundoff rule to the saved XLSX and its builder. An
+[independent LibreOffice Calc check](reports/workbook_application_verification_20261020.json)
+opens, recalculates, saves and reopens the delivered workbooks. The finance
+workbook retains all nine policy cases and 297 formula cells; 51 probes below,
+at and above the minimum spread pass. Native Microsoft Excel was not executed.
+
 The [20 October dependency revision](reports/dependency_revision_20261020.json)
 updates the PDF parser to PyMuPDF 1.26.7. All eleven finance source-reconstruction
 outputs remain identical in the patched environment. Original environment pins
 are retained alongside the dated dependency-audit scope.
+
+</details>
