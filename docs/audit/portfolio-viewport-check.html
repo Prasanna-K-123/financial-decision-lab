@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Portfolio viewport review</title><style>body{margin:20px;color:#172d3e;background:#edf1f2;font:16px/1.5 system-ui,sans-serif}label{font-weight:700}select{font:inherit;min-height:44px;margin:0 12px;padding:8px}iframe{display:block;width:320px;height:1600px;border:1px solid #647d8c;margin-top:18px;background:white}p{max-width:850px}</style></head><body>
+<h1>Portfolio viewport review</h1>
+<p>Review harness for the public portfolio. The frame uses the selected CSS viewport width in this browser; it does not emulate another device or browser engine.</p>
+<label for="review-width">CSS viewport width</label><select id="review-width"><option value="320">320 px</option><option value="390">390 px</option><option value="1200">1200 px</option></select>
+<iframe id="portfolio-frame" title="Portfolio at selected CSS viewport" src="../portfolio.html"></iframe>
+<script>'use strict';document.getElementById('review-width').addEventListener('change',event=>{document.getElementById('portfolio-frame').style.width=event.target.value+'px';});</script>
+</body></html>
