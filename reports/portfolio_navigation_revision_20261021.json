@@ -1,0 +1,543 @@
+{
+  "schema": "portfolio-navigation-review-v1",
+  "date": "2026-10-21",
+  "status": "passed",
+  "finding": "F14",
+  "source_commit": "e18c9f1c395fb777633d9832bd425a418fa5f2a4",
+  "hub_source_blob": "b623af523b1afb9091cb8c5efe7b5fd332fafffd",
+  "changes": [
+    "Native role selector for six role families, with all seven studies retained",
+    "Visible statistical/econometric/financial methods on every study",
+    "Direct decision/research, technical-report, implementation, repository and explorer links",
+    "Narrow-screen role labels fit; method, role and evidence text is at least 14px in measured default-root layouts",
+    "Finance README prioritizes findings, evidence and reproduction; full maintenance history remains accessible"
+  ],
+  "browser": {
+    "source_commit": "e18c9f1c395fb777633d9832bd425a418fa5f2a4",
+    "hub_implementation_commit": "24815e8166784615b0485e297349ca7dd17d8946",
+    "browser": "Cloud Chrome / Chromium",
+    "viewport_route": "https://prasanna-k-123.github.io/financial-decision-lab/audit/portfolio-viewport-check.html?review=e18c9f1c395fb777633d9832bd425a418fa5f2a4",
+    "role_width_checks": [
+      {
+        "requestedWidth": 320,
+        "role": "all",
+        "columns": "269px",
+        "documentWidth": 305,
+        "evidenceLinks": 34,
+        "methodBlocks": 7,
+        "scrollWidth": 305,
+        "selected": "all",
+        "status": "Showing all seven studies.",
+        "viewport": 320,
+        "visible": [
+          "credit",
+          "insurance",
+          "causal",
+          "treasury",
+          "demand",
+          "economics",
+          "finance"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 320,
+        "role": "credit",
+        "columns": "269px",
+        "documentWidth": 305,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 305,
+        "selected": "credit",
+        "status": "Showing two complementary studies for Credit / model risk.",
+        "viewport": 320,
+        "visible": [
+          "credit",
+          "treasury"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 320,
+        "role": "insurance",
+        "columns": "269px",
+        "documentWidth": 305,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 305,
+        "selected": "insurance",
+        "status": "Showing two complementary studies for Insurance / actuarial.",
+        "viewport": 320,
+        "visible": [
+          "insurance",
+          "treasury"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 320,
+        "role": "treasury",
+        "columns": "269px",
+        "documentWidth": 305,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 305,
+        "selected": "treasury",
+        "status": "Showing two complementary studies for Treasury / ALM.",
+        "viewport": 320,
+        "visible": [
+          "treasury",
+          "credit"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 320,
+        "role": "finance",
+        "columns": "269px",
+        "documentWidth": 305,
+        "evidenceLinks": 9,
+        "methodBlocks": 2,
+        "scrollWidth": 305,
+        "selected": "finance",
+        "status": "Showing two complementary studies for Finance / FP&A.",
+        "viewport": 320,
+        "visible": [
+          "finance",
+          "economics"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 320,
+        "role": "analytics",
+        "columns": "269px",
+        "documentWidth": 305,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 305,
+        "selected": "analytics",
+        "status": "Showing two complementary studies for Data analytics.",
+        "viewport": 320,
+        "visible": [
+          "causal",
+          "demand"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 320,
+        "role": "economics",
+        "columns": "269px",
+        "documentWidth": 305,
+        "evidenceLinks": 9,
+        "methodBlocks": 2,
+        "scrollWidth": 305,
+        "selected": "economics",
+        "status": "Showing two complementary studies for Economic research.",
+        "viewport": 320,
+        "visible": [
+          "economics",
+          "causal"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 390,
+        "role": "all",
+        "columns": "339px",
+        "documentWidth": 375,
+        "evidenceLinks": 34,
+        "methodBlocks": 7,
+        "scrollWidth": 375,
+        "selected": "all",
+        "status": "Showing all seven studies.",
+        "viewport": 390,
+        "visible": [
+          "credit",
+          "insurance",
+          "causal",
+          "treasury",
+          "demand",
+          "economics",
+          "finance"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 390,
+        "role": "credit",
+        "columns": "339px",
+        "documentWidth": 375,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 375,
+        "selected": "credit",
+        "status": "Showing two complementary studies for Credit / model risk.",
+        "viewport": 390,
+        "visible": [
+          "credit",
+          "treasury"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 390,
+        "role": "insurance",
+        "columns": "339px",
+        "documentWidth": 375,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 375,
+        "selected": "insurance",
+        "status": "Showing two complementary studies for Insurance / actuarial.",
+        "viewport": 390,
+        "visible": [
+          "insurance",
+          "treasury"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 390,
+        "role": "treasury",
+        "columns": "339px",
+        "documentWidth": 375,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 375,
+        "selected": "treasury",
+        "status": "Showing two complementary studies for Treasury / ALM.",
+        "viewport": 390,
+        "visible": [
+          "treasury",
+          "credit"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 390,
+        "role": "finance",
+        "columns": "339px",
+        "documentWidth": 375,
+        "evidenceLinks": 9,
+        "methodBlocks": 2,
+        "scrollWidth": 375,
+        "selected": "finance",
+        "status": "Showing two complementary studies for Finance / FP&A.",
+        "viewport": 390,
+        "visible": [
+          "finance",
+          "economics"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 390,
+        "role": "analytics",
+        "columns": "339px",
+        "documentWidth": 375,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 375,
+        "selected": "analytics",
+        "status": "Showing two complementary studies for Data analytics.",
+        "viewport": 390,
+        "visible": [
+          "causal",
+          "demand"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 390,
+        "role": "economics",
+        "columns": "339px",
+        "documentWidth": 375,
+        "evidenceLinks": 9,
+        "methodBlocks": 2,
+        "scrollWidth": 375,
+        "selected": "economics",
+        "status": "Showing two complementary studies for Economic research.",
+        "viewport": 390,
+        "visible": [
+          "economics",
+          "causal"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 1200,
+        "role": "all",
+        "columns": "525px 525px",
+        "documentWidth": 1185,
+        "evidenceLinks": 34,
+        "methodBlocks": 7,
+        "scrollWidth": 1185,
+        "selected": "all",
+        "status": "Showing all seven studies.",
+        "viewport": 1200,
+        "visible": [
+          "credit",
+          "insurance",
+          "causal",
+          "treasury",
+          "demand",
+          "economics",
+          "finance"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 1200,
+        "role": "credit",
+        "columns": "525px 525px",
+        "documentWidth": 1200,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 1200,
+        "selected": "credit",
+        "status": "Showing two complementary studies for Credit / model risk.",
+        "viewport": 1200,
+        "visible": [
+          "credit",
+          "treasury"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 1200,
+        "role": "insurance",
+        "columns": "525px 525px",
+        "documentWidth": 1200,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 1200,
+        "selected": "insurance",
+        "status": "Showing two complementary studies for Insurance / actuarial.",
+        "viewport": 1200,
+        "visible": [
+          "insurance",
+          "treasury"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 1200,
+        "role": "treasury",
+        "columns": "525px 525px",
+        "documentWidth": 1200,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 1200,
+        "selected": "treasury",
+        "status": "Showing two complementary studies for Treasury / ALM.",
+        "viewport": 1200,
+        "visible": [
+          "treasury",
+          "credit"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 1200,
+        "role": "finance",
+        "columns": "525px 525px",
+        "documentWidth": 1200,
+        "evidenceLinks": 9,
+        "methodBlocks": 2,
+        "scrollWidth": 1200,
+        "selected": "finance",
+        "status": "Showing two complementary studies for Finance / FP&A.",
+        "viewport": 1200,
+        "visible": [
+          "finance",
+          "economics"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 1200,
+        "role": "analytics",
+        "columns": "525px 525px",
+        "documentWidth": 1200,
+        "evidenceLinks": 10,
+        "methodBlocks": 2,
+        "scrollWidth": 1200,
+        "selected": "analytics",
+        "status": "Showing two complementary studies for Data analytics.",
+        "viewport": 1200,
+        "visible": [
+          "causal",
+          "demand"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      },
+      {
+        "requestedWidth": 1200,
+        "role": "economics",
+        "columns": "525px 525px",
+        "documentWidth": 1200,
+        "evidenceLinks": 9,
+        "methodBlocks": 2,
+        "scrollWidth": 1200,
+        "selected": "economics",
+        "status": "Showing two complementary studies for Economic research.",
+        "viewport": 1200,
+        "visible": [
+          "economics",
+          "causal"
+        ],
+        "minimumEvidenceTarget": 44,
+        "minimumEvidenceFont": 14.08,
+        "pass": true
+      }
+    ],
+    "deep_link": {
+      "selected": "finance",
+      "visible": [
+        "study-finance",
+        "study-economics"
+      ]
+    },
+    "invalid_hash_fallback": {
+      "selected": "all",
+      "visible": 7
+    },
+    "keyboard_selection": "economics",
+    "keyboard_first_link": {
+      "href": "https://prasanna-k-123.github.io/inflation-vintages/",
+      "tag": "A",
+      "text": "Explore results"
+    },
+    "failures": [],
+    "keyboard": {
+      "focusedHref": "https://prasanna-k-123.github.io/inflation-vintages/",
+      "focusedTag": "A",
+      "selected": "economics"
+    },
+    "captured_page_console_errors": [],
+    "extension_metadata_errors_outside_authored_page": {
+      "count": 16,
+      "classification": "Browser-extension metadata delivery messages, not portfolio script failures"
+    }
+  },
+  "source_to_live_dom_comparison": {
+    "matches": true,
+    "comparison": "All authored content, presentation and script subtrees; not a raw HTTP response-byte comparison",
+    "source_blob": "b623af523b1afb9091cb8c5efe7b5fd332fafffd",
+    "normalizations": [
+      "Remove disabled attribute cleared by documented initialization",
+      "Exclude noscript subtree (serialized as raw text with scripting enabled)",
+      "Compare authored subtrees; browser-tool cursor overlay and HTML wrapper serialization are outside source scope"
+    ],
+    "checks": [
+      {
+        "tag": "header",
+        "source_count": 1,
+        "live_count": 1,
+        "matches": true
+      },
+      {
+        "tag": "main",
+        "source_count": 1,
+        "live_count": 1,
+        "matches": true
+      },
+      {
+        "tag": "footer",
+        "source_count": 1,
+        "live_count": 1,
+        "matches": true
+      },
+      {
+        "tag": "style",
+        "source_count": 1,
+        "live_count": 1,
+        "matches": true
+      },
+      {
+        "tag": "script",
+        "source_count": 1,
+        "live_count": 1,
+        "matches": true
+      },
+      {
+        "tag": "title",
+        "source_count": 1,
+        "live_count": 1,
+        "matches": true
+      },
+      {
+        "tag": "meta",
+        "source_count": 3,
+        "live_count": 3,
+        "matches": true
+      }
+    ]
+  },
+  "source_link_check": {
+    "github_file_targets": 20,
+    "all_exist_in_reviewed_public_trees": true,
+    "study_evidence_links": 34,
+    "study_explorers": 7,
+    "repositories": 7,
+    "portfolio_guide_exists": true
+  },
+  "scientific_outputs_models_data_and_workbooks_changed": false,
+  "research_ci_at_reviewed_source": {
+    "run_id": 39590396821,
+    "conclusion": "success",
+    "python_unit_tests": 22
+  },
+  "pages_deployment_at_reviewed_source": {
+    "run_id": 39590396419,
+    "conclusion": "success"
+  },
+  "earlier_check_correction": "The seven-card source assertion assumed attribute-free article tags. It now accepts attributes while still requiring exactly seven cards; full subsequent CI passes.",
+  "boundaries": [
+    "Fresh responsive UI checks use Chromium at three CSS viewport widths; no fresh Firefox or physical-device claim",
+    "Authored DOM subtrees match after documented browser serialization/initialization normalization; this is not a raw HTTP response-byte comparison",
+    "The seven existing explorers and saved scientific results are unchanged; their prior dated audits remain separate"
+  ]
+}

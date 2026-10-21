@@ -18,27 +18,29 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       AUDITED_REPOSITORY: "Prasanna-K-123/financial-decision-lab"
-      AUDITED_BASELINE: "0810d053709bdd95e01b49527f735ee233f48f32"
-      RELEASE_TAG: "v1.0.4"
-      RELEASE_TITLE: "Corporate Finance Decision Lab — v1.0.4"
-      ALLOWED_PATHS: "[\"docs/index.html\",\"tools/explorer.js\",\"tools/explorer_template.html\",\"reports/presentation_revision_20261020.json\",\".github/workflows/release.yml\"]"
-      APPROVED_SOURCE_BLOBS: "{\"docs/index.html\":\"996c411e881e944a0b46f9df4f665f1368e9fa99\",\"tools/explorer.js\":\"2b00766925d42ff1ce46b80eff6f03fb6e345425\",\"tools/explorer_template.html\":\"2ff00ddfb1b50641dc405fa1e371099586b0cf52\"}"
+      AUDITED_BASELINE: "e18c9f1c395fb777633d9832bd425a418fa5f2a4"
+      RELEASE_TAG: "v1.0.5"
+      RELEASE_TITLE: "Corporate Finance Decision Lab — v1.0.5"
+      ALLOWED_PATHS: "[\"reports/portfolio_navigation_revision_20261021.json\",\".github/workflows/release.yml\"]"
+      APPROVED_SOURCE_BLOBS: "{\"docs/index.html\":\"996c411e881e944a0b46f9df4f665f1368e9fa99\",\"docs/portfolio.html\":\"b623af523b1afb9091cb8c5efe7b5fd332fafffd\",\"README.md\":\"b412e415d65cc86e301d8feff799f2c3c3e51eb1\",\"tests/check_explorer.cjs\":\"b8b6ce6f5be6a226a478054196ee86efee73e0a9\",\"docs/audit/portfolio-viewport-check.html\":\"ec95cf4d8f9a1d9ec0da4fa58316876ff42add7d\"}"
       BROWSER_SOURCE_COMMIT: "44c3ccbe0a59acfc8e98b44e6c4a41288daa3455"
       BROWSER_EVIDENCE_COMMIT: "74eb642e9b5916f0f546da55ea3b24d753c2a236"
       BROWSER_PAGE: "finance"
       RELEASE_NOTES: |
-        This maintenance release improves mobile chart readability.
+        This maintenance release makes the seven-study portfolio easier to evaluate for risk, insurance, Treasury, finance, analytics and economic-research roles.
         
-        - Use the actual chart width so amount/year labels remain at least 12px.
-        - Keep three fiscal-year groups readable without overlapping labels across Microsoft, Target and Infosys.
-        - Redraw on viewport resize and keep the author name on one line.
-        - Synchronize the exact inline script and build template, including the existing workbook-verification footer.
+        - Add a native role selector, explicit methods and 34 direct study-evidence links.
+        - Keep all seven studies, original findings and scenario/research boundaries visible.
+        - Improve narrow-screen role labels and evidence-text readability.
+        - Put Finance README evidence and reproduction before retained maintenance history.
         
-        Verified at 320px, 390px and desktop widths in Chromium and Firefox. Publication requires successful research CI and the exact approved candidate source bytes.
+        The final deployed portfolio passes 21 role/width checks in Chromium at 320, 390 and 1200 CSS pixels, plus role deep-link, invalid-hash and keyboard checks. Authored DOM content, style and script subtrees match the reviewed source after documented browser serialization/initialization normalization. All 20 direct GitHub file targets exist.
         
-        Scientific datasets, models, saved outcomes and workbooks are unchanged. Prior releases and original verification records remain available.
+        The seven study explorers, scientific results, methods, datasets and workbooks are unchanged. Their prior dated verification records remain separate; this release does not claim fresh Firefox, physical-device or native Excel execution.
         
-        [Open the evidence browser](https://prasanna-k-123.github.io/financial-decision-lab/). [Presentation revision](https://github.com/Prasanna-K-123/financial-decision-lab/blob/main/reports/presentation_revision_20261020.json).
+        Publication requires current-commit research CI, exact approved source identities and the portfolio review receipt.
+        
+        [Open the portfolio](https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html) · [Navigation verification](https://github.com/Prasanna-K-123/financial-decision-lab/blob/main/reports/portfolio_navigation_revision_20261021.json)
     steps:
       - name: Verify reviewed source and successful audits before publication
         shell: bash
@@ -89,6 +91,14 @@ jobs:
           require(len(views)==6 and all(p["delivered_blob"]==expected and p["expected_blob"]==expected and not p["failures"] for p in views),"Candidate views do not match this HTML")
           browser_run=public_json("https://api.github.com/repos/Prasanna-K-123/financial-decision-lab/actions/runs/"+str(proof["run_id"]))
           require(browser_run["status"]=="completed" and browser_run["conclusion"]=="success","Browser workflow did not finish successfully")
+          portfolio=public_json("https://raw.githubusercontent.com/"+repo+"/"+sha+"/reports/portfolio_navigation_revision_20261021.json")
+          require(portfolio["status"]=="passed" and portfolio["source_commit"]==baseline,"Unexpected portfolio review source")
+          require(portfolio["hub_source_blob"]==approved["docs/portfolio.html"],"Portfolio source identity differs")
+          checks=portfolio["browser"]["role_width_checks"]
+          require(len(checks)==21 and all(c["pass"] and c["minimumEvidenceFont"]>=14 and c["minimumEvidenceTarget"]>=44 for c in checks),"Portfolio role/width checks failed")
+          require({(c["requestedWidth"],c["role"]) for c in checks}=={(w,r) for w in (320,390,1200) for r in ("all","credit","insurance","treasury","finance","analytics","economics")},"Missing portfolio role/width case")
+          require(not portfolio["browser"]["failures"] and not portfolio["browser"]["captured_page_console_errors"],"Portfolio page errors remain")
+          require(portfolio["source_to_live_dom_comparison"]["matches"] and portfolio["source_link_check"]["all_exist_in_reviewed_public_trees"],"Portfolio evidence checks failed")
           deadline=time.monotonic()+900
           while True:
               runs=api("/actions/runs?head_sha="+sha+"&per_page=100")["workflow_runs"]
@@ -111,7 +121,7 @@ jobs:
           require(release["body"].replace("\r\n","\n").strip()==notes.strip(),"Release notes differ")
           require(target()==sha and api("/releases/latest")["id"]==release["id"],"Latest release is not this tested commit")
           with open(os.environ["GITHUB_STEP_SUMMARY"],"a") as summary:
-              summary.write("Published ["+tag+"]("+release["html_url"]+") after research CI and independent candidate-browser verification.\n\n")
+              summary.write("Published ["+tag+"]("+release["html_url"]+") after research CI, retained explorer proof and final portfolio UI/source verification.\n\n")
               summary.write("Scientific datasets, models, saved outcomes and workbooks are byte-identical to the prior audited release.\n")
           print(json.dumps({"tag":tag,"commit":sha,"url":release["html_url"],"research_ci":latest["html_url"],"browser_evidence_commit":proof_commit}))
           
