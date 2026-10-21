@@ -1,0 +1,87 @@
+{
+  "schema": "portfolio-independent-controls-v1",
+  "seed_date": "2026-10-21",
+  "checks": {
+    "credit-risk-model-validation": {
+      "status": "passed",
+      "sharp_bound_problems": 7966,
+      "binary_label_completions": 28118,
+      "scope": "All n<=5 binary/missing label vectors with at least one known event and every fixed selection mask; exact enumeration.",
+      "seconds": 6.905
+    },
+    "insurance-price-reserve-risk": {
+      "status": "passed",
+      "currency_scale_and_row_permutation_cases": 30,
+      "independent_lognormal_moment_pairs": 4,
+      "deterministic_simulations": 1000,
+      "scope": "Mack homogeneity, row exchangeability, covariance PSD and independently reconstructed distribution moments.",
+      "seconds": 0.083
+    },
+    "causal-customer-decisions": {
+      "status": "passed",
+      "exact_randomization_assignments": 81,
+      "globally_enumerated_contact_allocation_cases": 160,
+      "feasible_contact_policies": 7280,
+      "scope": "Finite-population DR unbiasedness with wrong nuisance means; exact optimality under the stated equal-contact-cost/cap model, not arbitrary marketing constraints.",
+      "seconds": 0.076
+    },
+    "treasury-alm": {
+      "status": "passed",
+      "key_partition_rows": 1000,
+      "analytic_flat_curve_risk_cases": 60,
+      "discounted_runoff_conservation_cases": 60,
+      "constant_mortality_payment_terms": 60,
+      "current_case_quadratic_programs": [
+        {
+          "method": "key_rate",
+          "feasible_faces": 76,
+          "saved_objective": 0.04225353104912818,
+          "global_face_minimum": 0.042253531049108575
+        },
+        {
+          "method": "covariance",
+          "feasible_faces": 58,
+          "saved_objective": 1.8168824352032068e-07,
+          "global_face_minimum": 1.816882418535763e-07
+        }
+      ],
+      "seconds": 4.194
+    },
+    "demand-inventory": {
+      "status": "passed",
+      "future_data_tamper_feature_cases": 60,
+      "integer_budget_capacity_cases": 60,
+      "lead_time_stock_conservation_simulations": 60,
+      "scope": "Feasibility and physical conservation for the documented heuristic; no claim of globally optimal heterogeneous-cost inventory allocation.",
+      "seconds": 0.134
+    },
+    "inflation-vintages": {
+      "status": "passed",
+      "timezone_release_boundary_and_base_separation_checks": 5,
+      "public_numeric_reconstruction": "Separate script: scripts/reproduce_numeric_results.py; see numeric_reproduction.json for execution status.",
+      "seconds": 0.0
+    },
+    "financial-decision-lab": {
+      "status": "passed",
+      "independent_60_digit_profit_layer_cases": 1000,
+      "equal_return_growth_neutrality_cases": 4,
+      "independent_target_reverse_case": 1,
+      "maximum_relative_or_absolute_scaled_difference": 3.6893740595559865e-14,
+      "seconds": 0.446
+    }
+  },
+  "failures": [],
+  "scope": "Deterministic mathematical controls on exact source files; no model fitting, test-set selection or claims of empirical outperformance.",
+  "source_identity": {
+    "files_verified": 476,
+    "source_commits": {
+      "credit-risk-model-validation": "f22e70ffde1978c5053acecaef188ecce58f7915",
+      "insurance-price-reserve-risk": "ea1cccd2fee9f7d78654ae0d5b26ab38d118ac2e",
+      "causal-customer-decisions": "ffb9ab5c805c56bb69079fa13b5bf576e6b00b84",
+      "treasury-alm": "e6e98a61971c621aee57c39ddf422fffadfc4926",
+      "demand-inventory": "db9217a84ae9a29df4e3e7f519c262bdf4edc118",
+      "inflation-vintages": "7d033e3fdc25cb678f3107941d7fee011e5636c2",
+      "financial-decision-lab": "c6912d89b32efda389b2e489758e095d0174dc67"
+    }
+  }
+}

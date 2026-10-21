@@ -34,6 +34,8 @@ not a claim to use each issuer's latest available filing. The
 [live browser verification](reports/live_browser_verification.json) checks all
 nine rendered scenarios, all 363 sensitivity cells and the nine source displays.
 
+The [seven-study mathematical control suite](verification/README.md) adds rerunnable exact-enumeration and analytic checks, with immutable source identities and a separate automated workflow.
+
 ## Evidence that can be checked
 
 | Check | Result | Interpretation |

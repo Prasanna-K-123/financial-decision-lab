@@ -1,0 +1,82 @@
+name: Verify portfolio mathematics
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  independent-controls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Prasanna-K-123/credit-risk-model-validation
+          ref: f22e70ffde1978c5053acecaef188ecce58f7915
+          path: portfolio-sources/credit-risk-model-validation
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Prasanna-K-123/insurance-price-reserve-risk
+          ref: ea1cccd2fee9f7d78654ae0d5b26ab38d118ac2e
+          path: portfolio-sources/insurance-price-reserve-risk
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Prasanna-K-123/causal-customer-decisions
+          ref: ffb9ab5c805c56bb69079fa13b5bf576e6b00b84
+          path: portfolio-sources/causal-customer-decisions
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Prasanna-K-123/treasury-alm
+          ref: e6e98a61971c621aee57c39ddf422fffadfc4926
+          path: portfolio-sources/treasury-alm
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Prasanna-K-123/demand-inventory
+          ref: db9217a84ae9a29df4e3e7f519c262bdf4edc118
+          path: portfolio-sources/demand-inventory
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Prasanna-K-123/inflation-vintages
+          ref: 7d033e3fdc25cb678f3107941d7fee011e5636c2
+          path: portfolio-sources/inflation-vintages
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: Prasanna-K-123/financial-decision-lab
+          ref: c6912d89b32efda389b2e489758e095d0174dc67
+          path: portfolio-sources/financial-decision-lab
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: verification/requirements.txt
+      - run: python -m pip install -r verification/requirements.txt
+      - name: Verify immutable sources and independent mathematical references
+        run: >-
+          python verification/portfolio_controls.py
+          --sources portfolio-sources --manifest verification/sources.json
+          --output portfolio-controls-result.json
+      - name: Write concise verification summary
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          result=json.loads(Path('portfolio-controls-result.json').read_text())
+          assert not result['failures']
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as summary:
+              summary.write('All seven deterministic mathematical control groups passed.\n\n')
+              summary.write(str(result['source_identity']['files_verified'])+' immutable public source files verified before imports.\n')
+          PY
