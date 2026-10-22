@@ -34,6 +34,12 @@ The harness verifies all 476 recorded Git blob identities before importing study
 code. Any failed assertion produces a nonzero exit and a per-study failure in
 the JSON output. Seeds and case families are fixed in the source.
 
+The inventory module is loaded through its Python package, including its input
+contracts. This supports both the original pinned study and the documented
+22 October validation revision. The immutable manifest still describes its
+original commits; omitting it requires recording the alternative source
+identities separately and does not establish a match to that manifest.
+
 [Workflow](../.github/workflows/portfolio-mathematics.yml) ·
 [Recorded local result](../reports/portfolio_mathematical_controls_20261021.json)
 

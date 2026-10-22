@@ -250,7 +250,8 @@ def treasury_controls(root):
 
 
 def demand_controls(root):
-    core = module('control_demand_core', root/'src/demand_inventory/core.py')
+    sys.path.insert(0, str(root/'src'))
+    from demand_inventory import core
     rng = np.random.default_rng(2026102105)
     feature_cases = allocation_cases = runoff_cases = 0
     for n in (1, 3, 10):
