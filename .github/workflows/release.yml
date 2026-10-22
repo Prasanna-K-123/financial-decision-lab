@@ -18,20 +18,22 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       AUDITED_REPOSITORY: "Prasanna-K-123/financial-decision-lab"
-      AUDITED_BASELINE: "c6912d89b32efda389b2e489758e095d0174dc67"
-      RELEASE_TAG: "v1.0.6"
-      RELEASE_TITLE: "Corporate Finance Decision Lab — v1.0.6"
-      ALLOWED_PATHS: "[\".github/workflows/portfolio-mathematics.yml\",\".github/workflows/release.yml\",\"README.md\",\"reports/portfolio_mathematical_controls_20261021.json\",\"verification/README.md\",\"verification/portfolio_controls.py\",\"verification/requirements.txt\",\"verification/sources.json\"]"
-      APPROVED_BLOBS: "{\".github/workflows/portfolio-mathematics.yml\":\"2df69b7271c4f1f4fee8fd808c66d6b2c0acc2c7\",\"README.md\":\"e2f27b46e2c5372d91e9369cb9f4de5bf9f6611d\",\"reports/portfolio_mathematical_controls_20261021.json\":\"e173683dd30447a15915ef800842b0df8b9e4fe5\",\"verification/README.md\":\"5950b2323462ad225248e98c07e8177c2c044611\",\"verification/portfolio_controls.py\":\"cf0dd138c89f1439e72a7ee82f02074836f302ec\",\"verification/requirements.txt\":\"fcd03fd7f5cc6282358d70bbc5123725b3f23ab2\",\"verification/sources.json\":\"2147723d737f895cbfda53fd726bbcf3f33ebd9a\"}"
+      AUDITED_BASELINE: "29775bb46b8f439b1f4bfc6d3b0555b07767bbf9"
+      RELEASE_TAG: "v1.0.7"
+      RELEASE_TITLE: "Corporate Finance Decision Lab — v1.0.7"
+      ALLOWED_PATHS: "[\".github/workflows/release.yml\"]"
+      APPROVED_BLOBS: "{\"verification/portfolio_controls.py\":\"e4d5ab5a30881ed8c7c52d0bfb0f89ccee0adaef\",\"verification/README.md\":\"0e072d6fbe0318b3310b26a1ab168195b74bfb72\",\"reports/inventory_control_import_revision_20261022.json\":\"b7d7f438b890bbec2f9ef9a6c0695d531f861580\",\"src/finance_lab/valuation.py\":\"db31e80dbef7b7e8326041ade18c8739f3f77665\",\"reports/extractor_freeze.json\":\"c1331af5df2a50c2c1ed81ae9348e184aa8ad0f6\"}"
       REQUIRED_WORKFLOWS: "[\"Verify public research\", \"Verify portfolio mathematics\"]"
       RELEASE_NOTES: |
-        Publish an independently formulated mathematical-control suite for all seven studies, with immutable source identities, pinned dependencies, complete execution instructions and a separate automated workflow.
-        
-        The checks verify 476 pinned source files before imports and cover exact missing-label bounds; Mack scale/permutation and simulation controls; finite randomization and constrained contact allocation; analytic treasury risk, runoff conservation and hedge optima; inventory information timing and feasibility; inflation release boundaries; and 1,000 independent 60-digit Decimal valuation cases.
-        
-        These deterministic synthetic controls are separate from empirical tests and unit-test counts. They are implementation verification, not an external audit or new evidence of investment, deployment or placement performance. The original scientific methods, results, workbook and live portfolio/explorer are unchanged.
-        
-        Publication requires both current-commit research CI and the portfolio mathematics workflow to succeed.
+        Maintain the seven-study mathematical controls after the inventory input-contract repair.
+
+        The inventory controls now import the study through its Python package, so its validation dependencies resolve. Both the original immutable 476-file snapshot and a separately recorded snapshot containing the revised inventory code pass all seven mathematical control groups locally. The receipt distinguishes base commits from reviewed verification-source overrides.
+
+        No corporate-finance formula, frozen prediction, empirical result, workbook or explorer changed. These deterministic project-authored controls are implementation verification, not an external audit or additional empirical evidence.
+
+        [Compatibility receipt](https://github.com/Prasanna-K-123/financial-decision-lab/blob/v1.0.7/reports/inventory_control_import_revision_20261022.json).
+
+        Publication requires current-commit research and portfolio-mathematics workflows to pass. Earlier release tags remain unchanged.
     steps:
       - name: Verify reviewed content and successful CI before publishing
         shell: bash
