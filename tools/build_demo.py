@@ -1,18 +1,45 @@
-"""Package an offline evidence browser and the seven-study portfolio index."""
+"""Build the offline finance explorer and preserve the current portfolio guide."""
 from pathlib import Path
-import json,shutil,html
-R=Path(__file__).resolve().parents[1];D=R/'docs';E=D/'exports';E.mkdir(parents=True,exist_ok=True)
-read=lambda path:json.loads((R/path).read_text())
-data={'spread':read('reports/financial_spread.json'),'references':read('data/references.json'),'cases':read('reports/valuation_scenarios.json'),'predictions':read('reports/development_predictions.json')+read('reports/final_predictions.json')}
-template=(R/'tools/explorer_template.html').read_text();js=(R/'tools/explorer.js').read_text();assert '</script' not in js.lower()
-(D/'index.html').write_text(template.replace('__DATA__',json.dumps(data,separators=(',',':')).replace('</','<\\/')).replace('__APP__',js))
-for name in ['P7_Technical_Report.pdf','P7_Decision_Memo.pdf','Prasanna_K_Research_Portfolio.pdf','Corporate_Finance_Decision_Lab.xlsx']:shutil.copy2(R/'artifacts'/name,E/name)
-projects=read('data/portfolio_projects.json')
-cards=[]
-for i,x in enumerate(projects, 1):
- repo=x['repo'];cards.append('<article><div class="number">'+str(i).zfill(2)+'</div><h2>'+html.escape(x['name'])+'</h2><p>'+html.escape(x['description'])+'</p><p class="roles">'+html.escape(x['roles'])+'</p><p><a href="https://prasanna-k-123.github.io/'+repo+'/">Evidence browser</a><a href="https://github.com/Prasanna-K-123/'+repo+'">Code and research</a></p></article>')
-page='''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prasanna K | Research Portfolio</title><meta name="description" content="Seven research studies in risk, corporate finance and applied economics by Prasanna K, Madras School of Economics."><style>
-*{box-sizing:border-box}body{margin: 0;background:#f6f7f5;color:#172d3e;font: 16px/1.6 system-ui,sans-serif}main,header,footer{max-width: 1120px;margin:auto;padding: 24px}a{color:#006c65;text-underline-offset: 4px}header{display:flex;justify-content:space-between;gap: 20px;border-bottom: 1px solid #cbd6dd}header strong{font-size: 1.1rem}header a{margin-left: 18px;font-size:.88rem}h1{font: 500 clamp(2.4rem, 5vw, 4.1rem)/1.1 Georgia,serif;letter-spacing:-.04em;max-width: 800px;margin: 25px 0}h2{font: 500 1.5rem/1.25 Georgia,serif;margin: 10px 0 15px}.intro{max-width: 810px;color:#526878}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;color:#006c65;font-weight: 700}.actions{margin: 25px 0 37px}.actions a{display:inline-block;border: 1px solid #203d57;background:#203d57;color:white;border-radius: 4px;padding: 10px 16px;text-decoration:none}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap: 22px}article{background:white;border: 1px solid #d5dfe5;border-radius: 7px;padding: 27px}article .number{color:#647d8c;font-size:.8rem}article p{font-size:.94rem}article a{font-size:.86rem;margin-right: 18px}.roles{color:#526878;font-size:.81rem!important}footer{font-size:.8rem;color:#526878}.map{margin: 30px 0;background:#eaf1f3;padding: 24px;border-radius: 6px}.map p{margin-bottom: 0}a:focus-visible{outline: 3px solid #ba742b;outline-offset: 4px}@media(max-width: 700px){.grid{grid-template-columns: 1fr}main,header,footer{padding: 18px}article{padding: 21px}header{align-items:flex-start}header nav{text-align:right}}
-</style></head><body><header><strong>Prasanna K</strong><nav aria-label="Profiles"><a href="https://github.com/Prasanna-K-123">GitHub</a><a href="https://www.linkedin.com/in/prasanna-k-964716384/">LinkedIn</a></nav></header><main><div class="eyebrow">M.A. Actuarial Economics · Madras School of Economics · Class of 2028</div><h1>Risk, finance and applied economic research.</h1><p class="intro">Seven studies connect traceable data and fixed model comparisons to practical decisions. Historical evidence, uncertainty and scenario assumptions stay visible. Summer 2027 internships.</p><div class="actions"><a href="exports/Prasanna_K_Research_Portfolio.pdf">Read the portfolio guide</a></div><div class="grid">__CARDS__</div><div class="map"><h2>Choose a starting point</h2><p>Credit and model risk: 1 +4. Insurance: 2 +4. Corporate finance and FP&amp;A: 7 +6. Product and business analytics: 3 +5. Economic research: 6 +3.</p></div></main><footer>Prasanna K · Research version 19 October 2026. Studies retain their source-population, historical-test and scenario limits. No proprietary industry experience or realised commercial impact is implied.</footer></body></html>'''
-(D/'portfolio.html').write_text(page.replace('__CARDS__',''.join(cards)))
-print(json.dumps({'index_bytes':(D/'index.html').stat().st_size,'portfolio_studies':len(cards),'exports':len(list(E.iterdir()))}))
+import json
+import shutil
+
+ROOT = Path(__file__).resolve().parents[1]
+EXPORTS = (
+    'P7_Technical_Report.pdf',
+    'P7_Decision_Memo.pdf',
+    'Prasanna_K_Research_Portfolio.pdf',
+    'Corporate_Finance_Decision_Lab.xlsx',
+)
+
+
+def build(root: Path = ROOT) -> dict:
+    docs = root / 'docs'
+    exports = docs / 'exports'
+    exports.mkdir(parents=True, exist_ok=True)
+    read = lambda name: json.loads((root / name).read_text())
+    data = {
+        'spread': read('reports/financial_spread.json'),
+        'references': read('data/references.json'),
+        'cases': read('reports/valuation_scenarios.json'),
+        'predictions': read('reports/development_predictions.json') + read('reports/final_predictions.json'),
+    }
+    template = (root / 'tools/explorer_template.html').read_text()
+    script = (root / 'tools/explorer.js').read_text()
+    if template.count('__DATA__') != 1 or template.count('__APP__') != 1 or '</script' in script.lower():
+        raise ValueError('Invalid explorer template or unsafe inline script terminator.')
+    payload = json.dumps(data, separators=(',', ':'), allow_nan=False).replace('</', '<\\/')
+    (docs / 'index.html').write_text(template.replace('__DATA__', payload).replace('__APP__', script))
+    for name in EXPORTS:
+        shutil.copy2(root / 'artifacts' / name, exports / name)
+    # Role routes, methods and direct evidence links are authored in this source
+    # template. A rebuild must not restore the earlier, simpler seven-card page.
+    (docs / 'portfolio.html').write_bytes((root / 'tools/portfolio_template.html').read_bytes())
+    return {
+        'index_bytes': (docs / 'index.html').stat().st_size,
+        'portfolio_studies': len(read('data/portfolio_projects.json')),
+        'exports': len(EXPORTS),
+    }
+
+
+if __name__ == '__main__':
+    print(json.dumps(build()))

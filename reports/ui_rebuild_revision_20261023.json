@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "date": "2026-10-23",
+  "baseline": "46230399666e878d93cc3f4d419e84f3bf1f862c",
+  "findings": [
+    "Selecting a sensitivity cell destroys the focused button and moves native focus to body",
+    "The demo builder recreates an obsolete portfolio page without role routes, methods and direct evidence links"
+  ],
+  "changes": [
+    "Restore focus to the same connected sensitivity pair after recomputation without scrolling",
+    "Concise labelled policy status, semantic table captions/headers, named keyboard-scroll regions and skip link",
+    "Canonical portfolio template exactly preserves the currently reviewed seven-study guide",
+    "CI runs interaction checks and refuses build drift in both pages and exports"
+  ],
+  "interaction_checks": {
+    "saved_policy_displays": 9,
+    "sensitivity_focus_checks": 1089,
+    "source_views": 9,
+    "invalid_input_recovery": true,
+    "unrelated_input_focus_preserved": true,
+    "precision_toggle": true
+  },
+  "numeric_checks": {
+    "javascript_comparisons": 1159,
+    "decimal_spread_boundary_cases": 1602,
+    "percentage_input_cases": 12,
+    "python_tests": 22,
+    "scientific_outputs_rebuilt": 9,
+    "unchanged_prediction_seals": 2
+  },
+  "build_regression": {
+    "baseline": "46230399666e878d93cc3f4d419e84f3bf1f862c",
+    "old_builder": {
+      "exit_code": 0,
+      "portfolio_matches_reviewed_page": false,
+      "role_picker_present": false,
+      "method_blocks": 0,
+      "index_matches_reviewed_page": false,
+      "hub_sha256": "2051d04540a28b3ba305f19c6277ee70e841eef940c08f13296b09cc67750d3d"
+    },
+    "repaired_builder": {
+      "exit_code": 0,
+      "portfolio_matches_reviewed_page": true,
+      "role_picker_present": true,
+      "method_blocks": 7,
+      "index_matches_reviewed_page": true,
+      "hub_sha256": "031b520ad5d450e186ff69b4487fa29778c952e35fa17212d94e004ae6d0decd",
+      "second_build_byte_identical": true
+    }
+  },
+  "protected_files_checked": 21,
+  "protected_files_byte_identical": true,
+  "scope": "Local source, exact embedded app, DOM model and numeric/build controls. Native browser, viewport and assistive-technology observations are separate; no screen-reader or universal accessibility certification."
+}

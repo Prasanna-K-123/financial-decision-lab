@@ -70,6 +70,20 @@ PYTHONPATH=src python tools/reproduce_numeric.py
 This numeric route does not independently re-audit the original PDF/DOCX cells.
 The workflow runs it on each push. Source extraction has its own reproduction.
 
+The self-contained explorer and role guide can also be rebuilt from the public
+files, without raw reports or a fitted private artifact:
+
+```bash
+python tools/build_demo.py
+node tests/check_explorer.cjs
+node tests/check_explorer_interactions.cjs
+```
+
+The interaction check covers all nine saved policies, 1,089 sensitivity selections,
+input-error recovery and nine source views. Native browser checks are separate.
+CI also rebuilds both pages and their exports and rejects any difference from the
+committed presentation. Edit the templates in `tools/` when changing either page.
+
 ## Reproduce the independent workbook check
 
 On Ubuntu with LibreOffice Calc and its system Python UNO bridge:
@@ -126,6 +140,12 @@ commercial deployment, investment returns or regulatory compliance.
 
 <details>
 <summary>Maintenance history and verification records</summary>
+
+The [23 October UI and build revision](reports/ui_rebuild_revision_20261023.json)
+preserves keyboard focus after sensitivity selection, adds labelled result
+announcements and table navigation, and prevents rebuilding the older portfolio
+page over the current role-based guide. Scientific calculations and saved
+research outputs are unchanged.
 
 The [20 October editorial revision](reports/editorial_revision_20261020.json)
 corrects report spacing. All eleven scientific outputs, the frozen method and

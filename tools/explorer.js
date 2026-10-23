@@ -49,12 +49,12 @@ function assumptions(){
  if(!validDiscountSpread(a.wacc,a.terminal_growth))invalid(el('wacc'),'WACC must be at least 0.01 percentage points above terminal growth.');
  return a;
 }
-function th(x,numeric){return '<th'+(numeric?' class="number"':'')+'>'+esc(x)+'</th>';}
+function th(x,numeric,scope='col'){return '<th scope="'+scope+'"'+(numeric?' class="number"':'')+'>'+esc(x)+'</th>';}
 function td(x,numeric){return '<td'+(numeric?' class="number"':'')+'>'+esc(x)+'</td>';}
 function historical(){
  const issuer=el('company').value,rows=DATA.spread.filter(x=>x.issuer===issuer),combined=issuer==='INFY';
  const metrics=[['Revenue / total net sales',x=>x.facts.revenue],['Reported operating income',x=>x.facts.operating_income],['Operating margin',x=>percent(x.reported_operating_margin)],['Operating cash flow',x=>x.facts.cfo],[combined?'Cash PPE and intangibles':'Gross cash PPE purchases',x=>combined?x.combined_ppe_intangibles_cash_outflow:x.facts.cash_ppe],[combined?'CFO less combined PPE / intangibles':'CFO less pure cash PPE',x=>combined?x.cash_generation_after_combined_investment:x.cash_generation_cfo_minus_cash_ppe]];
- el('historical-table').innerHTML='<table><thead><tr>'+th('USD millions, except margin')+rows.map(x=>th('FY'+x.fiscal_year,true)).join('')+'</tr></thead><tbody>'+metrics.map(m=>'<tr>'+td(m[0])+rows.map(x=>td(typeof m[1](x)==='number'?money(m[1](x),1):m[1](x),true)).join('')+'</tr>').join('')+'</tbody></table>';
+ el('historical-table').innerHTML='<table><caption>Reported financials for '+esc(el('company').selectedOptions[0].textContent)+'; USD millions, except margin.</caption><thead><tr>'+th('USD millions, except margin')+rows.map(x=>th('FY'+x.fiscal_year,true)).join('')+'</tr></thead><tbody>'+metrics.map(m=>'<tr>'+th(m[0],false,'row')+rows.map(x=>td(typeof m[1](x)==='number'?money(m[1](x),1):m[1](x),true)).join('')+'</tr>').join('')+'</tbody></table>';
  const width=Math.max(220,Math.min(900,el('historical-plot').clientWidth||900)),height=150,baseline=195;
  const investments=rows.map(x=>combined?x.combined_ppe_intangibles_cash_outflow:x.facts.cash_ppe);
  const max=Math.max(1,...rows.map(x=>x.facts.cfo),...investments),group=(width-30)/rows.length;
@@ -77,21 +77,24 @@ function renderModel(){
   el('policy-value').textContent=money(r.policy_value,d);el('initial-investment').textContent=money(r.upfront_investment,d);el('terminal-share').textContent=percent(r.terminal_share_of_net_value);
   const lift=r.no_growth_reference===0?null:r.policy_value/r.no_growth_reference-1;
   el('policy-interpretation').textContent='Relative to the no-growth cash-return reference: '+percent(lift)+'. Initial investment funds next year’s incremental profit; it is not reported cash PPE.'+(r.terminal_cash_flow<0?' This forced policy requires continuing terminal capital injections.':'');
-  el('policy-table').innerHTML='<table id="policy-ledger"><thead><tr>'+['Funding time','Normalised NOPAT','Net growth investment','Policy cash flow','Present value'].map((x,j)=>th(x,j>0)).join('')+'</tr></thead><tbody>'+r.ledger.map(x=>'<tr>'+td(x.year)+[x.nopat,x.net_investment,x.cash_flow,x.present_value].map(v=>td(money(v,d),true)).join('')+'</tr>').join('')+'</tbody></table>';
+  el('policy-table').innerHTML='<table id="policy-ledger"><caption>Operating-policy cash-flow ledger; USD millions. Funding time is years from the initial investment.</caption><thead><tr>'+['Funding time','Normalised NOPAT','Net growth investment','Policy cash flow','Present value'].map((x,j)=>th(x,j>0)).join('')+'</tr></thead><tbody>'+r.ledger.map(x=>'<tr>'+th(x.year,false,'row')+[x.nopat,x.net_investment,x.cash_flow,x.present_value].map(v=>td(money(v,d),true)).join('')+'</tr>').join('')+'</tbody></table>';
+  el('policy-status').textContent=el('company').selectedOptions[0].textContent+'. WACC '+money(a.wacc*100,2)+' percent; terminal growth '+money(a.terminal_growth*100,2)+' percent. Operating-policy value '+money(r.policy_value,d)+' million US dollars.';
   renderSensitivity(a);
- }catch(error){el('model-results').hidden=true;el('model-error').hidden=false;el('model-error').textContent=error.message;}
+ }catch(error){el('model-results').hidden=true;el('model-error').hidden=false;el('model-error').textContent=error.message;el('policy-status').textContent='';}
 }
 function renderSensitivity(a){
- const issuer=el('company').value,ebit=selected().reported_ebit,d=precision();let text='<table id="sensitivity-grid"><thead><tr>'+th('WACC / terminal growth');
+ const active=document.activeElement;
+ const focused=active&&active.dataset&&active.dataset.wacc!==undefined&&el('sensitivity').contains(active)?{wacc:active.dataset.wacc,terminal:active.dataset.terminal}:null;
+ const issuer=el('company').value,ebit=selected().reported_ebit,d=precision();let text='<table id="sensitivity-grid"><caption>Operating-policy value in USD millions by WACC and terminal profit growth.</caption><thead><tr>'+th('WACC / terminal growth');
  for(let g=0;g<=10;g++)text+=th((g*.5).toFixed(1)+'%');text+='</tr></thead><tbody>';
- for(let w=6;w<=16;w++){text+='<tr>'+th(w+'.0%');for(let g=0;g<=10;g++){const value=calculate(ebit,Object.assign({},a,{wacc:w/100,terminal_growth:g/200})).policy_value;text+='<td><button type="button" data-wacc="'+w+'" data-terminal="'+(g*.5)+'" aria-label="WACC '+w+'%, terminal growth '+(g*.5)+'%: '+money(value,d)+' million">'+money(value,d)+'</button></td>';}text+='</tr>';}
- el('sensitivity').innerHTML=text+'</tbody></table>';el('sensitivity').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{el('wacc').value=b.dataset.wacc;el('terminal_growth').value=b.dataset.terminal;renderModel();}));
+ for(let w=6;w<=16;w++){text+='<tr>'+th(w+'.0%',false,'row');for(let g=0;g<=10;g++){const value=calculate(ebit,Object.assign({},a,{wacc:w/100,terminal_growth:g/200})).policy_value;text+='<td><button type="button" data-wacc="'+w+'" data-terminal="'+(g*.5)+'" aria-label="WACC '+w+'%, terminal growth '+(g*.5)+'%: '+money(value,d)+' million">'+money(value,d)+'</button></td>';}text+='</tr>';}
+ el('sensitivity').innerHTML=text+'</tbody></table>';el('sensitivity').querySelectorAll('button').forEach(b=>{b.addEventListener('click',()=>{el('wacc').value=b.dataset.wacc;el('terminal_growth').value=b.dataset.terminal;renderModel();});if(focused&&b.dataset.wacc===focused.wacc&&b.dataset.terminal===focused.terminal)b.focus({preventScroll:true});});
 }
 function sourceEvidence(){
  const id=el('report-case').value,m=DATA.spread.find(x=>x.id===id),refs=DATA.references.filter(x=>x.source_id===id&&x.status!=='control'),pred=DATA.predictions.filter(x=>x.source_id===id);
  const labels={revenue:'Revenue',operating_income:'Operating income',net_income:'Consolidated net income',assets:'Assets',liabilities:'Direct liabilities',equity:'Consolidated equity',cash:'Cash only',current_assets:'Current assets',current_liabilities:'Current liabilities',cfo:'Operating cash',cash_ppe:'Pure cash PPE',da:'Pure D&A'};
  const prediction=(field,method)=>{const x=pred.find(y=>y.field===field&&y.method===method);return x.value===null?'Abstain':money(Number(x.value),0);};
- el('source-table').innerHTML='<table><thead><tr>'+['Financial target (USDm)','Reviewed fact','Literal answer','Strict answer','Canonical source cell'].map((x,i)=>th(x,i>0&&i<4)).join('')+'</tr></thead><tbody>'+refs.map(x=>'<tr>'+td(labels[x.field])+td(x.status==='direct'?money(x.value, 0):'Unavailable',true)+td(prediction(x.field,'literal'),true)+td(prediction(x.field,'strict'),true)+td(x.locator+(x.limitation?' · '+x.limitation:''))+'</tr>').join('')+'</tbody></table>';
+ el('source-table').innerHTML='<table><caption>Source-cell evidence for '+esc(id.replace('_',' FY'))+'; USD millions.</caption><thead><tr>'+['Financial target (USDm)','Reviewed fact','Literal answer','Strict answer','Canonical source cell'].map((x,i)=>th(x,i>0&&i<4)).join('')+'</tr></thead><tbody>'+refs.map(x=>'<tr>'+th(labels[x.field],false,'row')+td(x.status==='direct'?money(x.value, 0):'Unavailable',true)+td(prediction(x.field,'literal'),true)+td(prediction(x.field,'strict'),true)+td(x.locator+(x.limitation?' · '+x.limitation:''))+'</tr>').join('')+'</tbody></table>';
  el('source-link').innerHTML='<a href="'+esc(m.url)+'" target="_blank" rel="noopener">Read the original '+esc(id.replace('_',' FY'))+' report</a> · Fiscal end '+esc(m.period_end)+'.';
  el('source-identity').textContent='Original-file SHA256: '+m.sha256+'. '+m.bytes.toLocaleString('en-US')+' bytes. Retrieved '+m.retrieved_utc+'. Currency USD, amounts in millions. Issuer-hosted version; immutable original SEC accession equivalence is not asserted.';
 }
