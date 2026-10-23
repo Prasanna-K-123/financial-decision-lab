@@ -18,28 +18,25 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       AUDITED_REPOSITORY: "Prasanna-K-123/financial-decision-lab"
-      AUDITED_BASELINE: "29775bb46b8f439b1f4bfc6d3b0555b07767bbf9"
-      RELEASE_TAG: "v1.0.7"
-      RELEASE_TITLE: "Corporate Finance Decision Lab — v1.0.7"
-      ALLOWED_PATHS: "[\".github/workflows/release.yml\"]"
-      APPROVED_BLOBS: "{\"verification/portfolio_controls.py\":\"e4d5ab5a30881ed8c7c52d0bfb0f89ccee0adaef\",\"verification/README.md\":\"0e072d6fbe0318b3310b26a1ab168195b74bfb72\",\"reports/inventory_control_import_revision_20261022.json\":\"b7d7f438b890bbec2f9ef9a6c0695d531f861580\",\"src/finance_lab/valuation.py\":\"db31e80dbef7b7e8326041ade18c8739f3f77665\",\"reports/extractor_freeze.json\":\"c1331af5df2a50c2c1ed81ae9348e184aa8ad0f6\"}"
+      AUDITED_BASELINE: "293f7c6b3cc183ecca1d65b2ca595af2c3217035"
+      RELEASE_TAG: "v1.0.8"
+      RELEASE_TITLE: "Corporate Finance Decision Lab — v1.0.8"
+      ALLOWED_PATHS: "[\".github/workflows/release.yml\", \"reports/browser_ui_verification_20261023.json\"]"
+      APPROVED_BLOBS: "{\".github/workflows/verify.yml\":\"bb45e538afa84932c00ec748d1b1374b855515d1\",\"README.md\":\"46d9fbe4ce30159c737004f66b36de81dee107fc\",\"docs/audit/explorer-viewport-check.html\":\"61b25456852816700d1064057a5f6c9e358558e3\",\"docs/index.html\":\"99dfba70aeaba4478f5347f4b8a07b74fdced71a\",\"reports/ui_rebuild_revision_20261023.json\":\"dafbd215cb223d7007424a7660d553d62119c482\",\"tests/check_explorer_interactions.cjs\":\"f045bee00c7f632c4592b7dcffb688a172fcced3\",\"tools/build_demo.py\":\"e974f40fb12a8f79f4f44f5203e3f1ecedc98b40\",\"tools/explorer.js\":\"cf5fefedf9275f934b403a6ec2773ea2b2666b3d\",\"tools/explorer_template.html\":\"4348415cac0cbdce7076a1d0cfb31cb031316c70\",\"tools/portfolio_template.html\":\"b623af523b1afb9091cb8c5efe7b5fd332fafffd\",\"reports/browser_ui_verification_20261023.json\":\"a885b6b5d3914c1bc92b4f7370c511b8284e27c0\"}"
       REQUIRED_WORKFLOWS: "[\"Verify public research\", \"Verify portfolio mathematics\"]"
+      BROWSER_SOURCE_COMMIT: "293f7c6b3cc183ecca1d65b2ca595af2c3217035"
+      BROWSER_EVIDENCE_PATH: "reports/browser_ui_verification_20261023.json"
+      EXPECTED_HTML_SHA256: "45aee19b89b88ea08d0adec2b6143b6e715924e312fcbfd9d039de0b5099a00b"
       RELEASE_NOTES: |
-        Maintain the seven-study mathematical controls after the inventory input-contract repair.
+        Preserve native keyboard focus after sensitivity selection and add labelled result status and table navigation. The demo builder now preserves the current seven-study role guide. CI checks all 1,089 sensitivity selections, nine saved policies, input recovery and source views, then rejects build drift in both pages and their exports. Native Chrome checks cover the published source and three CSS viewport widths. Scientific calculations, saved results and workbooks are unchanged.
 
-        The inventory controls now import the study through its Python package, so its validation dependencies resolve. Both the original immutable 476-file snapshot and a separately recorded snapshot containing the revised inventory code pass all seven mathematical control groups locally. The receipt distinguishes base commits from reviewed verification-source overrides.
-
-        No corporate-finance formula, frozen prediction, empirical result, workbook or explorer changed. These deterministic project-authored controls are implementation verification, not an external audit or additional empirical evidence.
-
-        [Compatibility receipt](https://github.com/Prasanna-K-123/financial-decision-lab/blob/v1.0.7/reports/inventory_control_import_revision_20261022.json).
-
-        Publication requires current-commit research and portfolio-mathematics workflows to pass. Earlier release tags remain unchanged.
+        [Browser verification](https://github.com/Prasanna-K-123/financial-decision-lab/blob/v1.0.8/reports/browser_ui_verification_20261023.json). Earlier release tags and dated records remain unchanged.
     steps:
       - name: Verify reviewed content and successful CI before publishing
         shell: bash
         run: |
           python3 - <<'PY'
-          import json, os, time, urllib.request, urllib.error
+          import base64, json, os, time, urllib.request, urllib.error
           repo=os.environ['GITHUB_REPOSITORY']
           sha=os.environ['GITHUB_SHA']
           def require(condition,message):
@@ -70,6 +67,20 @@ jobs:
           approved=json.loads(os.environ['APPROVED_BLOBS'])
           require(all(actual.get(path)==digest for path,digest in approved.items()),
               'Source differs from reviewed content')
+          proof_path=os.environ['BROWSER_EVIDENCE_PATH']
+          proof_blob=api('/git/blobs/'+approved[proof_path])
+          require(proof_blob['encoding']=='base64','Unexpected verification encoding')
+          proof=json.loads(base64.b64decode(proof_blob['content']))
+          require(proof['source_commit']==os.environ['BROWSER_SOURCE_COMMIT'],
+              'Browser observations refer to a different source')
+          require(proof['native_checks_passed'] is True and all(proof['native_checks'].values()),
+              'Native interface verification did not pass')
+          views=proof['viewport_views']
+          require(len(views)==3 and {view['requestedCssWidth'] for view in views}=={320,390,1200}
+              and all(view['passed'] for view in views),'Viewport verification did not pass')
+          require(proof['http_html_matches_reviewed_source'] is True and
+              proof['delivered_html_sha256']==os.environ['EXPECTED_HTML_SHA256'],
+              'Delivered HTML differs from the reviewed source')
           required=json.loads(os.environ['REQUIRED_WORKFLOWS'])
           deadline=time.monotonic()+900
           verified={}

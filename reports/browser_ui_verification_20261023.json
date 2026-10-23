@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "date": "2026-10-23",
+  "source_commit": "293f7c6b3cc183ecca1d65b2ca595af2c3217035",
+  "browser": "Cloud Chrome",
+  "native_checks_passed": true,
+  "native_checks": {
+    "invalid_spread_explained_and_associated": true,
+    "minimum_spread_recovers_results": true,
+    "unrelated_field_focus_retained": true,
+    "selected_sensitivity_button_connected_and_focused": true
+  },
+  "observations": {
+    "invalid": {
+      "describedBy": "model-error",
+      "error": "WACC must be at least 0.01 percentage points above terminal growth.",
+      "hiddenResults": true,
+      "invalid": "true"
+    },
+    "minimumSpread": {
+      "focus": "wacc",
+      "hiddenError": true,
+      "hiddenResults": false,
+      "invalid": null,
+      "value": "1,284,420,610.0"
+    },
+    "selectedCell": {
+      "activeLabel": "WACC 6%, terminal growth 0%: 2,427,434.0 million",
+      "activeTag": "BUTTON",
+      "connected": true,
+      "status": "Microsoft. WACC 6.00 percent; terminal growth 0.00 percent. Operating-policy value 2,427,434.0 million US dollars.",
+      "terminalGrowth": "0",
+      "wacc": "6"
+    }
+  },
+  "viewport_views": [
+    {
+      "project": "financial-decision-lab",
+      "requestedCssWidth": 320,
+      "captionCount": 4,
+      "documentWidth": 305,
+      "layoutWidth": 305,
+      "overflowRegions": [
+        {
+          "contentWidth": 325,
+          "id": "historical-table",
+          "label": "Reported financials",
+          "tabindex": "0",
+          "width": 235
+        },
+        {
+          "contentWidth": 639,
+          "id": "policy-table",
+          "label": "Operating-policy cash-flow ledger",
+          "tabindex": "0",
+          "width": 235
+        },
+        {
+          "contentWidth": 949,
+          "id": "sensitivity",
+          "label": "WACC and terminal-growth sensitivity values",
+          "tabindex": "0",
+          "width": 235
+        },
+        {
+          "contentWidth": 313,
+          "id": "",
+          "label": null,
+          "tabindex": null,
+          "width": 235
+        },
+        {
+          "contentWidth": 669,
+          "id": "source-table",
+          "label": "Source-cell evidence",
+          "tabindex": "0",
+          "width": 235
+        }
+      ],
+      "tableCount": 5,
+      "title": "Corporate Finance Decision Lab | Prasanna K",
+      "passed": true
+    },
+    {
+      "project": "financial-decision-lab",
+      "requestedCssWidth": 390,
+      "captionCount": 4,
+      "documentWidth": 375,
+      "layoutWidth": 375,
+      "overflowRegions": [
+        {
+          "contentWidth": 325,
+          "id": "historical-table",
+          "label": "Reported financials",
+          "tabindex": "0",
+          "width": 305
+        },
+        {
+          "contentWidth": 639,
+          "id": "policy-table",
+          "label": "Operating-policy cash-flow ledger",
+          "tabindex": "0",
+          "width": 305
+        },
+        {
+          "contentWidth": 949,
+          "id": "sensitivity",
+          "label": "WACC and terminal-growth sensitivity values",
+          "tabindex": "0",
+          "width": 305
+        },
+        {
+          "contentWidth": 313,
+          "id": "",
+          "label": null,
+          "tabindex": null,
+          "width": 305
+        },
+        {
+          "contentWidth": 669,
+          "id": "source-table",
+          "label": "Source-cell evidence",
+          "tabindex": "0",
+          "width": 305
+        }
+      ],
+      "tableCount": 5,
+      "title": "Corporate Finance Decision Lab | Prasanna K",
+      "passed": true
+    },
+    {
+      "project": "financial-decision-lab",
+      "requestedCssWidth": 1200,
+      "captionCount": 4,
+      "documentWidth": 1185,
+      "layoutWidth": 1185,
+      "overflowRegions": [],
+      "tableCount": 5,
+      "title": "Corporate Finance Decision Lab | Prasanna K",
+      "passed": true
+    }
+  ],
+  "http_html_matches_reviewed_source": true,
+  "delivered_html_sha256": "45aee19b89b88ea08d0adec2b6143b6e715924e312fcbfd9d039de0b5099a00b",
+  "scope": "Native browser controls and DOM/AX observations; three CSS iframe widths. This is project-authored verification, not external review, screen-reader testing, phone/touch certification or a new other-engine run."
+}
