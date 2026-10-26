@@ -1,5 +1,7 @@
 # Corporate Finance Decision Lab
 
+> **Supplementary study.** The current selected portfolio focuses on [operational decision systems](https://github.com/Prasanna-K-123/demand-inventory), [causal campaign decisions](https://github.com/Prasanna-K-123/causal-customer-decisions) and [credit-risk validation](https://github.com/Prasanna-K-123/credit-risk-model-validation). This study remains available as supporting work.
+
 [![Public research checks](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml/badge.svg)](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml)
 
 **Annual-report facts, cash-generation analysis and the capital required to fund growth.**
