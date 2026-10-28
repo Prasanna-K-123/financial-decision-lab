@@ -1,0 +1,10 @@
+{
+  "change": "Check all supported aliases for disagreement before canonical-label preference. Differing net sales and total revenue are ambiguous under this field contract and abstain. Literal baseline unchanged.",
+  "date": "2026-10-26",
+  "historical_freeze_and_predictions_unchanged": true,
+  "issue": "Strict extraction filtered alias ranks before checking conflicting values.",
+  "original_sha256": "a5a7893036d09c4993a7bd4dc5e0c8dd9edbb49d2d0d1b94cd3e7930d5a4c967",
+  "revised_sha256": "e0530729300ee399da356b6162e5a90a337d73edfe7bacdab04be73b74f4450d",
+  "revision_patch_sha256": "ecce0a7de05cb9e7a81a5603b460ad5f87b655d20119a8e4424e05553d6dd848",
+  "validation": "See alias_conflict_verification_20261026.json; historical results are not silently relabelled as prospective evaluation of this revision."
+}

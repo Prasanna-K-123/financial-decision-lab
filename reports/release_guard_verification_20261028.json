@@ -1,0 +1,17 @@
+{
+  "all_tests_passed": 32,
+  "date": "2026-10-28",
+  "existing_tag_and_exact_reviewed_main_required": true,
+  "files_sha256": {
+    ".github/workflows/release.yml": "0e64b7604b667878f3fd729351b58eb93e071b6c5f4b10c938eb5f691aba259c",
+    "tests/test_release_guard.py": "d437c5b80da92cb348fb17971aa3c6754f33da655564a9fffb3e4dd5d41fe4da",
+    "tools/release_guard.py": "e72aad76223c667073b9ca347f488ef3be712bf5934fb933c53985465ab91df1"
+  },
+  "local_test_log_sha256": "51f442f09697aee8e876449129031a90ca41fb1ffd8d3d6cc3bb18f86eb795ae",
+  "no_artifact_uploads_or_cache_creation": true,
+  "no_explicit_tag_mutation_api": true,
+  "publication_depends_on_verification": true,
+  "release_guard_tests": 7,
+  "scope": "Local behavioral guard tests and workflow structure/command review; no workflow dispatch, release creation or tag mutation performed.",
+  "verification_contents_read_only": true
+}

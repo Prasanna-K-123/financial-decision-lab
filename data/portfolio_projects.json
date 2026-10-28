@@ -1,44 +1,152 @@
 [
   {
-    "name": "Credit risk and model validation",
-    "repo": "credit-risk-model-validation",
-    "description": "300,000 mortgages and 20.15 million monthly records. Chronological SQL snapshots, censored outcomes, fixed models and economic-stress validation. Better held-out discrimination did not justify unchanged probabilities: calibration failures are disclosed.",
-    "roles": "Credit risk, model validation, risk analytics"
+    "key": "demand",
+    "name": "Operational forecasting and allocation",
+    "repo": "demand-inventory",
+    "description": "FreshRetailNet-LT observed sales support time-aware forecasts and capacity-constrained allocation scenarios. The implementation includes a typed ingestion ledger, immutable input snapshots and asynchronous jobs. Stockout-adjusted forecasts and operating effects remain scenarios, not observed retailer savings.",
+    "roles": "Operations analytics, forecasting, decision systems",
+    "methods": "Time-aware features · masked-history evaluation · constrained allocation · transactional ingestion",
+    "evidence": [
+      {
+        "label": "Research report",
+        "path": "docs/RESEARCH_REPORT.md"
+      },
+      {
+        "label": "System design",
+        "path": "docs/SYSTEM_DESIGN.md"
+      },
+      {
+        "label": "Core methods",
+        "path": "src/stockout/decisions.py"
+      }
+    ]
   },
   {
-    "name": "Insurance pricing and reserve uncertainty",
-    "repo": "insurance-price-reserve-risk",
-    "description": "French motor pricing and a separate US auto-reserving study. Fixed pricing comparisons and reserve interval scores expose conditional-calibration and coverage failures. The two populations are not joined.",
-    "roles": "Actuarial analytics, insurance risk, uncertainty modelling"
-  },
-  {
+    "key": "causal",
     "name": "Causal customer decisions",
     "repo": "causal-customer-decisions",
-    "description": "A 64,000-customer, three-arm randomized experiment. Frozen policies and doubly robust evaluation did not establish that personalized targeting beats the selected simple campaign. Explicit margin and contact costs are scenarios.",
-    "roles": "Product analytics, experimentation, causal inference"
+    "description": "A 64,000-customer randomized campaign did not establish that personalized targeting beats the selected simple policy. A separate 873,520-row Criteo cohort tests released-sample response and selection sensitivity; it does not identify original-population causal profit.",
+    "roles": "Product analytics, experimentation, causal inference",
+    "methods": "Randomized policy evaluation · cross-fitting · paired uncertainty · selection sensitivity",
+    "evidence": [
+      {
+        "label": "Decision memo",
+        "path": "reports/DECISION_MEMO.md"
+      },
+      {
+        "label": "Research report",
+        "path": "reports/TECHNICAL_REPORT.md"
+      },
+      {
+        "label": "Core methods",
+        "path": "src/customer_policy/evaluation.py"
+      }
+    ]
   },
   {
-    "name": "Treasury ALM and liquidity",
-    "repo": "treasury-alm",
-    "description": "Interest-rate hedging, published Treasury curves and hypothetical benefit cash flows. Four hedge policies, 56 rate stresses and 108 liquidity-runoff cases. Independent Decimal and formula-workbook reconciliations support the modelling.",
-    "roles": "Treasury, ALM, financial risk"
+    "key": "credit",
+    "name": "Bank-risk model validation",
+    "repo": "credit-risk-model-validation",
+    "description": "237,253 annual bank observations support a purged temporal failure-monitoring study with separate calibration and policy stages. Later monitoring missed 9 of 10 failures, restricting use despite stronger earlier ranking. Bank failure is not borrower default or regulatory approval.",
+    "roles": "Bank risk, model validation, risk analytics",
+    "methods": "Temporal purging · rare-event calibration · model challenge · cohort monitoring",
+    "evidence": [
+      {
+        "label": "Decision memo",
+        "path": "reports/DECISION_MEMO.md"
+      },
+      {
+        "label": "Research report",
+        "path": "reports/VALIDATION_REPORT.md"
+      },
+      {
+        "label": "Core methods",
+        "path": "bank_monitoring/"
+      }
+    ]
   },
   {
-    "name": "Demand, capital and inventory",
-    "repo": "demand-inventory",
-    "description": "210 historical M5 item-store series link probabilistic forecasts to replenishment under common capital/capacity constraints. Fifteen final weekly origins and overlapping horizons limit inference. Operating effects are simulations, not observed retailer savings.",
-    "roles": "Business analytics, forecasting, operations and working capital"
-  },
-  {
-    "name": "Indian inflation release vintages",
-    "repo": "inflation-vintages",
-    "description": "48 official releases and 144 vintage observations. An 18-release final check retains persistence: RMSE 0.8185 pp versus 1.6901 for fixed AR(1). Release dates and the later base revision remain separate. No current inflation forecast is claimed.",
-    "roles": "Economic research, time series, publication-aware data"
-  },
-  {
+    "key": "finance",
     "name": "Corporate Finance Decision Lab",
     "repo": "financial-decision-lab",
     "description": "Nine issuer reports, a traced financial spread and a funded-growth policy model. Final extraction: 33 supported correct /36 financial targets for both methods, three justified abstentions. 519 independent valuation checks and a reconciled formula workbook.",
-    "roles": "Corporate finance, FP&A, financial research and finance data"
+    "roles": "Corporate finance, FP&A, financial research and finance data",
+    "methods": "Source-cell extraction · accounting identities · funded growth · reverse scenarios · Decimal reconciliation",
+    "evidence": [
+      {
+        "label": "Decision memo",
+        "path": "reports/DECISION_MEMO.md"
+      },
+      {
+        "label": "Research report",
+        "path": "reports/TECHNICAL_REPORT.md"
+      },
+      {
+        "label": "Core methods",
+        "path": "src/finance_lab/valuation.py"
+      }
+    ]
+  },
+  {
+    "key": "economics",
+    "name": "Indian inflation release vintages",
+    "repo": "inflation-vintages",
+    "description": "48 official releases and 144 vintage observations. An 18-release final check retains persistence: RMSE 0.8185 pp versus 1.6901 for fixed AR(1). Release dates and the later base revision remain separate. No current inflation forecast is claimed.",
+    "roles": "Economic research, time series, publication-aware data",
+    "methods": "Publication-aware as-of joins · Ridge AR(1) · release revisions · block uncertainty",
+    "evidence": [
+      {
+        "label": "Research report",
+        "path": "reports/RESEARCH_PAPER.md"
+      },
+      {
+        "label": "Core methods",
+        "path": "src/inflation_vintages/core.py"
+      }
+    ]
+  },
+  {
+    "key": "treasury",
+    "name": "Treasury ALM and liquidity",
+    "repo": "treasury-alm",
+    "description": "Interest-rate hedging, published Treasury curves and hypothetical benefit cash flows. Four hedge policies, 56 rate stresses and 108 liquidity-runoff cases. Independent Decimal and formula-workbook reconciliations support the modelling.",
+    "roles": "Treasury, ALM, financial risk",
+    "methods": "Term-structure cash flows · constrained hedging · rate stresses · liquidity conservation",
+    "evidence": [
+      {
+        "label": "Decision memo",
+        "path": "reports/integrated_20261019/DECISION_MEMO.md"
+      },
+      {
+        "label": "Research report",
+        "path": "reports/integrated_20261019/TECHNICAL_REPORT.md"
+      },
+      {
+        "label": "Core methods",
+        "path": "extensions/treasury_alm/hedging.py"
+      }
+    ]
+  },
+  {
+    "key": "insurance",
+    "name": "Insurance pricing and reserve uncertainty",
+    "repo": "insurance-price-reserve-risk",
+    "description": "French motor pricing and a separate US auto-reserving study. Fixed pricing comparisons and reserve interval scores expose conditional-calibration and coverage failures. The two populations are not joined.",
+    "roles": "Actuarial analytics, insurance risk, uncertainty modelling",
+    "methods": "Exposure-weighted GLMs · calibrated boosting · Mack covariance · interval coverage",
+    "evidence": [
+      {
+        "label": "Decision memo",
+        "path": "reports/DECISION_MEMO.md"
+      },
+      {
+        "label": "Research report",
+        "path": "reports/TECHNICAL_REPORT.md"
+      },
+      {
+        "label": "Core methods",
+        "path": "src/insurance_risk/reserving.py"
+      }
+    ]
   }
 ]

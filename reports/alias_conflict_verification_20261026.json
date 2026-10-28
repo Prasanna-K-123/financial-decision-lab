@@ -1,0 +1,304 @@
+{
+  "base_commit": "06a314fe22f342961fd77865756bff0e79342696",
+  "checks": {
+    "explorer_interactions": {
+      "invalid_input_recovery": true,
+      "passed": true,
+      "precision_toggle": true,
+      "saved_policy_displays": 9,
+      "scope": "Actual embedded app in a DOM model; native browser focus, layout and accessibility observations are separate.",
+      "sensitivity_focus_checks": 1089,
+      "source_views": 9,
+      "unrelated_input_focus_preserved": true
+    },
+    "explorer_numeric": {
+      "actual_embedded_script_checked": true,
+      "decimal_boundary_checks": 1602,
+      "local_deliverable_links_present": true,
+      "max_absolute_error_usd_millions": 4.656612873077393e-10,
+      "numeric_comparisons": 1159,
+      "percentage_input_guard_checks": 12,
+      "portfolio_studies": 7,
+      "python_case_evaluations": 519,
+      "scope": "Node VM execution of the exact published script; rendered browser, keyboard and live-link checks are separate.",
+      "zero_and_invalid_boundary_checks": true
+    },
+    "independent_decimal_cases": 519,
+    "original_prediction_seals_preserved": 2,
+    "public_numeric_outputs_rebuilt": 9,
+    "python_tests_passed": 25
+  },
+  "protected_inputs": {
+    "PROTOCOL.md": "4457eb5895b809deccd79f8b09a7a74bdb588e0c062f7ae760278a4a6a19001b",
+    "data/financial_aux.json": "29d846ca2272bb0d62437eff783ac96b807c3f8355423f9657a2bee0e25a9b45",
+    "data/references.json": "3d1a3ffb603fa1d3c5a01e6df5ab431aed858fb89728e3a657158f1edbddcfed",
+    "data/sources.json": "fe299ab96b79ac9e57ff58eb3dee6a820602e90033366e67718a7c5794b69797",
+    "reports/extractor_freeze.json": "33a478589c5dfad0d8f3da94b3f68b12fdb2876160575da9dfff1ee7b5634c9a",
+    "reports/prediction_seal.json": "c702ba9049bcb2f0563fdb9e60ac2a590afaefd4f04fb6a3c0a608e95cc12d79"
+  },
+  "raw_reconstruction": {
+    "decoded_cache_hits": 0,
+    "exit_code": 0,
+    "fresh_network_source_count": 9,
+    "per_source_execution": [
+      {
+        "decode_and_30_requests_seconds": 0.934410897003545,
+        "ocr_rows": 0,
+        "rows": 1629,
+        "source": "MSFT_2023",
+        "source_decode_cache_hit": false
+      },
+      {
+        "decode_and_30_requests_seconds": 0.828619701002026,
+        "ocr_rows": 0,
+        "rows": 1696,
+        "source": "MSFT_2024",
+        "source_decode_cache_hit": false
+      },
+      {
+        "decode_and_30_requests_seconds": 1.054133133002324,
+        "ocr_rows": 0,
+        "rows": 1675,
+        "source": "MSFT_2025",
+        "source_decode_cache_hit": false
+      },
+      {
+        "decode_and_30_requests_seconds": 276.3094464650021,
+        "ocr_rows": 2809,
+        "rows": 3088,
+        "source": "TGT_2023",
+        "source_decode_cache_hit": false
+      },
+      {
+        "decode_and_30_requests_seconds": 1.046856390999892,
+        "ocr_rows": 0,
+        "rows": 3461,
+        "source": "TGT_2024",
+        "source_decode_cache_hit": false
+      },
+      {
+        "decode_and_30_requests_seconds": 1.290184342997236,
+        "ocr_rows": 0,
+        "rows": 3416,
+        "source": "TGT_2025",
+        "source_decode_cache_hit": false
+      },
+      {
+        "decode_and_30_requests_seconds": 4.6039826790001825,
+        "ocr_rows": 0,
+        "rows": 12554,
+        "source": "INFY_2023",
+        "source_decode_cache_hit": false
+      },
+      {
+        "decode_and_30_requests_seconds": 6.530460351998045,
+        "ocr_rows": 0,
+        "rows": 12378,
+        "source": "INFY_2024",
+        "source_decode_cache_hit": false
+      },
+      {
+        "decode_and_30_requests_seconds": 286.73217563900107,
+        "ocr_rows": 5492,
+        "rows": 18942,
+        "source": "INFY_2025",
+        "source_decode_cache_hit": false
+      }
+    ],
+    "responses": 270,
+    "runtime": {
+      "max_child_rss_kib": 561684,
+      "original_report_count": 9,
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "scope": "Raw-source decoding, 270 deterministic answers, reference scoring, financial model grids and independent Decimal checks; no network, human-time or paid-provider timing claim.",
+      "wall_seconds": 579.8309523980024
+    },
+    "scientific_hashes": {
+      "development_predictions.json": "0db5a5a37bbdba6c028ba9fa87f0c19fb3d5ed41f4a1be7a6d92f8841f0c0a1b",
+      "error_ledger.json": "7fe44f57eb28fb002838db0b1952ac202c17ad5df0a1efad3b2a717bc20b1b07",
+      "evaluation_ledger.json": "6d95fc8f3cde92632ff7c9593d3f25baa42e0f1f62bb0c81549dba0bd7ba263b",
+      "evaluation_summary.json": "5deff011342635c60bd264015aa13f8c8c2b3e9767c7777dde9b20910f774a30",
+      "final_predictions.json": "0272f65436cd714db4a6aa9933fe0b0d91ac936f3e2ff38518ad672aa001a24b",
+      "financial_spread.json": "a38057450aa756144854922374dfa8183d1fa0831d64038c03221a919f168f75",
+      "growth_return_regimes.json": "d19415d086f8f161e4086a74c4cc4d6b7347a054039d336190c673adf2a0c446",
+      "independent_math_verification.json": "eda88c43c2c1d0cfe4cc997187acb81f38cf3c3a606cc28c1762373181b25481",
+      "reverse_cases.json": "2a9bb2c7187baac88baa30f0503807efdcec95e9eff2d819fa9772a7ee522ece",
+      "valuation_scenarios.json": "e5dd3e32eefd9d5e39aa115515bd287ccfe88f0da8e202cafc37444d41b033a9",
+      "valuation_sensitivity.json": "458facefaa61128dbe266a35b0030b5564051cde276cf50c9317ddaf20b191c7"
+    },
+    "scientific_outputs_byte_identical": 11
+  },
+  "remaining_scope": [
+    "Native browser, publication and final portfolio integration are separate checks.",
+    "Existing formula workbook was not rebuilt or recalculated for this extraction-only correction. Historical LibreOffice evidence is not a fresh native Excel check.",
+    "Runtime excludes network acquisition, PDF/workbook/browser generation and human work."
+  ],
+  "revision_date": "2026-10-26",
+  "runtime": {
+    "dependency_environment": "venv with system-site-packages; PyMuPDF1.26.7 installed locally",
+    "english_traineddata_sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+    "mupdf": "1.26.12",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "pymupdf": "1.26.7",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "tesseract": "5.3.4"
+  },
+  "scope": "Revised alias-conflict extraction, fresh acquisition of nine pinned originals, clean decoding/OCR, scoring, financial models and independent Decimal checks. Historical freeze/prediction seals preserved; no new blind holdout or employer approval.",
+  "source_spot_checks": {
+    "checked_at_utc": "2026-10-28T09:06:31.681680+00:00",
+    "checks": {
+      "infosys": {
+        "cash_taxes_paid": [
+          662,
+          1114
+        ],
+        "cfo": [
+          4351,
+          3148
+        ],
+        "cfo_change": 1203,
+        "lower_cash_tax_contribution": 452,
+        "periods": [
+          2025,
+          2024
+        ],
+        "pre_tax_operating_cash": [
+          5013,
+          4262
+        ],
+        "source": "INFY_2025",
+        "source_locations": [
+          "PDF page166 consolidated cash flows"
+        ],
+        "source_sha256": "eeb58b8a27df8b15b0c9ac5ee4cc01dcb9b460c597a07d00334ded10860412c8",
+        "tax_contribution_percent": 37.57273482959268,
+        "url": "https://www.infosys.com/investors/documents/exchange-filings/2025/form20f-2025.pdf"
+      },
+      "microsoft": {
+        "cash_ppe": [
+          64551,
+          44477
+        ],
+        "cash_ppe_growth_percent": 45.13343975537918,
+        "cfo": [
+          136162,
+          118548
+        ],
+        "cfo_less_cash_ppe": [
+          71611,
+          74071
+        ],
+        "periods": [
+          2025,
+          2024
+        ],
+        "revenue": [
+          281724,
+          245122
+        ],
+        "revenue_growth_percent": 14.932156232406712,
+        "source": "MSFT_2025",
+        "source_locations": [
+          "DOCX table23 row11",
+          "DOCX table26 rows25,42"
+        ],
+        "source_sha256": "777ed663455c01710aaf9235a74ad5044cc0ade639baeb9bda20889e0994b22f",
+        "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/MSFT_FY25q4_10K"
+      },
+      "target": {
+        "cash_ppe": [
+          3727,
+          2891
+        ],
+        "cash_proxy_change_percent": -36.66219839142091,
+        "cfo": [
+          6562,
+          7367
+        ],
+        "cfo_less_cash_ppe": [
+          2835,
+          4476
+        ],
+        "periods": [
+          2025,
+          2024
+        ],
+        "source": "TGT_2025",
+        "source_locations": [
+          "PDF page54 consolidated cash flows"
+        ],
+        "source_sha256": "ad0cd2a6e7c01a2e6b84525dfde0eef2d2fcde379ff17bed9bd969a140dde88c",
+        "url": "https://corporate.target.com/getmedia/79214b4b-6331-4b1c-b76f-acff121b40f9/2025-Annual-Report-Target-Corporation.pdf"
+      }
+    },
+    "method": "Separate direct DOCX XML table/PDF page text reading, without importing the project document/extractor functions. Numeric values transcribed from observed source cells; arithmetic recalculated. Bounded source review, not entire-corpus manual reannotation.",
+    "unit": "USD millions"
+  },
+  "sources": [
+    {
+      "bytes": 1108967,
+      "original_identity_matched": true,
+      "sha256": "6cdaa2e9710b930ce5f1ddb186753b82e6b1d659734b7d5e5c8fc69b72a2f17c",
+      "source_id": "MSFT_2023",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/MSFT_FY23Q4_10K"
+    },
+    {
+      "bytes": 1240696,
+      "original_identity_matched": true,
+      "sha256": "d2634a95701e31734089f6f8f7e080e1fb3ceb44c7a9e7442bd28744d8ec7ab0",
+      "source_id": "MSFT_2024",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/MSFT_FY24Q4_10K"
+    },
+    {
+      "bytes": 1239623,
+      "original_identity_matched": true,
+      "sha256": "777ed663455c01710aaf9235a74ad5044cc0ade639baeb9bda20889e0994b22f",
+      "source_id": "MSFT_2025",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/MSFT_FY25q4_10K"
+    },
+    {
+      "bytes": 1506109,
+      "original_identity_matched": true,
+      "sha256": "c24cc99baecb31b3567b60c117a68a3e039299351b8bf17cf4846b9aa059fa5c",
+      "source_id": "TGT_2023",
+      "url": "https://corporate.target.com/getmedia/eba4c76f-a33f-4f4c-9dce-683e907ac4e1/2023-Annual-Report-Target-Corporation.pdf"
+    },
+    {
+      "bytes": 902389,
+      "original_identity_matched": true,
+      "sha256": "0ea59d72e596171693c01e46711ca63fd411da64d059f192a2e7dff2b6492271",
+      "source_id": "TGT_2024",
+      "url": "https://corporate.target.com/getmedia/c23bca62-1790-47bd-ad0e-6971aee4f78d/2024-Annual-Report-Target-Corporation.pdf"
+    },
+    {
+      "bytes": 2440540,
+      "original_identity_matched": true,
+      "sha256": "ad0cd2a6e7c01a2e6b84525dfde0eef2d2fcde379ff17bed9bd969a140dde88c",
+      "source_id": "TGT_2025",
+      "url": "https://corporate.target.com/getmedia/79214b4b-6331-4b1c-b76f-acff121b40f9/2025-Annual-Report-Target-Corporation.pdf"
+    },
+    {
+      "bytes": 2543407,
+      "original_identity_matched": true,
+      "sha256": "0484191d2705ca420f7324bfce2881acbd2ae204c8b1d87acaff6af7d43aa4c4",
+      "source_id": "INFY_2023",
+      "url": "https://www.infosys.com/investors/reports-filings/annual-report/form20f/documents/form20f-2023.pdf"
+    },
+    {
+      "bytes": 5359420,
+      "original_identity_matched": true,
+      "sha256": "5c4fcad9c7204f6bae8945f2b54bb1c3a5efd06203e8bd1619da946ded4e1072",
+      "source_id": "INFY_2024",
+      "url": "https://www.infosys.com/investors/reports-filings/annual-report/form20f/documents/form20f-2024.pdf"
+    },
+    {
+      "bytes": 14813325,
+      "original_identity_matched": true,
+      "sha256": "eeb58b8a27df8b15b0c9ac5ee4cc01dcb9b460c597a07d00334ded10860412c8",
+      "source_id": "INFY_2025",
+      "url": "https://www.infosys.com/investors/documents/exchange-filings/2025/form20f-2025.pdf"
+    }
+  ],
+  "status": "passed_bounded_revision_checks",
+  "verification_completed_at_utc": "2026-10-28T09:12:52.668332+00:00"
+}

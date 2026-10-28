@@ -1,17 +1,24 @@
-# Independent mathematical controls
+# Historical mathematical controls
 
-These deterministic checks test the mathematical behaviour of all seven studies
+These deterministic checks test the mathematical behaviour of seven **21 October 2026 source snapshots**
 against independently enumerated or analytic references. They use synthetic
 inputs and the pinned public source files; no private rows, credentials, model
 fitting or final-outcome selection is required.
 
+This dated suite includes the earlier mortgage and M5 inventory implementations.
+It does not validate the current FDIC bank-monitoring or FreshRetailNet-LT
+operational projects. Their current acceptance checks are maintained in their
+own repositories. The immutable snapshots and original results below preserve
+the scope of the historical computation; they are not certification of the
+current seven-project portfolio.
+
 | Study | Independent control |
 | --- | --- |
-| Credit | 7,966 sharp-bound problems with 28,118 binary label completions, for all sample sizes 1–5 with at least one known event and every selection mask. |
+| Earlier mortgage study | 7,966 sharp-bound problems with 28,118 binary label completions, for all sample sizes 1–5 with at least one known event and every selection mask. |
 | Insurance | 30 Mack currency-scale/row-permutation cases, covariance PSD, four independently reconstructed lognormal moment pairs and 1,000 deterministic simulation draws. |
 | Causal decisions | Exact 81-assignment randomization average with deliberately wrong nuisance means; 160 contact-allocation cases compared with 7,280 feasible policies under equal contact cost and the stated contact cap. |
 | Treasury | 1,000 key-rate partition rows, 60 closed-form risk cases, 60 discounted runoff-conservation cases, constant-force mortality cash flows and complete active-face enumeration for both current constrained hedge objectives. |
-| Inventory | 60 future-data feature perturbations, 60 integer budget/capacity cases and 60 lead-time stock-conservation simulations. The allocation remains a documented heuristic. |
+| Earlier M5 inventory study | 60 future-data feature perturbations, 60 integer budget/capacity cases and 60 lead-time stock-conservation simulations. The allocation remains a documented heuristic. |
 | Inflation | Release-cutoff timezone equivalence, pre-release exclusion, later revisions, base separation and calendar rollover. Full public numeric reconstruction is a separate study command. |
 | Corporate finance | 1,000 synthetic cases against an independent 60-digit Decimal permanent-profit-layer formulation, four ROIC=WACC growth-neutrality cases and an independently valued reverse target. |
 

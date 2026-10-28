@@ -4,3 +4,4 @@ source_cache/
 work/
 tmp/
 decoded/
+.venv/

@@ -1,0 +1,84 @@
+{
+  "all_selected_projects_are_core": true,
+  "build_hashes": {
+    "artifacts/P7_Decision_Memo.pdf": "01eb59e37f584e27e2b580263ae3e655263fa32dd8dd74982a3dbbed149d01e2",
+    "artifacts/P7_Technical_Report.pdf": "13eddbd450f5c1777a9fee5284f11f4e79f88b94266b526bd4e5c230e8b4c492",
+    "artifacts/Prasanna_K_Research_Portfolio.pdf": "6236d11b0935e29997eb45227ed31f5c114a9ef115c9a4315dd33f3bd3e4e382",
+    "docs/exports/Corporate_Finance_Decision_Lab.xlsx": "56926847b3a6a9555cb7b4b4ddc187aeb8d207d1e6b66fafd83f05d16823ef9b",
+    "docs/exports/P7_Decision_Memo.pdf": "01eb59e37f584e27e2b580263ae3e655263fa32dd8dd74982a3dbbed149d01e2",
+    "docs/exports/P7_Technical_Report.pdf": "13eddbd450f5c1777a9fee5284f11f4e79f88b94266b526bd4e5c230e8b4c492",
+    "docs/exports/Prasanna_K_Research_Portfolio.pdf": "6236d11b0935e29997eb45227ed31f5c114a9ef115c9a4315dd33f3bd3e4e382",
+    "docs/index.html": "45aee19b89b88ea08d0adec2b6143b6e715924e312fcbfd9d039de0b5099a00b",
+    "docs/portfolio.html": "3150170735651bf710dd6f6555afa268c5e8e08d8bf1173de11fff0561c204dd",
+    "reports/DECISION_MEMO.md": "40f9fd37baa3362560338e3c0aac7e230f68e93cefd9b1e9e6978e8790418b62",
+    "reports/RECRUITER_GUIDE.md": "350a81376b62a3dc24fb0824caec8f17268d7aec24ee688cfce24231c8a904f1",
+    "reports/TECHNICAL_REPORT.md": "604f19e2d4fb5cee2594000a1f4fd5dfe1a5b81cd025914b16c8631908bafebb",
+    "reports/growth_return_policy.png": "2780636c9de3c364e90355d44dc6db308b91592fa2ef5ee27deedb907021269f",
+    "reports/growth_return_policy.svg": "ce560bf53ac3dea4c2e1c1715d58c1a9f598e9c57e19cf74fc42a1af6bd87d94"
+  },
+  "checked_at_utc": "2026-10-28T09:22:38.705613+00:00",
+  "checks": {
+    "check_explorer.cjs": {
+      "actual_embedded_script_checked": true,
+      "decimal_boundary_checks": 1602,
+      "local_deliverable_links_present": true,
+      "max_absolute_error_usd_millions": 4.656612873077393e-10,
+      "numeric_comparisons": 1159,
+      "percentage_input_guard_checks": 12,
+      "portfolio_studies": 7,
+      "python_case_evaluations": 519,
+      "scope": "Node VM execution of the exact published script; rendered browser, keyboard and live-link checks are separate.",
+      "zero_and_invalid_boundary_checks": true
+    },
+    "check_explorer_interactions.cjs": {
+      "invalid_input_recovery": true,
+      "passed": true,
+      "precision_toggle": true,
+      "saved_policy_displays": 9,
+      "scope": "Actual embedded app in a DOM model; native browser focus, layout and accessibility observations are separate.",
+      "sensitivity_focus_checks": 1089,
+      "source_views": 9,
+      "unrelated_input_focus_preserved": true
+    },
+    "check_portfolio.cjs": {
+      "actual_embedded_script": true,
+      "hash_navigation_and_unknown_fallback": true,
+      "passed": true,
+      "projects": 7,
+      "role_routes": 7,
+      "scope": "DOM model; native browser layout, accessibility and live links are separate."
+    }
+  },
+  "date": "2026-10-28",
+  "historical_mathematical_suite": "Immutable21October source identities retained; mortgage and M5 controls explicitly labelled historical, not current-core certification.",
+  "pdf_metadata": "Invariant PDF metadata for reproducibility; actual revision date printed in documents.",
+  "project_order": [
+    "demand",
+    "causal",
+    "credit",
+    "finance",
+    "economics",
+    "treasury",
+    "insurance"
+  ],
+  "protected_input_hashes": {
+    "PROTOCOL.md": "4457eb5895b809deccd79f8b09a7a74bdb588e0c062f7ae760278a4a6a19001b",
+    "data/financial_aux.json": "29d846ca2272bb0d62437eff783ac96b807c3f8355423f9657a2bee0e25a9b45",
+    "data/references.json": "3d1a3ffb603fa1d3c5a01e6df5ab431aed858fb89728e3a657158f1edbddcfed",
+    "data/sources.json": "fe299ab96b79ac9e57ff58eb3dee6a820602e90033366e67718a7c5794b69797",
+    "reports/extractor_freeze.json": "33a478589c5dfad0d8f3da94b3f68b12fdb2876160575da9dfff1ee7b5634c9a",
+    "reports/prediction_seal.json": "c702ba9049bcb2f0563fdb9e60ac2a590afaefd4f04fb6a3c0a608e95cc12d79"
+  },
+  "remote_publication": false,
+  "same_environment_second_build_byte_identical": true,
+  "scientific_outputs_unchanged": 11,
+  "scope": "Canonical seven-project metadata, shared HTML/PDF narrative, corrected FDIC/FreshRetailNet references, source-safe exports and honest finance revision prose.",
+  "visual_pdf_review": {
+    "all_pages_rendered_and_inspected": true,
+    "clipping_overlap_missing_text_observed": false,
+    "decision_memo_pages": 2,
+    "native_browser_review": false,
+    "portfolio_guide_pages": 2,
+    "technical_report_pages": 5
+  }
+}

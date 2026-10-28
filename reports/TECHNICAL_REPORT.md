@@ -1,6 +1,6 @@
 # Corporate Finance Decision Lab — technical report
 
-Prasanna K · M.A. Actuarial Economics, MSE · 19 October 2026
+Prasanna K · M.A. Actuarial Economics, MSE · Revised 28 October 2026
 
 The [five-page PDF](../artifacts/P7_Technical_Report.pdf) documents the source
 audit, chronological workflow, complete evaluation, financial controls, growth
@@ -20,8 +20,10 @@ literal 64/72; six unavailable targets for each. Valid consolidated annual MD&A
 duplicates count as correct baseline provenance. The two development errors are
 Infosys D&A prior-year cells. No final superiority or universal extraction claim.
 
-Method code was frozen after development and predictions were committed before
-final annotation/scoring. The reports are already public: Target FY 2025 cover
+Original method code was frozen after development and predictions were committed
+before final annotation/scoring. Documented validation and alias-conflict revisions
+preserve that original code and freeze; current reconstruction checks the exact
+declared revisions. Conflicting supported aliases now abstain before preference. The reports are already public: Target FY 2025 cover
 highlights were incidentally displayed in source review. This is not a blind,
 prospective or unseen-issuer evaluation. Three final clusters do not justify a
 population confidence interval. The public repository is a clean completed-study
@@ -59,13 +61,20 @@ reproduced eleven scientific outputs byte for byte in 565.57 seconds. Maximum
 child RSS 553,208 KiB; Python 3.12.14, PyMuPDF 1.26.6, Tesseract 5.3.4 and a pinned
 English trained-data hash. No source cache of decoded rows was reused.
 An 8.71-second run with all nine decoded structures cached is reported separately.
-No fresh-network, cross-platform, external-review or human-time-saving claim.
+Those are historical runs. On 28 October 2026, the corrected alias-conflict
+method freshly reacquired all nine exact source versions and repeated decoding/OCR
+with no decoded cache. All 270 responses and eleven scientific outputs remain
+byte-identical. Actual compute wall time was 579.83 seconds and maximum child
+RSS 561,684 KiB, using PyMuPDF 1.26.7 and the same Tesseract/trained-data identity.
+Network acquisition and document/workbook/browser generation are outside that
+timing. No cross-platform, external-review or human-time-saving claim.
 
 The public numeric route rebuilds nine outputs from published facts/sealed
 predictions and checks the two prediction hashes. It is not a fresh original
 PDF/DOCX audit. See README, source/prediction manifests, complete error ledger,
 independent_math_verification.json, workbook_verification.json and
-clean_reproduction.json for exact artifacts and scope.
+clean_reproduction.json for historical scope and
+alias_conflict_verification_20261026.json for the completed 28 October revision.
 
 Primary originals are linked in data/sources.json and per-field locators in
 data/references.json. Raw copyrighted issuer reports remain private. Growth and

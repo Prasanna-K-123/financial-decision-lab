@@ -1,6 +1,6 @@
 # Corporate Finance Decision Lab
 
-> **Supplementary study.** The current selected portfolio focuses on [operational decision systems](https://github.com/Prasanna-K-123/demand-inventory), [causal campaign decisions](https://github.com/Prasanna-K-123/causal-customer-decisions) and [credit-risk validation](https://github.com/Prasanna-K-123/credit-risk-model-validation). This study remains available as supporting work.
+Part of a [seven-project portfolio](https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html) in quantitative decision science. This project supplies financial-statement, accounting-control and capital-allocation evidence alongside operational forecasting, causal decisions and bank-risk validation.
 
 [![Public research checks](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml/badge.svg)](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml)
 
@@ -33,10 +33,11 @@ nonoperating assets and equity adjustments; no target share price is claimed.
 
 The FY 2025 policy anchors form a fixed retrospective research sample; they are
 not a claim to use each issuer's latest available filing. The
-[live browser verification](reports/live_browser_verification.json) checks all
-nine rendered scenarios, all 363 sensitivity cells and the nine source displays.
+[historical browser verification](reports/live_browser_verification.json) records
+checks of all nine rendered scenarios, all 363 sensitivity cells and the nine
+source displays; its dated scope is separate from the current source replay.
 
-The [seven-study mathematical control suite](verification/README.md) adds rerunnable exact-enumeration and analytic checks, with immutable source identities and a separate automated workflow.
+The [historical mathematical control suite](verification/README.md) adds rerunnable exact-enumeration and analytic checks on immutable 21 October snapshots. It includes the earlier mortgage and M5 implementations; current bank-risk and operational-system checks live in their respective repositories.
 
 ## Evidence that can be checked
 
@@ -48,7 +49,7 @@ The [seven-study mathematical control suite](verification/README.md) adds rerunn
 | Conditional model | Nine scenarios, 363 sensitivity cases, 147 constant-regime cases and nine reverse cases | Two reverse targets are unreachable in the fixed bracket; they are not extrapolated. |
 | Independent mathematics | 519 case evaluations checked by 45-digit Decimal profit-layer valuation | Different formulation from the main cash-flow discounting implementation; no external-review claim. |
 | Workbook | 932 construction reconciliations; 297 formula cells recalculated; all nine policies and 51 spread-boundary probes | Artifact Tool construction plus independent LibreOffice import, input-change and saved-file checks. Native Excel was not executed. |
-| Clean raw-source reconstruction | Eleven scientific outputs identical after repeating all report decoding/OCR | Same environment, pinned cached bytes. Not a fresh-network or cross-platform replication claim. |
+| 28 October raw-source reconstruction | All nine exact sources reacquired; eleven scientific outputs identical after clean decoding/OCR | No decoded-cache reuse. Not a cross-platform or new-holdout claim. |
 
 Only three final report clusters are available. These are already-public,
 retrospective cases, not an unseen-issuer test. Target FY 2025 cover highlights
@@ -79,12 +80,19 @@ files, without raw reports or a fitted private artifact:
 python tools/build_demo.py
 node tests/check_explorer.cjs
 node tests/check_explorer_interactions.cjs
+node tests/check_portfolio.cjs
 ```
 
 The interaction check covers all nine saved policies, 1,089 sensitivity selections,
 input-error recovery and nine source views. Native browser checks are separate.
 CI also rebuilds both pages and their exports and rejects any difference from the
 committed presentation. Edit the templates in `tools/` when changing either page.
+The HTML and printable portfolio share `data/portfolio_projects.json`; the
+role check covers all seven routes, direct hash navigation and unknown-route
+fallback. Regenerate the documents with `python tools/build_reports.py` after
+installing `requirements-reporting.txt`, then rebuild the explorer exports.
+The [28 October presentation record](reports/portfolio_revision_20261028.json)
+records repeated-build identity and the nine-page PDF inspection.
 
 ## Reproduce the independent workbook check
 
@@ -122,6 +130,21 @@ PDF and browser generation and is not a human-time-saving claim. A separate
 cached structure run took 8.71 seconds. See the per-source cache flags.
 
 ## Research history and boundaries
+
+The [26 October alias-conflict correction](reports/alias_conflict_revision_20261026.json)
+makes strict extraction check every supported alias before applying label
+preference. Differing values under “Revenue” and “Total revenue” now cause an
+explicit abstention with both locators. Different net-sales/total-revenue values
+are treated as ambiguous under this field contract. The literal baseline is
+unchanged. The exact original extractor, original freeze and prediction seals
+remain available; this is a disclosed correction, not a new blind holdout.
+The [28 October verification](reports/alias_conflict_verification_20261026.json)
+freshly downloaded all nine pinned reports and repeated all decoding/OCR,
+with no decoded-cache reuse. All 270 responses and eleven scientific outputs
+match the original hashes. The revised method changes the conflicting-alias
+fixtures, not the recorded corpus results. The 25 research tests, seven release
+guard tests and separate Decimal checks passed. This is a retrospective
+correction and replay, not a new holdout.
 
 The [protocol](PROTOCOL.md), [frozen method](reports/extractor_freeze.json),
 [prediction seal](reports/prediction_seal.json), [references](data/references.json)

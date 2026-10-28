@@ -1,0 +1,19 @@
+--- historical/src/finance_lab/extraction.py
++++ revised/src/finance_lab/extraction.py
+@@ -132,10 +132,14 @@
+             'source_value':str(value)}
+         candidates.append((allowed[label],order,value,provenance))
+     if not candidates:return {'value':None,'reason':'no_supported_row_year_scope','provenance':[]}
++    if strict and len({x[2] for x in candidates})!=1:
++        return {'value':None,'reason':'conflicting_supported_contexts','provenance':[x[3] for x in candidates]}
++    # Aliases are alternative labels for this field, not permission to discard
++    # conflicting evidence. Prefer the canonical label only after agreement.
++    # If net sales and total revenue differ, this contract cannot infer their
++    # economic equivalence and must abstain rather than silently choose one.
+     best=min(x[0] for x in candidates)
+     candidates=[x for x in candidates if x[0]==best]
+-    if strict and len({x[2] for x in candidates})!=1:
+-        return {'value':None,'reason':'conflicting_supported_contexts','provenance':[x[3] for x in candidates]}
+     selected=min(candidates,key=lambda x:x[1])
+     return {'value':str(selected[2]),'reason':'statement_scoped' if strict else 'literal_lookup',
+             'provenance':[x[3] for x in candidates] if strict else [selected[3]]}

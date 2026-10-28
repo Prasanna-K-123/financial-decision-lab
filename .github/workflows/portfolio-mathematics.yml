@@ -1,4 +1,4 @@
-name: Verify portfolio mathematics
+name: Verify historical mathematical controls
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read

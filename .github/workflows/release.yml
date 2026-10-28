@@ -1,124 +1,85 @@
-name: Publish audited release
+name: Publish reviewed finance release
 on:
-  push:
-    branches: [main]
-    paths: [.github/workflows/release.yml]
   workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag pointing to the reviewed main commit
+        required: true
+        type: string
+      reviewed_commit:
+        description: Exact reviewed 40-character main commit SHA
+        required: true
+        type: string
 permissions: {}
 concurrency:
-  group: audited-release
+  group: reviewed-finance-release
   cancel-in-progress: false
+env:
+  RELEASE_TAG: ${{ inputs.tag }}
+  REVIEWED_COMMIT: ${{ inputs.reviewed_commit }}
 jobs:
-  publish:
+  verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      PYTHONPATH: src
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '2'
+      TESSDATA_PREFIX: /usr/share/tesseract-ocr/5/tessdata
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Check dispatch and existing refs before execution
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/release_guard.py --check
+      - run: python -m pip install -r requirements.txt
+      - name: Install and verify the original OCR dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y tesseract-ocr tesseract-ocr-eng
+          python - <<'PY'
+          import hashlib, os, subprocess
+          from pathlib import Path
+          version = subprocess.check_output(['tesseract', '--version'], text=True).splitlines()[0]
+          assert version == 'tesseract 5.3.4', version
+          data = Path(os.environ['TESSDATA_PREFIX']) / 'eng.traineddata'
+          assert hashlib.sha256(data.read_bytes()).hexdigest() == '7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2'
+          PY
+      - run: python -m unittest discover -s tests -v
+      - name: Reacquire pinned originals and repeat source-to-result validation
+        run: |
+          python tools/acquire_sources.py --output source_cache
+          python tools/run_study.py --sources source_cache --decoded work/release/decoded --output work/release/results
+          python tools/reproduce_numeric.py
+          python tools/build_demo.py
+          node tests/check_explorer.cjs
+          node tests/check_explorer_interactions.cjs
+          node tests/check_portfolio.cjs
+          git diff --exit-code -- docs/index.html docs/portfolio.html docs/exports/
+      - name: Recheck refs after verification
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/release_guard.py --check
+  publish:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       contents: write
-      actions: read
-    env:
-      GH_TOKEN: ${{ github.token }}
-      AUDITED_REPOSITORY: "Prasanna-K-123/financial-decision-lab"
-      AUDITED_BASELINE: "293f7c6b3cc183ecca1d65b2ca595af2c3217035"
-      RELEASE_TAG: "v1.0.8"
-      RELEASE_TITLE: "Corporate Finance Decision Lab — v1.0.8"
-      ALLOWED_PATHS: "[\".github/workflows/release.yml\", \"reports/browser_ui_verification_20261023.json\"]"
-      APPROVED_BLOBS: "{\".github/workflows/verify.yml\":\"bb45e538afa84932c00ec748d1b1374b855515d1\",\"README.md\":\"46d9fbe4ce30159c737004f66b36de81dee107fc\",\"docs/audit/explorer-viewport-check.html\":\"61b25456852816700d1064057a5f6c9e358558e3\",\"docs/index.html\":\"99dfba70aeaba4478f5347f4b8a07b74fdced71a\",\"reports/ui_rebuild_revision_20261023.json\":\"dafbd215cb223d7007424a7660d553d62119c482\",\"tests/check_explorer_interactions.cjs\":\"f045bee00c7f632c4592b7dcffb688a172fcced3\",\"tools/build_demo.py\":\"e974f40fb12a8f79f4f44f5203e3f1ecedc98b40\",\"tools/explorer.js\":\"cf5fefedf9275f934b403a6ec2773ea2b2666b3d\",\"tools/explorer_template.html\":\"4348415cac0cbdce7076a1d0cfb31cb031316c70\",\"tools/portfolio_template.html\":\"b623af523b1afb9091cb8c5efe7b5fd332fafffd\",\"reports/browser_ui_verification_20261023.json\":\"a885b6b5d3914c1bc92b4f7370c511b8284e27c0\"}"
-      REQUIRED_WORKFLOWS: "[\"Verify public research\", \"Verify portfolio mathematics\"]"
-      BROWSER_SOURCE_COMMIT: "293f7c6b3cc183ecca1d65b2ca595af2c3217035"
-      BROWSER_EVIDENCE_PATH: "reports/browser_ui_verification_20261023.json"
-      EXPECTED_HTML_SHA256: "45aee19b89b88ea08d0adec2b6143b6e715924e312fcbfd9d039de0b5099a00b"
-      RELEASE_NOTES: |
-        Preserve native keyboard focus after sensitivity selection and add labelled result status and table navigation. The demo builder now preserves the current seven-study role guide. CI checks all 1,089 sensitivity selections, nine saved policies, input recovery and source views, then rejects build drift in both pages and their exports. Native Chrome checks cover the published source and three CSS viewport widths. Scientific calculations, saved results and workbooks are unchanged.
-
-        [Browser verification](https://github.com/Prasanna-K-123/financial-decision-lab/blob/v1.0.8/reports/browser_ui_verification_20261023.json). Earlier release tags and dated records remain unchanged.
     steps:
-      - name: Verify reviewed content and successful CI before publishing
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          import base64, json, os, time, urllib.request, urllib.error
-          repo=os.environ['GITHUB_REPOSITORY']
-          sha=os.environ['GITHUB_SHA']
-          def require(condition,message):
-              if not condition:raise RuntimeError(message)
-          def api(path,payload=None,missing=False):
-              request=urllib.request.Request('https://api.github.com/repos/'+repo+path,
-                  data=None if payload is None else json.dumps(payload).encode(),
-                  headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],
-                      'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28',
-                      'User-Agent':'audited-maintenance-release'})
-              try:
-                  with urllib.request.urlopen(request,timeout=30) as response:return json.load(response)
-              except urllib.error.HTTPError as error:
-                  if missing and error.code==404:return None
-                  raise RuntimeError('GitHub API failed (HTTP '+str(error.code)+')') from None
-          require(repo==os.environ['AUDITED_REPOSITORY'],'Unexpected repository')
-          require(os.environ['GITHUB_REF']=='refs/heads/main','Main is required')
-          comparison=api('/compare/'+os.environ['AUDITED_BASELINE']+'...'+sha)
-          require(comparison['status']=='ahead' and comparison['total_commits']==1,
-              'Exactly one reviewed maintenance commit required')
-          allowed=set(json.loads(os.environ['ALLOWED_PATHS']))
-          require({row['filename'] for row in comparison['files']}==allowed and
-              all(row['status'] in ('added','modified') for row in comparison['files']),
-              'Unexpected source changes')
-          tree=api('/git/trees/'+sha+'?recursive=1')
-          require(not tree['truncated'],'Incomplete source tree')
-          actual={row['path']:row['sha'] for row in tree['tree'] if row['type']=='blob'}
-          approved=json.loads(os.environ['APPROVED_BLOBS'])
-          require(all(actual.get(path)==digest for path,digest in approved.items()),
-              'Source differs from reviewed content')
-          proof_path=os.environ['BROWSER_EVIDENCE_PATH']
-          proof_blob=api('/git/blobs/'+approved[proof_path])
-          require(proof_blob['encoding']=='base64','Unexpected verification encoding')
-          proof=json.loads(base64.b64decode(proof_blob['content']))
-          require(proof['source_commit']==os.environ['BROWSER_SOURCE_COMMIT'],
-              'Browser observations refer to a different source')
-          require(proof['native_checks_passed'] is True and all(proof['native_checks'].values()),
-              'Native interface verification did not pass')
-          views=proof['viewport_views']
-          require(len(views)==3 and {view['requestedCssWidth'] for view in views}=={320,390,1200}
-              and all(view['passed'] for view in views),'Viewport verification did not pass')
-          require(proof['http_html_matches_reviewed_source'] is True and
-              proof['delivered_html_sha256']==os.environ['EXPECTED_HTML_SHA256'],
-              'Delivered HTML differs from the reviewed source')
-          required=json.loads(os.environ['REQUIRED_WORKFLOWS'])
-          deadline=time.monotonic()+900
-          verified={}
-          while True:
-              runs=api('/actions/runs?head_sha='+sha+'&per_page=100')['workflow_runs']
-              verified={}
-              for name in required:
-                  candidates=[run for run in runs if run['name']==name and run['head_sha']==sha
-                      and run['head_branch']=='main' and run['event']=='push']
-                  latest=max(candidates,key=lambda run:run['id']) if candidates else None
-                  if latest and latest['status']=='completed':
-                      require(latest['conclusion']=='success','Required workflow failed: '+name)
-                      verified[name]=latest['html_url']
-              if len(verified)==len(required):break
-              require(time.monotonic()<deadline,'Timed out waiting for required checks')
-              time.sleep(10)
-          require(api('/branches/main')['commit']['sha']==sha,'Main changed during verification')
-          tag=os.environ['RELEASE_TAG']
-          ref=api('/git/ref/tags/'+tag,missing=True)
-          if ref is not None:
-              require(ref['object']['type']=='commit' and ref['object']['sha']==sha,
-                  'Existing tag differs; retagging is forbidden')
-          release=api('/releases/tags/'+tag,missing=True)
-          if release is None:
-              release=api('/releases',{'tag_name':tag,'target_commitish':sha,
-                  'name':os.environ['RELEASE_TITLE'],'body':os.environ['RELEASE_NOTES'],
-                  'draft':False,'prerelease':False,'make_latest':'true'})
-          require(not release['draft'] and not release['prerelease'],'Final release required')
-          require(release['tag_name']==tag and release['name']==os.environ['RELEASE_TITLE'],
-              'Release identity differs')
-          require(release['body'].replace('\r\n','\n').strip()==os.environ['RELEASE_NOTES'].strip(),
-              'Release notes differ')
-          ref=api('/git/ref/tags/'+tag)
-          require(ref['object']['type']=='commit' and ref['object']['sha']==sha,
-              'Release tag does not point to the tested commit')
-          require(api('/releases/latest')['id']==release['id'],'Latest release differs')
-          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as summary:
-              summary.write('Published ['+tag+']('+release['html_url']+') after exact source and CI checks.\n\n')
-              for name,url in verified.items():summary.write('- ['+name+']('+url+')\n')
-          print(json.dumps({'tag':tag,'commit':sha,'url':release['html_url'],'required_checks':verified}))
-          PY
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Recheck existing tag and main before publishing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/release_guard.py --publish

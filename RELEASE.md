@@ -1,3 +1,39 @@
+# Release a reviewed revision
+
+Use `.github/workflows/release.yml` after reviewing the exact commit and creating
+its immutable version tag through the authorized account workflow. Do not move
+an existing tag to reuse its name.
+
+The workflow is manually dispatched from `main` with an existing version tag
+and the complete reviewed 40-character commit SHA. Dispatch SHA, checkout,
+current main and the tag's resolved commit must all agree. Annotated tags are
+resolved; missing or different tags fail without a tag-creation/movement call.
+The verification job has read-only contents access. A separate publication job
+gets contents-write access only after verification, rechecks the refs and either
+creates the release for that existing tag or accepts an exactly matching prior
+release. Different existing release notes are not overwritten. Concurrent
+external writers are outside the workflow lock, so refs are checked immediately
+before and after the release request; this is not a platform-wide atomic lock.
+
+No data, model or duplicate build artifacts are uploaded, no cache is created by
+the release workflow, and no quota or paid infrastructure is increased. The
+release does not automatically replace the account's latest-release designation.
+Local mock-API tests cover mismatched identities, missing/moved tags, moved main,
+annotated tags, cycles and idempotent publication. They are not evidence that a
+remote release has been executed.
+
+Verification includes the 25 research and seven guard tests, fresh acquisition
+of the nine exact issuer reports, clean decoding/OCR, all 270 responses, original
+prediction and scientific-output checks, independent Decimal valuation, and the
+finance and seven-project role explorers. The job requires Tesseract5.3.4 and
+the pinned English trained-data hash; an incompatible runner fails closed rather
+than adopting changed extraction output. Native browser and workbook-application
+checks retain their own dated evidence. The separate historical mathematical
+workflow still validates its immutable21October snapshots.
+
+The original release records below are historical, not assertions that every
+current release has already been published or checked in a native browser.
+
 # v1.0.1 — report typography and public verification
 
 Corrects spacing in the technical report, decision memo and Markdown alternative.

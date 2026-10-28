@@ -1,6 +1,6 @@
 # Cash generation and capital allocation
 
-Prasanna K · 19 October 2026
+Prasanna K · Original study 19 October 2026; revised 28 October 2026
 
 Microsoft FY 2025 revenue rose 14.9%, cash PPE 45.1%, and CFO less PPE fell 3.3%
 to USD 71,611m. Target’s proxy fell 36.7% to USD 2,835m. Infosys CFO increased
