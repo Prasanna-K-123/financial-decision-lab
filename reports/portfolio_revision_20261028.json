@@ -73,6 +73,23 @@
   "same_environment_second_build_byte_identical": true,
   "scientific_outputs_unchanged": 11,
   "scope": "Canonical seven-project metadata, shared HTML/PDF narrative, corrected FDIC/FreshRetailNet references, source-safe exports and honest finance revision prose.",
+  "subsequent_presentation_corrections": [
+    {
+      "changed_artifact_hashes": {
+        "artifacts/Prasanna_K_Research_Portfolio.pdf": "a26112c1e57e20e69ba47eebbcab28ea1b4ae50a8a88df96f83851f36a9efb5c",
+        "data/portfolio_projects.json": "afb91378dbd10c057ff67ba9330b55741f42ecac9b6a6634154d9b3a5593f17b",
+        "docs/exports/Prasanna_K_Research_Portfolio.pdf": "a26112c1e57e20e69ba47eebbcab28ea1b4ae50a8a88df96f83851f36a9efb5c",
+        "docs/portfolio.html": "dad3c8fe90064a3aafde782c16d12c573134c01b60039a01dbccbf3a1946d028"
+      },
+      "checked_at_utc": "2026-10-28T09:52:28.271367+00:00",
+      "other_inspected_outputs_unchanged": 55,
+      "portfolio_node_routes_passed": 7,
+      "portfolio_pdf_pages": 2,
+      "previous_build_hashes_retained_above": true,
+      "reason": "The 56 Treasury instantaneous stresses include longevity and curve-tail assumptions, so rate stresses was too narrow.",
+      "scope": "Text and generated presentation only. Original scientific outputs, source seals, workbook, finance report and memo bytes remain unchanged. No fresh scientific execution or browser review is claimed."
+    }
+  ],
   "visual_pdf_review": {
     "all_pages_rendered_and_inspected": true,
     "clipping_overlap_missing_text_observed": false,

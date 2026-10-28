@@ -109,7 +109,7 @@
     "key": "treasury",
     "name": "Treasury ALM and liquidity",
     "repo": "treasury-alm",
-    "description": "Interest-rate hedging, published Treasury curves and hypothetical benefit cash flows. Four hedge policies, 56 rate stresses and 108 liquidity-runoff cases. Independent Decimal and formula-workbook reconciliations support the modelling.",
+    "description": "Interest-rate hedging, published Treasury curves and hypothetical benefit cash flows. Four hedge policies, 56 instantaneous stresses and 108 liquidity-runoff cases. Independent Decimal and formula-workbook reconciliations support the modelling.",
     "roles": "Treasury, ALM, financial risk",
     "methods": "Term-structure cash flows · constrained hedging · rate stresses · liquidity conservation",
     "evidence": [
