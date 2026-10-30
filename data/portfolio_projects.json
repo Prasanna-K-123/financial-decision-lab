@@ -3,9 +3,9 @@
     "key": "cards",
     "name": "Consumer credit risk and strategy",
     "repo": "consumer-credit-risk-strategy",
-    "description": "Existing-card risk models use 30,000 Taiwanese clients from a 2005 snapshot. Historical review queues, paired uncertainty and independent SQL checks expose calibration and policy limits. A separate 56-quarter US bankcard reporting pack tracks delinquency and origination mix; it is not joined to the borrower sample.",
+    "description": "The boosting model's historical 600-client review queue (10% capacity) captured 33.4% of observed defaults; 72% of queued clients defaulted. A shallow CART benchmark and five cost assumptions expose segmentation and workload tradeoffs. Models use 30,000 Taiwanese clients from 2005, with independent SQL reconciliation. A separate 56-quarter US bankcard reporting pack tracks delinquency and origination mix; it is not joined to the borrower sample. Concentration does not establish prevented losses or profit.",
     "roles": "Consumer credit, risk strategy, model validation and credit analytics",
-    "methods": "Interpretable scorecard · calibrated boosting · capacity queues · independent SQL · US bankcard reporting",
+    "methods": "Interpretable scorecard · calibrated boosting · CART segmentation · policy-cost sensitivity · capacity queues · independent SQL · US bankcard reporting",
     "evidence": [
       {
         "label": "Decision memo",
@@ -18,9 +18,14 @@
       {
         "label": "Independent SQL",
         "path": "docs/SQL_CONTROLS.md"
+      },
+      {
+        "label": "CART and policy sensitivity",
+        "path": "reports/STRATEGY_REPORT.md"
       }
     ],
-    "demo_url": null
+    "demo_url": "https://prasanna-k-123.github.io/financial-decision-lab/consumer-credit.html",
+    "demo_label": "Explore card strategy"
   },
   {
     "key": "credit",

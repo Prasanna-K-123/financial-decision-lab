@@ -1,6 +1,6 @@
 # Corporate Finance Decision Lab
 
-Part of a [eight-project portfolio](https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html) in quantitative decision science. This project supplies financial-statement, accounting-control and capital-allocation evidence alongside consumer-card risk strategy, bank-risk validation, causal decisions and operational forecasting.
+Part of an [eight-project portfolio](https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html) in quantitative decision science. This project supplies financial-statement, accounting-control and capital-allocation evidence alongside consumer-card risk strategy, bank-risk validation, causal decisions and operational forecasting.
 
 [![Public research checks](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml/badge.svg)](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml)
 

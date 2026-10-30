@@ -84,7 +84,8 @@ for (const project of projects) {
     }
 }
 const card = projects.find(project => project.key === 'cards');
-assert.equal(card.demo_url, null);
+assert.equal(card.demo_url, 'https://prasanna-k-123.github.io/financial-decision-lab/consumer-credit.html');
+assert.ok(fs.statSync(path.join(root, 'docs/consumer-credit.html')).isFile());
 assert.ok(card.description.includes('Taiwanese') && card.description.includes('separate 56-quarter US'));
 assert.ok(card.description.includes('not joined') && card.methods.includes('independent SQL'));
 console.log(JSON.stringify({passed: true, projects: keys.length, role_routes: Object.keys(routes).length,

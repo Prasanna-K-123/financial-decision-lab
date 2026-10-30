@@ -26,6 +26,7 @@ jobs:
       - run: node tests/check_explorer.cjs
       - run: node tests/check_explorer_interactions.cjs
       - run: node tests/check_portfolio.cjs
+      - run: node tests/check_consumer_credit.cjs
       - run: python tools/reproduce_numeric.py
       - name: Rebuild current explorer and role guide without drift
         run: |
