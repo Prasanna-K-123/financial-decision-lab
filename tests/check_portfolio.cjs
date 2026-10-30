@@ -4,12 +4,12 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'docs/portfolio.html'), 'utf8');
 const projects = JSON.parse(fs.readFileSync(path.join(root, 'data/portfolio_projects.json'), 'utf8'));
-const keys = ['cards', 'credit', 'causal', 'demand', 'finance', 'economics', 'treasury', 'insurance'];
+const keys = ['cards', 'losses', 'credit', 'causal', 'demand', 'finance', 'economics', 'treasury', 'insurance'];
 assert.deepEqual(projects.map(p => p.key), keys);
 assert.ok(!html.includes('__STUDY_') && !html.includes('__PROJECT_CARDS__'));
-assert.ok(html.includes('All 8 studies') && html.includes('8 core projects'));
+assert.ok(html.includes(`All ${keys.length} studies`) && html.includes(`${keys.length} core projects`));
 assert.ok(!html.includes('src/mortgage_risk/') && !html.includes('210 historical M5'));
-const routes = {all: keys, 'consumer-credit': ['cards', 'credit', 'causal'],
+const routes = {all: keys, 'consumer-credit': ['cards', 'losses', 'credit'],
     credit: ['cards', 'credit', 'treasury'], insurance: ['insurance', 'treasury'],
     treasury: ['treasury', 'credit'], finance: ['finance', 'economics'],
     analytics: ['causal', 'demand'], economics: ['economics', 'causal']};
@@ -24,6 +24,7 @@ function environment(initialHash = '') {
     const select = {value: 'all', disabled: true, selectedOptions: [{textContent: 'Role'}],
         addEventListener: (name, callback) => {changes[name] = callback;}};
     const status = {textContent: ''};
+    const heading = {textContent: 'Quantitative decision science.'};
     const grid = {appendChild(card) {assert.ok(card); const at = order.indexOf(card.id); if (at !== -1) order.splice(at, 1); order.push(card.id);}};
     const location = {hash: initialHash, pathname: '/portfolio.html', search: '?view=research'};
     const history = {replaceState(_state, _title, value) {
@@ -32,22 +33,23 @@ function environment(initialHash = '') {
         assert.equal(target.search, '?view=research');
         location.hash = target.hash;
     }};
-    const document = {getElementById(id) {return id === 'studies' ? grid : id === 'role-select' ? select : id === 'role-status' ? status : cards.get(id);}};
+    const document = {getElementById(id) {return id === 'studies' ? grid : id === 'role-select' ? select : id === 'role-status' ? status : id === 'portfolio-heading' ? heading : cards.get(id);}};
     const window = {addEventListener(name, callback) {windowEvents[name] = callback;}};
     vm.runInNewContext(scripts[0][1], {document, window, location, history, Map});
     const visible = () => order.filter(id => !cards.get(id).hidden).map(id => id.replace('study-', ''));
-    return {cards, changes, windowEvents, select, status, location, visible};
+    return {cards, changes, windowEvents, select, status, heading, location, visible};
 }
 const e = environment();
 assert.equal(e.select.disabled, false);
 assert.deepEqual(e.visible(), keys);
-assert.equal(e.status.textContent, 'Showing all 8 studies.');
+assert.equal(e.status.textContent, `Showing all ${keys.length} studies.`);
 for (const [route, expected] of Object.entries(routes)) {
     e.select.value = route;
     e.changes.change();
     assert.deepEqual(e.visible(), expected, route);
+    assert.equal(e.heading.textContent, route === 'consumer-credit' ? 'Consumer credit risk and model validation.' : 'Quantitative decision science.');
     assert.equal(e.location.hash, route === 'all' ? '' : '#' + route);
-    assert.ok(e.status.textContent.startsWith(route === 'all' ? 'Showing all 8 studies.' : 'Showing ' + expected.length + ' complementary studies for '));
+    assert.ok(e.status.textContent.startsWith(route === 'all' ? `Showing all ${keys.length} studies.` : 'Showing ' + expected.length + ' complementary studies for '));
     const direct = environment('#' + route);
     assert.deepEqual(direct.visible(), expected, 'initial hash ' + route);
     assert.equal(direct.select.value, route);

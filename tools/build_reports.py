@@ -39,7 +39,7 @@ def build_portfolio_guide(root=None):
         canvas.restoreState()
     guide = [paragraph('Prasanna K', 'title'), paragraph('Quantitative decision science', 'h1'),
         paragraph(f'M.A. Actuarial Economics - Madras School of Economics - Class of 2028<br/>Summer 2027 internships - {len(projects)} core projects with source-linked evidence', 'small'),
-        paragraph('Consumer-card risk, bank-model validation and causal decisions lead the portfolio. Operations, finance, economics, treasury and insurance add distinct evidence. Each project exposes its data, methods, results and limitations.')]
+        paragraph('Consumer-card strategy, US loss forecasting and bank-model validation lead the portfolio. Causal decisions, operations, finance, economics, treasury and insurance add distinct evidence. Each project exposes its data, methods, results and limitations.')]
     for index, project in enumerate(projects):
         if index == 4:
             guide += [PageBreak(), paragraph('Research portfolio', 'h1')]
@@ -56,7 +56,7 @@ def build_portfolio_guide(root=None):
             paragraph(f'{html.escape(project["roles"])}<br/><link href="{repository}" color="#006B70">Code and research</link> - <link href="{html.escape(browser, quote=True)}" color="#006B70">{html.escape(browser_label)}</link>', 'small')])]
     number = {project['key']: str(index+1) for index,project in enumerate(projects)}
     choices = [
-        ('Consumer credit / strategy', ['cards','credit','causal']),
+        ('Consumer credit / strategy', ['cards','losses','credit']),
         ('Bank / model risk', ['cards','credit','treasury']),
         ('Insurance', ['insurance','treasury']),
         ('Treasury', ['treasury','credit']),

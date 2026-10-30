@@ -12,7 +12,7 @@
 .evidence a{display:inline-flex;align-items:center;min-height:44px;margin:0;font-size:.9rem}
 [hidden]{display:none!important}select:focus-visible{outline:3px solid #ba742b;outline-offset:4px}
 @media(max-width:700px){.role-picker{padding:20px}header nav a{display:inline-flex;align-items:center;min-height:44px;margin-left:12px}}
-</style></head><body><header><strong>Prasanna K</strong><nav aria-label="Profiles"><a href="https://github.com/Prasanna-K-123">GitHub</a><a href="https://www.linkedin.com/in/prasanna-k-964716384/">LinkedIn</a></nav></header><main><div class="eyebrow">M.A. Actuarial Economics · Madras School of Economics · Class of 2028</div><h1>Quantitative decision science.</h1><p class="intro">__STUDY_COUNT__ core projects connect traceable data and model comparisons to practical decisions. Start with consumer credit, bank-risk validation and causal decisions; follow the role routes for operations, finance, economics, treasury and insurance. Summer 2027 internships.</p><div class="actions"><a href="exports/Prasanna_K_Research_Portfolio.pdf">Read the portfolio guide</a></div><section class="role-picker" aria-labelledby="role-heading">
+</style></head><body><header><strong>Prasanna K</strong><nav aria-label="Profiles"><a href="https://github.com/Prasanna-K-123">GitHub</a><a href="https://www.linkedin.com/in/prasanna-k-964716384/">LinkedIn</a></nav></header><main><div class="eyebrow">M.A. Actuarial Economics · Madras School of Economics · Class of 2028</div><h1 id="portfolio-heading">Quantitative decision science.</h1><p class="intro">__STUDY_COUNT__ core projects connect traceable data and model comparisons to practical decisions. Start with consumer-card strategy, US loss forecasting and bank-risk validation; follow the role routes for operations, finance, economics, treasury and insurance. Summer 2027 internships.</p><div class="actions"><a href="exports/Prasanna_K_Research_Portfolio.pdf">Read the portfolio guide</a></div><section class="role-picker" aria-labelledby="role-heading">
 <h2 id="role-heading">Find the evidence for your role</h2>
 <p>Choose a role to start with complementary studies. Each study links directly to its findings, methods and implementation.</p>
 <label for="role-select">Role focus</label>
@@ -38,7 +38,7 @@
   const all = __STUDY_KEYS__;
   const routes = {
     all,
-    'consumer-credit': ['cards', 'credit', 'causal'],
+    'consumer-credit': ['cards', 'losses', 'credit'],
     credit: ['cards', 'credit', 'treasury'],
     insurance: ['insurance', 'treasury'],
     treasury: ['treasury', 'credit'],
@@ -53,6 +53,8 @@
   }
   function show(key) {
     const visible = routes[key];
+    document.getElementById('portfolio-heading').textContent = key === 'consumer-credit' ?
+      'Consumer credit risk and model validation.' : 'Quantitative decision science.';
     const ordered = visible.concat(all.filter(item => !visible.includes(item)));
     for (const item of ordered) {
       const card = cards.get(item);

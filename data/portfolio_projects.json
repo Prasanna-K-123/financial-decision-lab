@@ -28,6 +28,29 @@
     "demo_label": "Explore card strategy"
   },
   {
+    "key": "losses",
+    "name": "US card loss forecasting and scenarios",
+    "repo": "us-card-loss-forecasting",
+    "description": "Archived ALFRED inputs support 46 quarterly US aggregate card-loss evaluations, with train-only scaling and an embargoed model-selection snapshot. Empirical error bands and a formula workbook make uncertainty and hypothetical exposure accounting inspectable. The AR model's small gain is uncertain; the macro model fails during COVID. These are aggregate research forecasts and scenarios, not borrower default probabilities or CECL reserves.",
+    "roles": "Credit-loss forecasting, model risk, risk analytics and financial reporting",
+    "methods": "Archived origin data · expanding Ridge fits · selection embargo · empirical error bands · formula scenarios",
+    "evidence": [
+      {
+        "label": "Decision memo",
+        "path": "reference/reports/DECISION_MEMO.md"
+      },
+      {
+        "label": "Research report",
+        "path": "reference/reports/RESEARCH_REPORT.md"
+      },
+      {
+        "label": "Formula workbook",
+        "path": "artifacts/US_Card_Loss_Scenarios.xlsx"
+      }
+    ],
+    "demo_url": null
+  },
+  {
     "key": "credit",
     "name": "Bank-risk model validation",
     "repo": "credit-risk-model-validation",
