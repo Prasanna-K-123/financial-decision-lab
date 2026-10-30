@@ -29,7 +29,7 @@ nonoperating assets and equity adjustments; no target share price is claimed.
 · [Decision memo](reports/DECISION_MEMO.md)
 · [Technical report](reports/TECHNICAL_REPORT.md)
 · [Formula workbook](artifacts/Corporate_Finance_Decision_Lab.xlsx)
-· [Eight-study portfolio](docs/portfolio.html)
+· [Nine-study portfolio](docs/portfolio.html)
 
 The FY 2025 policy anchors form a fixed retrospective research sample; they are
 not a claim to use each issuer's latest available filing. The
@@ -89,8 +89,8 @@ CI also rebuilds both pages and their exports and rejects any difference from th
 committed presentation. Edit the templates in `tools/` when changing either page.
 The HTML and printable portfolio share `data/portfolio_projects.json`; the
 role check covers all eight routes, direct hash navigation and unknown-route
-fallback. The consumer-credit route starts with card-risk research, bank-model
-validation and causal customer decisions. Regenerate only the current portfolio
+fallback. The consumer-credit route starts with card-risk research, US card-loss
+forecasting and bank-model validation. Regenerate only the current portfolio
 guide with `python tools/build_reports.py --portfolio-only` after installing
 `requirements-reporting.txt`, then rebuild the explorer exports. The full
 `python tools/build_reports.py` command retains the finance-document build.
