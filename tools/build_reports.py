@@ -1,6 +1,6 @@
 """Generate research documents from the checked numerical release evidence."""
 from pathlib import Path
-import json,html
+import json,html,sys
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -10,6 +10,76 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.pagesizes import A4
+
+
+def build_portfolio_guide(root=None):
+    """Build the current guide without rewriting historical finance reports."""
+    root = Path(root) if root is not None else Path(__file__).resolve().parents[1]
+    projects = json.loads((root / 'data/portfolio_projects.json').read_text())
+    fonts = Path(matplotlib.get_data_path()) / 'fonts/ttf'
+    for name, file in [('PortfolioBody', 'DejaVuSans.ttf'), ('PortfolioBold', 'DejaVuSans-Bold.ttf')]:
+        pdfmetrics.registerFont(TTFont(name, str(fonts / file)))
+    local_styles = {
+        'title': ParagraphStyle('portfolio-title', fontName='PortfolioBold', fontSize=24, leading=29, textColor=colors.HexColor('#203D57'), spaceAfter=13),
+        'h1': ParagraphStyle('portfolio-h1', fontName='PortfolioBold', fontSize=17, leading=21, textColor=colors.HexColor('#203D57'), spaceAfter=11),
+        'h2': ParagraphStyle('portfolio-h2', fontName='PortfolioBold', fontSize=11, leading=14, textColor=colors.HexColor('#203D57'), spaceBefore=10, spaceAfter=4),
+        'body': ParagraphStyle('portfolio-body', fontName='PortfolioBody', fontSize=9, leading=12.7, spaceAfter=7),
+        'small': ParagraphStyle('portfolio-small', fontName='PortfolioBody', fontSize=7.5, leading=10.5, textColor=colors.HexColor('#526677'), spaceAfter=6),
+    }
+    def paragraph(text, kind='body'):
+        return Paragraph(text, local_styles[kind])
+    def page_footer(canvas, doc):
+        canvas.saveState()
+        canvas.setStrokeColor(colors.HexColor('#B5C1CB'))
+        canvas.line(40, 34, A4[0]-40, 34)
+        canvas.setFont('PortfolioBody', 7)
+        canvas.setFillColor(colors.HexColor('#526677'))
+        canvas.drawString(40, 22, 'Prasanna K - Research Portfolio - Revised 30 October 2026')
+        canvas.drawRightString(A4[0]-40, 22, str(doc.page))
+        canvas.restoreState()
+    guide = [paragraph('Prasanna K', 'title'), paragraph('Quantitative decision science', 'h1'),
+        paragraph(f'M.A. Actuarial Economics - Madras School of Economics - Class of 2028<br/>Summer 2027 internships - {len(projects)} core projects with source-linked evidence', 'small'),
+        paragraph('Consumer-card risk, bank-model validation and causal decisions lead the portfolio. Operations, finance, economics, treasury and insurance add distinct evidence. Each project exposes its data, methods, results and limitations.')]
+    for index, project in enumerate(projects):
+        if index == 4:
+            guide += [PageBreak(), paragraph('Research portfolio', 'h1')]
+        repository = 'https://github.com/Prasanna-K-123/' + project['repo']
+        browser = project.get('demo_url', 'https://prasanna-k-123.github.io/' + project['repo'] + '/')
+        browser_label = project.get('demo_label', 'Evidence browser')
+        if not browser:
+            research = next(item for item in project['evidence'] if item['label'] == 'Research report')
+            browser = repository + '/blob/main/' + research['path']
+            browser_label = 'Research report'
+        guide += [KeepTogether([
+            paragraph(f'{index+1}. {html.escape(project["name"])}', 'h2'),
+            paragraph(html.escape(project['description'])),
+            paragraph(f'{html.escape(project["roles"])}<br/><link href="{repository}" color="#006B70">Code and research</link> - <link href="{html.escape(browser, quote=True)}" color="#006B70">{html.escape(browser_label)}</link>', 'small')])]
+    number = {project['key']: str(index+1) for index,project in enumerate(projects)}
+    choices = [
+        ('Consumer credit / strategy', ['cards','credit','causal']),
+        ('Bank / model risk', ['cards','credit','treasury']),
+        ('Insurance', ['insurance','treasury']),
+        ('Treasury', ['treasury','credit']),
+        ('Finance / FP&amp;A', ['finance','economics']),
+        ('Product / business analytics', ['causal','demand']),
+        ('Economic research', ['economics','causal']),
+    ]
+    starting_points = '. '.join(label + ': studies ' + ', '.join(number[key] for key in keys) for label,keys in choices) + '.'
+    guide += [paragraph('Choose a starting point', 'h2'), paragraph(starting_points),
+        paragraph('Traceable data, explicit information timing, appropriate uncertainty and decisions that follow the evidence connect the studies.'),
+        paragraph(f'<link href="https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html#consumer-credit" color="#006B70">Open the {len(projects)}-study portfolio</link> - <link href="https://github.com/Prasanna-K-123" color="#006B70">GitHub</link> - <link href="https://www.linkedin.com/in/prasanna-k-964716384/" color="#006B70">LinkedIn</link>', 'small')]
+    target = root / 'artifacts/Prasanna_K_Research_Portfolio.pdf'
+    target.parent.mkdir(exist_ok=True)
+    SimpleDocTemplate(str(target), pagesize=A4, rightMargin=40, leftMargin=40, topMargin=40, bottomMargin=48,
+        title='Prasanna K - Research Portfolio', author='Prasanna K',
+        subject='Source-linked consumer credit, model validation and quantitative research portfolio', invariant=1
+        ).build(guide, onFirstPage=page_footer, onLaterPages=page_footer)
+    return target
+
+
+if __name__ == '__main__' and '--portfolio-only' in sys.argv:
+    print(build_portfolio_guide())
+    raise SystemExit(0)
 
 R=Path(__file__).resolve().parents[1];O=R/'artifacts';O.mkdir(exist_ok=True);D=R/'reports'
 load=lambda n:json.loads((D/n).read_text())
@@ -110,15 +180,7 @@ memo +=[p('Sensitivity, not forecast certainty','h2'),p('The release contains 36
 memo +=[p('Read the audit trail','h2'),p('<link href="https://github.com/Prasanna-K-123/financial-decision-lab" color="#006B70">Repository, technical report, source locators and formula workbook</link><br/><link href="https://prasanna-k-123.github.io/financial-decision-lab/" color="#006B70">Interactive financial evidence and policy explorer</link>','small')]
 pdf('P7_Decision_Memo.pdf',memo,'Cash Generation and Capital Allocation — Decision Memo')
 
-projects=[(x['name'],x['repo'],x['description'],x['roles']) for x in json.loads((R/'data/portfolio_projects.json').read_text())]
-
-guide=[p('Prasanna K','title'),p('Quantitative decision science','h1'),p('M.A. Actuarial Economics · Madras School of Economics · Class of 2028<br/>Summer 2027 internships · Seven core projects with source-linked evidence','small'),p('Operational forecasting, causal decisions and bank-risk validation lead the portfolio. Finance, economics, treasury and insurance add distinct role-specific evidence. Each project makes its data, methods, results and limitations inspectable.')]
-for i,(name,repo,desc,role) in enumerate(projects):
- if i==4:guide +=[PageBreak(),p('Research portfolio','h1')]
- guide +=[KeepTogether([p(f'{i+1}. {name}','h2'),p(desc),p(f'{html.escape(role)}<br/><link href="https://github.com/Prasanna-K-123/{repo}" color="#006B70">Code and research</link> · <link href="https://prasanna-k-123.github.io/{repo}/" color="#006B70">Evidence browser</link>','small')])]
-guide +=[p('Choose a starting point','h2'),p('Bank/model risk: studies 3 and 6. Insurance: 7 and 6. Corporate finance/FP&amp;A: 4 and 5. Product/business analytics: 2 and 1. Economic research: 5 and 2. The shared standard is traceable source data, explicit information timing, appropriate uncertainty and a decision that follows the evidence.')]
-guide +=[p('<link href="https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html" color="#006B70">Open the seven-study portfolio</link> · <link href="https://github.com/Prasanna-K-123" color="#006B70">GitHub</link> · <link href="https://www.linkedin.com/in/prasanna-k-964716384/" color="#006B70">LinkedIn</link>','small')]
-pdf('Prasanna_K_Research_Portfolio.pdf',guide,'Prasanna K — Research Portfolio')
+build_portfolio_guide(R)
 
 # Text alternatives retain the same quantitative definitions and limits.
 md('DECISION_MEMO.md','''# Cash generation and capital allocation

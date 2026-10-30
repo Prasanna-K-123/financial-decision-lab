@@ -1,6 +1,6 @@
 # Corporate Finance Decision Lab
 
-Part of a [seven-project portfolio](https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html) in quantitative decision science. This project supplies financial-statement, accounting-control and capital-allocation evidence alongside operational forecasting, causal decisions and bank-risk validation.
+Part of a [eight-project portfolio](https://prasanna-k-123.github.io/financial-decision-lab/portfolio.html) in quantitative decision science. This project supplies financial-statement, accounting-control and capital-allocation evidence alongside consumer-card risk strategy, bank-risk validation, causal decisions and operational forecasting.
 
 [![Public research checks](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml/badge.svg)](https://github.com/Prasanna-K-123/financial-decision-lab/actions/workflows/verify.yml)
 
@@ -29,7 +29,7 @@ nonoperating assets and equity adjustments; no target share price is claimed.
 · [Decision memo](reports/DECISION_MEMO.md)
 · [Technical report](reports/TECHNICAL_REPORT.md)
 · [Formula workbook](artifacts/Corporate_Finance_Decision_Lab.xlsx)
-· [Seven-study portfolio](docs/portfolio.html)
+· [Eight-study portfolio](docs/portfolio.html)
 
 The FY 2025 policy anchors form a fixed retrospective research sample; they are
 not a claim to use each issuer's latest available filing. The
@@ -88,9 +88,12 @@ input-error recovery and nine source views. Native browser checks are separate.
 CI also rebuilds both pages and their exports and rejects any difference from the
 committed presentation. Edit the templates in `tools/` when changing either page.
 The HTML and printable portfolio share `data/portfolio_projects.json`; the
-role check covers all seven routes, direct hash navigation and unknown-route
-fallback. Regenerate the documents with `python tools/build_reports.py` after
-installing `requirements-reporting.txt`, then rebuild the explorer exports.
+role check covers all eight routes, direct hash navigation and unknown-route
+fallback. The consumer-credit route starts with card-risk research, bank-model
+validation and causal customer decisions. Regenerate only the current portfolio
+guide with `python tools/build_reports.py --portfolio-only` after installing
+`requirements-reporting.txt`, then rebuild the explorer exports. The full
+`python tools/build_reports.py` command retains the finance-document build.
 The [28 October presentation record](reports/portfolio_revision_20261028.json)
 records repeated-build identity and the nine-page PDF inspection.
 

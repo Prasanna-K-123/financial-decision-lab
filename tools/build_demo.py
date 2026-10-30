@@ -15,8 +15,8 @@ EXPORTS = (
 
 def portfolio(template, projects):
     """Render the same project identities used by the printable guide."""
-    if len(projects) != 7 or len({p['key'] for p in projects}) != 7:
-        raise ValueError('Expected seven distinct portfolio identities.')
+    if not projects or len({p['key'] for p in projects}) != len(projects):
+        raise ValueError('Expected distinct nonempty portfolio identities.')
     cards = []
     escape = html.escape
     for number, project in enumerate(projects, 1):
@@ -24,7 +24,10 @@ def portfolio(template, projects):
         if not re.fullmatch(r'[a-z-]+', key) or not re.fullmatch(r'[a-z-]+', repo):
             raise ValueError('Invalid portfolio identity.')
         repository = 'https://github.com/Prasanna-K-123/' + repo
-        links = [(f'https://prasanna-k-123.github.io/{repo}/', 'Explore results')]
+        demo_url = project.get('demo_url', f'https://prasanna-k-123.github.io/{repo}/')
+        if demo_url is not None and not demo_url.startswith('https://'):
+            raise ValueError('Demo URLs must use HTTPS or be omitted.')
+        links = [(demo_url, project.get('demo_label', 'Explore results'))] if demo_url else []
         for item in project['evidence']:
             path = item['path']
             if path.startswith('/') or '..' in path.split('/') or ':' in path:
@@ -38,9 +41,9 @@ def portfolio(template, projects):
                      f'<p class="methods"><strong>Methods</strong> {escape(project["methods"])}</p>'
                      f'<p class="roles">{escape(project["roles"])}</p>'
                      f'<nav class="evidence" aria-label="{escape(project["name"], quote=True)} evidence">{navigation}</nav></article>')
-    if template.count('__PROJECT_CARDS__') != 1 or template.count('__STUDY_KEYS__') != 1:
+    if template.count('__PROJECT_CARDS__') != 1 or template.count('__STUDY_KEYS__') != 1 or not template.count('__STUDY_COUNT__'):
         raise ValueError('Invalid portfolio template placeholders.')
-    return template.replace('__PROJECT_CARDS__', ''.join(cards)).replace('__STUDY_KEYS__', json.dumps([p['key'] for p in projects]))
+    return template.replace('__PROJECT_CARDS__', ''.join(cards)).replace('__STUDY_KEYS__', json.dumps([p['key'] for p in projects])).replace('__STUDY_COUNT__', str(len(projects)))
 
 
 def build(root: Path = ROOT) -> dict:

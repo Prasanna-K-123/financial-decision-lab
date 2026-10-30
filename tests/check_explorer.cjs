@@ -27,7 +27,9 @@ for(const [text,min,max] of [['',.01,100],['   ',0,100],['0.001',.01,100],['101'
 const a=read('reports/valuation_scenarios.json')[1].assumptions;context.input={ebit:0,a};same(vm.runInContext('calculate(input.ebit,input.a).policy_value',context),0,'zero EBIT');
 for(const patch of [{wacc:a.terminal_growth},{marginal_roic:0},{growth:NaN},{tax:1}]){context.input={ebit:100,a:{...a,...patch}};assert.throws(()=>vm.runInContext('calculate(input.ebit,input.a)',context));}
 for(const label of ['Company','Scenario','Report case','Initial profit growth (%)','WACC (%)'])assert.ok(html.includes(label),label);
-assert.equal((fs.readFileSync(path.join(root,'docs/portfolio.html'),'utf8').match(/<article\b[^>]*>/g)||[]).length,7);
+const portfolioStudies=read('data/portfolio_projects.json').length;
+assert.equal((fs.readFileSync(path.join(root,'docs/portfolio.html'),'utf8').match(/<article\b[^>]*>/g)||[]).length,portfolioStudies);
 const local=[...html.split('<script id="lab-data"')[0].matchAll(/href="([^"]+)"/g)].map(x=>x[1]).filter(x=>!x.startsWith('http')&&!x.startsWith('#'));
 for(const link of local)assert.ok(fs.existsSync(path.join(root,'docs',link)),link);
-const result={actual_embedded_script_checked:true,numeric_comparisons:checked,python_case_evaluations:519,max_absolute_error_usd_millions:maxError,zero_and_invalid_boundary_checks:true,local_deliverable_links_present:true,portfolio_studies:7,decimal_boundary_checks:decimalBoundaryCases,percentage_input_guard_checks:inputGuardCases,scope:'Node VM execution of the exact published script; rendered browser, keyboard and live-link checks are separate.'};fs.writeFileSync(path.join(root,'reports/explorer_numeric_verification.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));
+const result={actual_embedded_script_checked:true,numeric_comparisons:checked,python_case_evaluations:519,max_absolute_error_usd_millions:maxError,zero_and_invalid_boundary_checks:true,local_deliverable_links_present:true,portfolio_studies:portfolioStudies,decimal_boundary_checks:decimalBoundaryCases,percentage_input_guard_checks:inputGuardCases,scope:'Node VM execution of the exact published script; rendered browser, keyboard and live-link checks are separate.'};// Current checks emit their result; the recorded historical report is not overwritten.
+console.log(JSON.stringify(result));

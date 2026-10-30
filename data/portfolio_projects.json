@@ -1,23 +1,46 @@
 [
   {
-    "key": "demand",
-    "name": "Operational forecasting and allocation",
-    "repo": "demand-inventory",
-    "description": "FreshRetailNet-LT observed sales support time-aware forecasts and capacity-constrained allocation scenarios. The implementation includes a typed ingestion ledger, immutable input snapshots and asynchronous jobs. Stockout-adjusted forecasts and operating effects remain scenarios, not observed retailer savings.",
-    "roles": "Operations analytics, forecasting, decision systems",
-    "methods": "Time-aware features · masked-history evaluation · constrained allocation · transactional ingestion",
+    "key": "cards",
+    "name": "Consumer credit risk and strategy",
+    "repo": "consumer-credit-risk-strategy",
+    "description": "Existing-card risk models use 30,000 Taiwanese clients from a 2005 snapshot. Historical review queues, paired uncertainty and independent SQL checks expose calibration and policy limits. A separate 56-quarter US bankcard reporting pack tracks delinquency and origination mix; it is not joined to the borrower sample.",
+    "roles": "Consumer credit, risk strategy, model validation and credit analytics",
+    "methods": "Interpretable scorecard · calibrated boosting · capacity queues · independent SQL · US bankcard reporting",
     "evidence": [
       {
-        "label": "Research report",
-        "path": "docs/RESEARCH_REPORT.md"
+        "label": "Decision memo",
+        "path": "reports/DECISION_MEMO.md"
       },
       {
-        "label": "System design",
-        "path": "docs/SYSTEM_DESIGN.md"
+        "label": "Research report",
+        "path": "reports/RESEARCH_REPORT.md"
+      },
+      {
+        "label": "Independent SQL",
+        "path": "docs/SQL_CONTROLS.md"
+      }
+    ],
+    "demo_url": null
+  },
+  {
+    "key": "credit",
+    "name": "Bank-risk model validation",
+    "repo": "credit-risk-model-validation",
+    "description": "237,253 annual bank observations support a purged temporal failure-monitoring study with separate calibration and policy stages. Later monitoring missed 9 of 10 failures, restricting use despite stronger earlier ranking. Bank failure is not borrower default or regulatory approval.",
+    "roles": "Bank risk, model validation, risk analytics",
+    "methods": "Temporal purging · rare-event calibration · model challenge · cohort monitoring",
+    "evidence": [
+      {
+        "label": "Decision memo",
+        "path": "reports/DECISION_MEMO.md"
+      },
+      {
+        "label": "Research report",
+        "path": "reports/VALIDATION_REPORT.md"
       },
       {
         "label": "Core methods",
-        "path": "src/stockout/decisions.py"
+        "path": "bank_monitoring/"
       }
     ]
   },
@@ -44,24 +67,24 @@
     ]
   },
   {
-    "key": "credit",
-    "name": "Bank-risk model validation",
-    "repo": "credit-risk-model-validation",
-    "description": "237,253 annual bank observations support a purged temporal failure-monitoring study with separate calibration and policy stages. Later monitoring missed 9 of 10 failures, restricting use despite stronger earlier ranking. Bank failure is not borrower default or regulatory approval.",
-    "roles": "Bank risk, model validation, risk analytics",
-    "methods": "Temporal purging · rare-event calibration · model challenge · cohort monitoring",
+    "key": "demand",
+    "name": "Operational forecasting and allocation",
+    "repo": "demand-inventory",
+    "description": "FreshRetailNet-LT observed sales support time-aware forecasts and capacity-constrained allocation scenarios. The implementation includes a typed ingestion ledger, immutable input snapshots and asynchronous jobs. Stockout-adjusted forecasts and operating effects remain scenarios, not observed retailer savings.",
+    "roles": "Operations analytics, forecasting, decision systems",
+    "methods": "Time-aware features · masked-history evaluation · constrained allocation · transactional ingestion",
     "evidence": [
       {
-        "label": "Decision memo",
-        "path": "reports/DECISION_MEMO.md"
+        "label": "Research report",
+        "path": "docs/RESEARCH_REPORT.md"
       },
       {
-        "label": "Research report",
-        "path": "reports/VALIDATION_REPORT.md"
+        "label": "System design",
+        "path": "docs/SYSTEM_DESIGN.md"
       },
       {
         "label": "Core methods",
-        "path": "bank_monitoring/"
+        "path": "src/stockout/decisions.py"
       }
     ]
   },
